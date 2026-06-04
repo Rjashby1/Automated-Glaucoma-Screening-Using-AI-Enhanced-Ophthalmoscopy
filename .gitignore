@@ -1,0 +1,122 @@
+# ============================================================
+# Raw / private / large project data
+# ============================================================
+
+# Raw data from Tien, including zipped and extracted contents
+raw_from_Tien/
+
+# Optional broader raw-data folders, if created later
+data/raw/
+data/interim/
+data/external/
+
+# Large compressed files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Large medical/image data formats commonly used in this project
+*.tif
+*.tiff
+*.bmp
+*.png
+*.jpg
+*.jpeg
+*.psd
+
+# But allow small documentation images if placed here
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.jpeg
+!figures/**/*.png
+!figures/**/*.jpg
+!figures/**/*.jpeg
+
+
+# ============================================================
+# Model outputs / training artifacts
+# ============================================================
+
+checkpoints/
+models/
+model_outputs/
+runs/
+wandb/
+mlruns/
+tensorboard/
+outputs/
+predictions/
+
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.pkl
+*.joblib
+
+
+# ============================================================
+# Python / Jupyter
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.ipynb_checkpoints/
+
+.venv/
+venv/
+env/
+ENV/
+
+*.egg-info/
+dist/
+build/
+
+
+# ============================================================
+# Logs / temporary files
+# ============================================================
+
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Rivanna / SLURM outputs
+slurm-*.out
+*.out
+*.err
+
+
+# ============================================================
+# Secrets / local config
+# ============================================================
+
+.env
+.env.*
+*.env
+
+secrets/
+credentials/
+*.key
+*.pem
+*.json
+
+
+# ============================================================
+# OS / editor junk
+# ============================================================
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
