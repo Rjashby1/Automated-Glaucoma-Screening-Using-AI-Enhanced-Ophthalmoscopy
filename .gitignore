@@ -4,11 +4,15 @@
 
 # Raw data from Tien, including zipped and extracted contents
 raw_from_Tien/
+/raw_from_Tien/**
 
 # Optional broader raw-data folders, if created later
 data/raw/
 data/interim/
 data/external/
+/data/raw/
+/data/raw/**
+*.zip
 
 # Large compressed files
 *.zip

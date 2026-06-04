@@ -1,0 +1,34 @@
+name: glaucoma-capstone
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - pip
+
+  # Core workflow
+  - ipykernel
+  - jupyterlab
+  - notebook
+
+  # Data handling
+  - numpy
+  - pandas
+  - tqdm
+  - pyyaml
+
+  # Visualization
+  - matplotlib
+
+  # Image processing
+  - pillow
+  - opencv
+  - scikit-image
+
+  # Modeling utilities, not deep learning yet
+  - scikit-learn
+
+  # Pip-only packages can go here later
+  - pip:
+      []
