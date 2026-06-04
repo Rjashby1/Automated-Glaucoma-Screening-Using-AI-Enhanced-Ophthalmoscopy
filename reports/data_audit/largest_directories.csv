@@ -1,0 +1,70 @@
+directory,file_count,total_size_mb,image_file_count,mask_label_file_count,model_file_count,code_file_count,document_file_count,video_file_count,metadata_file_count,public_keyword_hits,sponsor_keyword_hits,mask_label_keyword_hits,baseline_keyword_hits,split_keyword_hits,quality_domain_keyword_hits,extension_counts
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Clinic/Videos,2,642.237878,0,0,0,0,0,2,0,0,4,1,0,0,0,.mp4:2
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Papila/FundusImages,484,499.794535,484,484,0,0,0,0,0,1,2,1,0,0,0,.jpg:484
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Images,650,465.651101,650,650,0,0,0,0,0,1,2,1,0,0,0,.jpg:650
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025,1,427.103208,0,0,0,0,0,0,0,1,1,1,0,1,0,.zip:1
+extracted_zips/rivanna_train_discview/rivanna_train_discview/testing_doc_dump,4,302.866179,1,1,3,0,0,0,0,0,1,2,0,3,0,.ckpt:2; .jpg:1; .pth:1
+extracted_zips/rivanna_train_discview/rivanna_train_discview,16,260.15756,1,2,2,12,0,0,1,0,1,1,0,1,0,.py:9; .ckpt:2; .ipynb:1; .csv:1; .png:1; .sh:1; .bat:1
+extracted_zips/rivanna_train_discview/rivanna_train_discview/training_logs_15_4/checkpoints,2,259.47695,0,0,2,0,0,0,0,0,1,1,3,2,0,.ckpt:2
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Images_Glare,650,182.675507,650,650,0,0,0,0,0,1,2,1,0,0,1,.jpg:650
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Clinic/Subject-3,215,153.447057,215,215,0,0,0,0,0,0,4,1,0,0,0,.png:215
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Clinic/Subject-2,208,140.022337,208,208,0,0,0,0,0,0,4,1,0,0,0,.png:208
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/Thresholded_Images_Square,650,90.597908,650,650,0,0,0,0,0,1,1,3,0,1,2,.jpg:650
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Papila/ExpertsSegmentations/ImagesWithContours,488,83.191399,488,488,0,0,0,0,0,0,2,2,0,0,0,.jpg:488
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Clinic/Subject 1 CD-1,74,69.521852,74,74,0,0,0,0,0,0,4,1,0,0,0,.png:74
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/psd_clinic_images_png,113,67.969578,113,113,0,0,0,0,0,1,3,2,0,1,0,.png:113
+extracted_zips/convert_psd_to_label/convert_psd_to_label/processed_pngs/clinic_images,113,67.969578,113,113,0,0,0,0,0,0,1,3,0,0,1,.png:113
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/oldthreshold_mistake_training_split/train/images,455,63.436172,455,455,0,0,0,0,0,1,1,2,0,3,1,.jpg:455
+extracted_zips/Tien_DiscView/Test_Non_Processed_Images/Test Non-processed Images Data,109,58.332504,109,109,0,0,0,0,0,0,1,2,0,1,3,.png:109
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/Test Non-processed Images Data,109,58.332504,109,109,0,0,0,0,0,1,1,2,0,2,2,.png:109
+extracted_zips/rivanna_train_discview/rivanna_train_discview/Test Non-processed Images Data,109,58.332504,109,109,0,0,0,0,0,0,1,2,0,2,2,.png:109
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/Thresholded_Images_Square_15_4,650,46.608776,650,650,0,0,0,0,0,1,1,3,0,1,2,.jpg:650
+extracted_zips/rivanna_train_discview/rivanna_train_discview/Thresholded_Images_Square_15_4,650,46.608776,650,650,0,0,0,0,0,0,1,3,0,1,2,.jpg:650
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Clinic/Subject 1 CD-2,38,39.980389,38,38,0,0,0,0,0,0,4,1,0,0,0,.png:38
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Images_Square,650,35.066236,650,650,0,0,0,0,0,1,2,1,0,0,0,.jpg:650
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/Images_Square,650,35.066236,650,650,0,0,0,0,0,1,1,1,0,1,0,.jpg:650
+extracted_zips/rivanna_train_discview/rivanna_train_discview/Images_Square,650,35.066236,650,650,0,0,0,0,0,0,1,1,0,1,0,.jpg:650
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/training_split/train/images,455,32.426007,455,455,0,0,0,0,0,1,1,1,0,3,0,.jpg:455
+extracted_zips/Tien_DiscView/paper_pdfs/paper_pdfs,4,23.860342,0,0,0,0,4,0,0,0,1,1,0,0,0,.pdf:4
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Semi-automatic-annotations,652,16.065817,2,652,0,0,0,0,650,1,2,3,0,0,0,.mat:650; .tif:2
+extracted_zips/convert_psd_to_label/convert_psd_to_label,8,15.09928,0,4,0,4,0,0,0,0,0,2,0,0,0,.psd:4; .py:4
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/oldthreshold_mistake_training_split/test/images,98,13.673573,98,98,0,0,0,0,0,1,1,2,0,4,1,.jpg:98
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/oldthreshold_mistake_training_split/val/images,97,13.488162,97,97,0,0,0,0,0,1,1,2,0,4,1,.jpg:97
+extracted_zips/Tien_DiscView/UVA_Health_Frontiers_Symp_ppt/UVA Health Frontiers in Clinical AI Symposium,3,8.202491,0,0,0,0,3,0,0,0,3,1,0,0,0,.pptx:2; .docx:1
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/training_split/test/images,98,7.404378,98,98,0,0,0,0,0,1,1,1,0,4,0,.jpg:98
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Masks,650,6.949396,650,650,0,0,0,0,0,1,2,3,0,0,0,.png:650
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Images_Glare/.ipynb_checkpoints,21,6.819179,21,21,0,0,0,0,0,1,2,1,2,0,1,.jpg:21
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/training_split/val/images,97,6.778391,97,97,0,0,0,0,0,1,1,1,0,4,0,.jpg:97
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Images_Cropped,650,5.839859,650,650,0,0,0,0,0,1,2,1,0,0,0,.jpg:650
+extracted_zips/Tien_DiscView/Test_Processed_Images/Test Preprocessed Images Data,48,5.31279,48,48,0,0,0,0,0,0,1,2,0,1,2,.png:48
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Predictions/Disc,650,5.102674,650,650,0,0,0,0,0,1,2,4,0,0,0,.png:650
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Predictions/Cup,650,5.028817,650,650,0,0,0,0,0,1,2,5,0,0,0,.png:650
+loose_files,4,2.876235,0,0,0,1,3,0,3,0,0,0,0,0,0,.txt:3; .sh:1
+extracted_zips/convert_psd_to_label/convert_psd_to_label/pngs,4,2.158178,4,4,0,0,0,0,0,0,0,2,0,0,0,.png:4
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Masks_Cropped,650,1.641981,650,650,0,0,0,0,0,1,2,3,0,0,0,.png:650
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA,3,1.194704,0,2,0,0,0,0,2,1,2,1,0,0,0,.csv:2; .zip:1
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Assignment Papers,4,1.185267,0,0,0,0,4,0,0,0,2,1,0,0,0,.docx:4
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Papila/ExpertsSegmentations/Contours,1952,1.007017,0,1952,0,0,1952,0,1952,0,2,2,0,0,0,.txt:1952
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Masks_Square,651,0.993426,651,651,0,0,0,0,0,1,2,3,0,0,0,.png:651
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/Masks_Square,650,0.98952,650,650,0,0,0,0,0,1,1,3,0,1,0,.png:650
+extracted_zips/rivanna_train_discview/rivanna_train_discview/Masks_Square,650,0.98952,650,650,0,0,0,0,0,0,1,3,0,1,0,.png:650
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/oldthreshold_mistake_training_split/train/masks,455,0.692397,455,455,0,0,0,0,0,1,1,4,0,3,1,.png:455
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/training_split/train/masks,455,0.692397,455,455,0,0,0,0,0,1,1,3,0,3,0,.png:455
+extracted_zips/convert_psd_to_label/convert_psd_to_label/processed_pngs/clinic_image_masks,113,0.303635,113,113,0,0,0,0,0,0,1,5,0,0,1,.png:113
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/oldthreshold_mistake_training_split/test/masks,98,0.149886,98,98,0,0,0,0,0,1,1,4,0,4,1,.png:98
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/training_split/test/masks,98,0.149886,98,98,0,0,0,0,0,1,1,3,0,4,0,.png:98
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/oldthreshold_mistake_training_split/val/masks,97,0.147237,97,97,0,0,0,0,0,1,1,4,0,4,1,.png:97
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/ORIGA/training_split/val/masks,97,0.147237,97,97,0,0,0,0,0,1,1,3,0,4,0,.png:97
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Images_Square_Boxed,1,0.054888,0,1,0,0,0,0,1,1,2,2,0,0,0,.csv:1
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening,7,0.041251,0,0,0,7,0,0,0,1,1,1,0,1,0,.py:4; .sh:3
+loose_files/Tien_DiscView,2,0.039164,0,0,0,0,2,0,0,0,1,1,0,0,0,.docx:2
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Papila/ClinicalData,2,0.036036,0,0,0,0,2,0,2,0,3,1,0,0,0,.xlsx:2
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Clinic,5,0.034942,0,4,0,1,0,0,4,0,3,1,0,0,0,.csv:4; .py:1
+extracted_zips/Tien_DiscView/web_application/web_application,1,0.017615,0,0,0,0,1,0,0,0,1,1,0,0,0,.docx:1
+extracted_zips/rivanna_train_discview/rivanna_train_discview/__pycache__,2,0.015803,0,0,0,0,0,0,0,0,1,1,0,1,0,.pyc:2
+extracted_zips/Tien_DiscView/Segmentation_Model/Segmentation_Model,1,0.011416,0,0,0,0,1,0,0,0,1,3,1,0,0,.docx:1
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025/rivanna_origa_train_backup_10082025/automated_screening/emd_gridsearch_thresholdparams,3,0.004162,0,0,0,2,1,0,0,1,1,2,0,1,1,.py:1; .log:1; .sh:1
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive,1,0.003364,0,1,0,0,1,0,1,0,1,1,0,0,0,.txt:1
+extracted_zips/rivanna_train_discview/rivanna_train_discview/training_logs_15_4/tensorboard/version_0,2,0.001073,0,0,0,1,0,0,1,0,1,1,1,2,0,.0:1; .yaml:1
+extracted_zips/rivanna_train_discview/rivanna_train_discview/training_logs_15_4/csv/version_0,2,0.000348,0,1,0,1,0,0,2,0,1,1,1,2,0,.yaml:1; .csv:1
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/Papila,1,0.000229,0,1,0,0,1,0,1,0,2,1,0,0,0,.txt:1

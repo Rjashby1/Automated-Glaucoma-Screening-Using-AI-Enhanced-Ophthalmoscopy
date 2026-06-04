@@ -1,0 +1,12 @@
+package_area,file_count,total_size_mb,public_keyword_hits,sponsor_keyword_hits,baseline_keyword_hits
+extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive,10002,2363.545887,0,1,0
+extracted_zips/Tien_DiscView/rivanna_origa_train_backup_10082025,5433,865.898868,1,1,0
+extracted_zips/rivanna_train_discview,2087,963.514951,0,1,0
+extracted_zips/convert_psd_to_label,238,85.530671,0,0,0
+extracted_zips/Tien_DiscView/Test_Non_Processed_Images,109,58.332504,0,1,0
+extracted_zips/Tien_DiscView/Test_Processed_Images,48,5.31279,0,1,0
+loose_files,6,2.915399,0,0,0
+extracted_zips/Tien_DiscView/paper_pdfs,4,23.860342,0,1,0
+extracted_zips/Tien_DiscView/UVA_Health_Frontiers_Symp_ppt,3,8.202491,0,2,0
+extracted_zips/Tien_DiscView/Segmentation_Model,1,0.011416,0,1,1
+extracted_zips/Tien_DiscView/web_application,1,0.017615,0,1,0
