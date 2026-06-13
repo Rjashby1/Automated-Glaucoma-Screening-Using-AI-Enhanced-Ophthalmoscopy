@@ -1,8 +1,0 @@
-directory,file_count,model_file_count,code_file_count,total_size_mb,baseline_keyword_hits,extension_counts
-extracted_zips/rivanna_train_discview/rivanna_train_discview/testing_doc_dump,4,3,0,302.866179,0,.ckpt:2; .jpg:1; .pth:1
-extracted_zips/rivanna_train_discview/rivanna_train_discview,16,2,12,260.15756,0,.py:9; .ckpt:2; .ipynb:1; .csv:1; .png:1; .sh:1; .bat:1
-extracted_zips/rivanna_train_discview/rivanna_train_discview/training_logs_15_4/checkpoints,2,2,0,259.47695,3,.ckpt:2
-extracted_zips/rivanna_train_discview/rivanna_train_discview/training_logs_15_4/tensorboard/version_0,2,0,1,0.001073,1,.0:1; .yaml:1
-extracted_zips/rivanna_train_discview/rivanna_train_discview/training_logs_15_4/csv/version_0,2,0,1,0.000348,1,.yaml:1; .csv:1
-extracted_zips/Tien_DiscView/Tien_MSDS_Google_Drive/MSDS Google Drive/UVA Capstone/Data Sets/ORIGA/Images_Glare/.ipynb_checkpoints,21,0,0,6.819179,2,.jpg:21
-extracted_zips/Tien_DiscView/Segmentation_Model/Segmentation_Model,1,0,0,0.011416,1,.docx:1

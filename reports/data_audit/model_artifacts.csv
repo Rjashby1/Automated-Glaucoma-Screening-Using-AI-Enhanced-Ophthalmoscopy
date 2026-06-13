@@ -1,8 +1,0 @@
-relative_path,file_name,extension,size_mb,artifact_type,modified_time
-extracted_zips/rivanna_train_discview/rivanna_train_discview/model-epoch=406-val_loss=4.0005e-03.ckpt,model-epoch=406-val_loss=4.0005e-03.ckpt,.ckpt,129.738975,model_artifact,2026-06-04T11:13:17
-extracted_zips/rivanna_train_discview/rivanna_train_discview/model-epoch=409-val_loss=4.0481e-03.ckpt,model-epoch=409-val_loss=4.0481e-03.ckpt,.ckpt,129.738975,model_artifact,2026-06-04T11:13:17
-extracted_zips/rivanna_train_discview/rivanna_train_discview/testing_doc_dump/model-epoch=266-val_loss=4.0820e-03.ckpt,model-epoch=266-val_loss=4.0820e-03.ckpt,.ckpt,129.738975,model_artifact,2026-06-04T11:13:19
-extracted_zips/rivanna_train_discview/rivanna_train_discview/testing_doc_dump/model-epoch=411-val_loss=7.2768e-03.ckpt,model-epoch=411-val_loss=7.2768e-03.ckpt,.ckpt,129.738975,model_artifact,2026-06-04T11:13:19
-extracted_zips/rivanna_train_discview/rivanna_train_discview/training_logs_15_4/checkpoints/model-epoch=01-val_loss=5.7846e-02.ckpt,model-epoch=01-val_loss=5.7846e-02.ckpt,.ckpt,129.738718,model_artifact,2026-06-04T11:13:21
-extracted_zips/rivanna_train_discview/rivanna_train_discview/training_logs_15_4/checkpoints/model-epoch=00-val_loss=5.9526e-02.ckpt,model-epoch=00-val_loss=5.9526e-02.ckpt,.ckpt,129.738232,model_artifact,2026-06-04T11:13:20
-extracted_zips/rivanna_train_discview/rivanna_train_discview/testing_doc_dump/model_state_dict.pth,model_state_dict.pth,.pth,43.252275,model_artifact,2026-06-04T11:13:19
