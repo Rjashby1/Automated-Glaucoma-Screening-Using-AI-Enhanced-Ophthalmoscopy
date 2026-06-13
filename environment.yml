@@ -29,6 +29,6 @@ dependencies:
   # Modeling utilities, not deep learning yet
   - scikit-learn
 
-  # Pip-only packages can go here later
+  # Pip-only packages
   - pip:
-      []
+      - kaggle
