@@ -2,9 +2,8 @@
 # Raw / private / large project data
 # ============================================================
 
-# Raw data from Tien, including zipped and extracted contents
-raw_from_Tien/
-/raw_from_Tien/**
+# Old files
+archive/old
 
 # Optional broader raw-data folders, if created later
 data/raw/
