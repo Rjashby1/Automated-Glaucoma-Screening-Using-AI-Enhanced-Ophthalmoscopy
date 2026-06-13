@@ -1,0 +1,103 @@
+# Kaggle dataset registry for public glaucoma / retinal segmentation data.
+#
+# Raw downloaded files should remain local-only and should not be committed.
+# Expected local data root:
+#   data/external/kaggle/
+#
+# Priority logic:
+#   1 = download/setup first
+#   2 = likely near-term
+#   3+ = optional candidate datasets for later inspection
+
+datasets:
+  origa_prior_group:
+    display_name: "Glaucoma OCT Scans (ORIGA) Dataset"
+    kaggle_slug: "scipygaurav/glaucoma-oct-scans-origa-dataset"
+    local_dir: "data/external/kaggle/origa_prior_group"
+    source_url: "https://www.kaggle.com/datasets/scipygaurav/glaucoma-oct-scans-origa-dataset"
+    source_role: "prior_group_baseline"
+    task_type: "optic_disc_cup_segmentation"
+    priority: 1
+    download_now: true
+    notes: >
+      Public ORIGA Kaggle dataset shared as the prior group's dataset.
+      This should be used first so our pipeline can be compared against the
+      previous capstone group's U-Net baseline results.
+
+  papila:
+    display_name: "PAPILA: Retinal Fundus Images"
+    kaggle_slug: "orvile/papila-retinal-fundus-images"
+    local_dir: "data/external/kaggle/papila"
+    source_url: "https://www.kaggle.com/datasets/orvile/papila-retinal-fundus-images"
+    source_role: "public_reference"
+    task_type: "optic_disc_cup_segmentation"
+    priority: 2
+    download_now: true
+    notes: >
+      Public fundus image dataset shared by sponsor/team as a candidate
+      external dataset for glaucoma assessment and optic disc/cup work.
+
+  glaucoma_fundus_imaging_bundle:
+    display_name: "Glaucoma Fundus Imaging Datasets"
+    kaggle_slug: "arnavjain1/glaucoma-datasets"
+    local_dir: "data/external/kaggle/glaucoma_fundus_imaging_bundle"
+    source_url: "https://www.kaggle.com/datasets/arnavjain1/glaucoma-datasets"
+    source_role: "public_reference_bundle"
+    task_type: "optic_disc_cup_segmentation"
+    priority: 3
+    download_now: false
+    notes: >
+      Candidate public bundle shared by sponsor/team. Useful for possible
+      expansion after ORIGA and PAPILA are inspected.
+
+  refuge2_cross:
+    display_name: "Refuge2 and Refuge2Cross Dataset"
+    kaggle_slug: "ferencjuhsz/refuge2-and-refuge2cross-dataset"
+    local_dir: "data/external/kaggle/refuge2_cross"
+    source_url: "https://www.kaggle.com/datasets/ferencjuhsz/refuge2-and-refuge2cross-dataset"
+    source_role: "public_reference"
+    task_type: "optic_disc_cup_segmentation"
+    priority: 4
+    download_now: false
+    notes: >
+      Candidate REFUGE2/REFUGE2Cross dataset shared by sponsor/team.
+      Inspect before adding to the main training manifest.
+
+  drishti_gs:
+    display_name: "Drishti-GS - Retina Dataset for ONH Segmentation"
+    kaggle_slug: "lokeshsaipureddi/drishtigs-retina-dataset-for-onh-segmentation"
+    local_dir: "data/external/kaggle/drishti_gs"
+    source_url: "https://www.kaggle.com/datasets/lokeshsaipureddi/drishtigs-retina-dataset-for-onh-segmentation"
+    source_role: "public_reference"
+    task_type: "optic_nerve_head_segmentation"
+    priority: 5
+    download_now: false
+    notes: >
+      Candidate optic nerve head segmentation dataset shared by sponsor/team.
+      Likely useful for model robustness after baseline data are working.
+
+  rim_one:
+    display_name: "RIM-ONE Retinal Dataset for Assessing Glaucoma"
+    kaggle_slug: "orvile/rim-one-retinal-dataset-for-assessing-glaucoma"
+    local_dir: "data/external/kaggle/rim_one"
+    source_url: "https://www.kaggle.com/datasets/orvile/rim-one-retinal-dataset-for-assessing-glaucoma"
+    source_role: "public_reference"
+    task_type: "glaucoma_assessment"
+    priority: 6
+    download_now: false
+    notes: >
+      Candidate glaucoma assessment dataset shared by sponsor/team.
+      Inspect mask/label availability before using for segmentation training.
+
+  smdg:
+    display_name: "SMDG, A Standardized Fundus Glaucoma Dataset"
+    kaggle_slug: "deathtrooper/multichannel-glaucoma-benchmark-dataset"
+    local_dir: "data/external/kaggle/smdg"
+    source_url: "https://www.kaggle.com/datasets/deathtrooper/multichannel-glaucoma-benchmark-dataset"
+    source_role: "public_reference"
+    task_type: "glaucoma_assessment"
+    priority: 7
+    download_now: false
+    notes: >
+      Candidate standardized fundus glaucoma dataset shared by sponsor/team.
+      Inspect structure and annotation type before including in segmentation work.
