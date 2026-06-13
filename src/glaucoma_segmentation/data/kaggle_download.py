@@ -1,22 +1,20 @@
 """
 Kaggle dataset download utilities.
 
-This module downloads public Kaggle datasets defined in:
-    configs/data/kaggle_datasets.yaml
+This module uses the Kaggle CLI, not the old Kaggle Python API import.
 
-The notebook should call these functions with dataset keys, for example:
+Notebook usage example:
 
-    download_kaggle_datasets(["origa_prior_group", "papila"])
+    from glaucoma_segmentation.data.kaggle_download import download_kaggle_datasets
 
-Kaggle credentials should remain local-only and should never be committed.
+    download_kaggle_datasets(["origa_prior_group"], unzip=True)
 """
 
 from __future__ import annotations
 
+import subprocess
 from pathlib import Path
 from typing import Any
-
-from kaggle.api.kaggle_api_extended import KaggleApi
 
 from glaucoma_segmentation.data.dataset_registry import (
     find_project_root,
@@ -24,44 +22,51 @@ from glaucoma_segmentation.data.dataset_registry import (
 )
 
 
-def get_kaggle_api() -> KaggleApi:
-    """
-    Authenticate and return a Kaggle API client.
-
-    This expects Kaggle credentials to already be configured locally.
-    Common setup:
-        ~/.kaggle/kaggle.json
-
-    Returns
-    -------
-    KaggleApi
-        Authenticated Kaggle API client.
-    """
-    api = KaggleApi()
-    api.authenticate()
-    return api
-
-
 def resolve_local_dir(local_dir: str | Path) -> Path:
-    """
-    Resolve a dataset local_dir relative to the project root.
+    """Resolve a registry local_dir relative to the project root."""
+    path = Path(local_dir)
 
-    Parameters
-    ----------
-    local_dir:
-        Path from the YAML registry.
+    if path.is_absolute():
+        return path
 
-    Returns
-    -------
-    Path
-        Absolute local directory path.
-    """
-    local_dir = Path(local_dir)
+    return find_project_root() / path
 
-    if local_dir.is_absolute():
-        return local_dir
 
-    return find_project_root() / local_dir
+def check_kaggle_cli() -> None:
+    """Confirm that the Kaggle CLI is available."""
+    result = subprocess.run(
+        ["kaggle", "--help"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    if result.returncode != 0:
+        raise RuntimeError(
+            "Kaggle CLI is not available in this environment.\n\n"
+            f"STDOUT:\n{result.stdout}\n\n"
+            f"STDERR:\n{result.stderr}"
+        )
+
+
+def run_command(command: list[str]) -> subprocess.CompletedProcess[str]:
+    """Run a shell command and raise a readable error if it fails."""
+    result = subprocess.run(
+        command,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    if result.returncode != 0:
+        raise RuntimeError(
+            "Command failed.\n\n"
+            f"Command:\n{' '.join(command)}\n\n"
+            f"STDOUT:\n{result.stdout}\n\n"
+            f"STDERR:\n{result.stderr}"
+        )
+
+    return result
 
 
 def download_kaggle_dataset(
@@ -69,42 +74,31 @@ def download_kaggle_dataset(
     dataset_metadata: dict[str, Any],
     unzip: bool = True,
     force: bool = False,
-    quiet: bool = False,
 ) -> dict[str, Any]:
-    """
-    Download one Kaggle dataset.
-
-    Parameters
-    ----------
-    dataset_key:
-        Registry key for the dataset.
-    dataset_metadata:
-        Metadata dictionary from the YAML registry.
-    unzip:
-        Whether Kaggle should unzip the downloaded dataset.
-    force:
-        Whether to force re-download even if files already exist.
-    quiet:
-        Whether to reduce Kaggle API output.
-
-    Returns
-    -------
-    dict
-        Download result summary.
-    """
-    api = get_kaggle_api()
+    """Download one Kaggle dataset using the Kaggle CLI."""
+    check_kaggle_cli()
 
     kaggle_slug = dataset_metadata["kaggle_slug"]
     local_dir = resolve_local_dir(dataset_metadata["local_dir"])
     local_dir.mkdir(parents=True, exist_ok=True)
 
-    api.dataset_download_files(
-        dataset=kaggle_slug,
-        path=str(local_dir),
-        unzip=unzip,
-        quiet=quiet,
-        force=force,
-    )
+    command = [
+        "kaggle",
+        "datasets",
+        "download",
+        "-d",
+        kaggle_slug,
+        "-p",
+        str(local_dir),
+    ]
+
+    if unzip:
+        command.append("--unzip")
+
+    if force:
+        command.append("--force")
+
+    result = run_command(command)
 
     return {
         "dataset_key": dataset_key,
@@ -113,6 +107,7 @@ def download_kaggle_dataset(
         "local_dir": str(local_dir),
         "unzip": unzip,
         "force": force,
+        "stdout": result.stdout,
     }
 
 
@@ -120,30 +115,9 @@ def download_kaggle_datasets(
     dataset_keys: list[str],
     unzip: bool = True,
     force: bool = False,
-    quiet: bool = False,
     registry_path: str | Path | None = None,
 ) -> list[dict[str, Any]]:
-    """
-    Download selected Kaggle datasets by registry key.
-
-    Parameters
-    ----------
-    dataset_keys:
-        Dataset keys from configs/data/kaggle_datasets.yaml.
-    unzip:
-        Whether to unzip downloads.
-    force:
-        Whether to force re-download.
-    quiet:
-        Whether to reduce Kaggle API output.
-    registry_path:
-        Optional custom registry path.
-
-    Returns
-    -------
-    list[dict]
-        Download result summaries.
-    """
+    """Download selected Kaggle datasets by registry key."""
     selected = select_datasets(
         dataset_keys=dataset_keys,
         registry_path=registry_path,
@@ -152,14 +126,14 @@ def download_kaggle_datasets(
     results = []
 
     for dataset_key, metadata in selected.items():
-        result = download_kaggle_dataset(
-            dataset_key=dataset_key,
-            dataset_metadata=metadata,
-            unzip=unzip,
-            force=force,
-            quiet=quiet,
+        results.append(
+            download_kaggle_dataset(
+                dataset_key=dataset_key,
+                dataset_metadata=metadata,
+                unzip=unzip,
+                force=force,
+            )
         )
-        results.append(result)
 
     return results
 
@@ -167,28 +141,9 @@ def download_kaggle_datasets(
 def download_default_kaggle_datasets(
     unzip: bool = True,
     force: bool = False,
-    quiet: bool = False,
     registry_path: str | Path | None = None,
 ) -> list[dict[str, Any]]:
-    """
-    Download all datasets marked download_now: true in the registry.
-
-    Parameters
-    ----------
-    unzip:
-        Whether to unzip downloads.
-    force:
-        Whether to force re-download.
-    quiet:
-        Whether to reduce Kaggle API output.
-    registry_path:
-        Optional custom registry path.
-
-    Returns
-    -------
-    list[dict]
-        Download result summaries.
-    """
+    """Download all datasets marked download_now: true in the registry."""
     selected = select_datasets(
         dataset_keys=None,
         download_now_only=True,
@@ -199,6 +154,5 @@ def download_default_kaggle_datasets(
         dataset_keys=list(selected.keys()),
         unzip=unzip,
         force=force,
-        quiet=quiet,
         registry_path=registry_path,
     )
