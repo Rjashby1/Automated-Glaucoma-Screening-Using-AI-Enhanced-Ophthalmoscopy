@@ -1,0 +1,3 @@
+dataset_key,image,other,possible_annotation,possible_mask_image
+glaucoma_fundus_imaging_bundle,10051,2,1676,9833
+papila,488,4,1985,488
