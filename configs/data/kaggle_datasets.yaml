@@ -4,10 +4,35 @@
 # Expected local data root:
 #   data/external/kaggle/
 #
+# Registry purpose:
+#   This file is the full menu of possible public Kaggle datasets.
+#   Datasets should not be removed just because they are not currently being used.
+#   Instead, update metadata fields such as audit_status, usability_status,
+#   priority, and download_now as the project learns more about each source.
+#
 # Priority logic:
-#   1 = download/setup first
-#   2 = likely near-term
-#   3+ = optional candidate datasets for later inspection
+#   1 = active first-pass dataset for current workflow
+#   2 = likely near-term dataset for current workflow
+#   3+ = candidate datasets for later inspection
+#   9 = retained for provenance/reference, but not active for current workflow
+#
+# Status logic:
+#   audit_status:
+#     not_yet_audited       = known candidate, not downloaded/audited yet
+#     downloaded_not_audited = local download exists, audit not yet completed
+#     audited_initial       = initial file inventory/audit has been run
+#     audited_mismatch      = audit found that dataset does not match expected use
+#
+#   usability_status:
+#     unknown                                  = not enough evidence yet
+#     segmentation_candidate                   = appears potentially useful for segmentation
+#     not_segmentation_ready_from_current_download = current files do not appear usable for segmentation
+#     classification_or_reference_only         = may be useful for context/classification, not current segmentation training
+#
+# Important project rule:
+#   Do not mark any dataset as training-ready until Notebook 01 confirms
+#   image-to-mask pairing and visual QA validates that masks correspond
+#   to the correct fundus images.
 
 datasets:
   origa_prior_group:
@@ -15,40 +40,54 @@ datasets:
     kaggle_slug: "scipygaurav/glaucoma-oct-scans-origa-dataset"
     local_dir: "data/external/kaggle/origa_prior_group"
     source_url: "https://www.kaggle.com/datasets/scipygaurav/glaucoma-oct-scans-origa-dataset"
-    source_role: "prior_group_baseline"
-    task_type: "optic_disc_cup_segmentation"
-    priority: 1
-    download_now: true
+    source_role: "prior_group_candidate_mismatch"
+    task_type: "glaucoma_classification_or_reference"
+    priority: 9
+    download_now: false
+    audit_status: "audited_mismatch"
+    usability_status: "not_segmentation_ready_from_current_download"
     notes: >
-      Public ORIGA Kaggle dataset shared as the prior group's dataset.
-      This should be used first so our pipeline can be compared against the
-      previous capstone group's U-Net baseline results.
-
-  papila:
-    display_name: "PAPILA: Retinal Fundus Images"
-    kaggle_slug: "orvile/papila-retinal-fundus-images"
-    local_dir: "data/external/kaggle/papila"
-    source_url: "https://www.kaggle.com/datasets/orvile/papila-retinal-fundus-images"
-    source_role: "public_reference"
-    task_type: "optic_disc_cup_segmentation"
-    priority: 2
-    download_now: true
-    notes: >
-      Public fundus image dataset shared by sponsor/team as a candidate
-      external dataset for glaucoma assessment and optic disc/cup work.
+      Retained in the registry because it was associated with prior project
+      exploration and may be useful for provenance. However, the current
+      downloaded Kaggle package appears to contain classification-style JPG
+      images without visible optic cup/disc masks or annotation files. It
+      should not be used for segmentation training unless separate masks or
+      annotations are located.
 
   glaucoma_fundus_imaging_bundle:
     display_name: "Glaucoma Fundus Imaging Datasets"
     kaggle_slug: "arnavjain1/glaucoma-datasets"
     local_dir: "data/external/kaggle/glaucoma_fundus_imaging_bundle"
     source_url: "https://www.kaggle.com/datasets/arnavjain1/glaucoma-datasets"
-    source_role: "public_reference_bundle"
-    task_type: "optic_disc_cup_segmentation"
-    priority: 3
-    download_now: false
+    source_role: "primary_public_segmentation_candidate"
+    task_type: "optic_disc_cup_segmentation_candidate"
+    priority: 1
+    download_now: true
+    audit_status: "audited_initial"
+    usability_status: "segmentation_candidate"
     notes: >
-      Candidate public bundle shared by sponsor/team. Useful for possible
-      expansion after ORIGA and PAPILA are inspected.
+      Candidate public bundle shared by sponsor/team. Initial audit found many
+      possible mask and annotation files, making this the strongest current
+      public-data candidate for optic disc/cup segmentation work. Next step is
+      path-pattern inspection, image-mask matching, manifest construction, and
+      visual validation.
+
+  papila:
+    display_name: "PAPILA: Retinal Fundus Images"
+    kaggle_slug: "orvile/papila-retinal-fundus-images"
+    local_dir: "data/external/kaggle/papila"
+    source_url: "https://www.kaggle.com/datasets/orvile/papila-retinal-fundus-images"
+    source_role: "sponsor_recommended_public_dataset"
+    task_type: "optic_disc_cup_segmentation_candidate"
+    priority: 2
+    download_now: true
+    audit_status: "audited_initial"
+    usability_status: "segmentation_candidate"
+    notes: >
+      Public fundus image dataset shared by sponsor/team as a candidate
+      external dataset for glaucoma assessment and optic disc/cup work.
+      Initial audit found image/mask-like files and annotation files. Next step
+      is image-mask matching and visual validation.
 
   refuge2_cross:
     display_name: "Refuge2 and Refuge2Cross Dataset"
@@ -56,12 +95,15 @@ datasets:
     local_dir: "data/external/kaggle/refuge2_cross"
     source_url: "https://www.kaggle.com/datasets/ferencjuhsz/refuge2-and-refuge2cross-dataset"
     source_role: "public_reference"
-    task_type: "optic_disc_cup_segmentation"
-    priority: 4
+    task_type: "optic_disc_cup_segmentation_candidate"
+    priority: 3
     download_now: false
+    audit_status: "not_yet_audited"
+    usability_status: "unknown"
     notes: >
-      Candidate REFUGE2/REFUGE2Cross dataset shared by sponsor/team.
-      Inspect before adding to the main training manifest.
+      Candidate REFUGE2/REFUGE2Cross dataset shared by sponsor/team. Keep in
+      the full public dataset registry. Download and inspect before adding to
+      the main training manifest.
 
   drishti_gs:
     display_name: "Drishti-GS - Retina Dataset for ONH Segmentation"
@@ -69,12 +111,16 @@ datasets:
     local_dir: "data/external/kaggle/drishti_gs"
     source_url: "https://www.kaggle.com/datasets/lokeshsaipureddi/drishtigs-retina-dataset-for-onh-segmentation"
     source_role: "public_reference"
-    task_type: "optic_nerve_head_segmentation"
-    priority: 5
+    task_type: "optic_nerve_head_segmentation_candidate"
+    priority: 4
     download_now: false
+    audit_status: "not_yet_audited"
+    usability_status: "unknown"
     notes: >
       Candidate optic nerve head segmentation dataset shared by sponsor/team.
-      Likely useful for model robustness after baseline data are working.
+      Keep in the full public dataset registry. Likely useful for model
+      robustness after baseline data are working, but it must be downloaded,
+      audited, matched, and visually validated before segmentation training use.
 
   rim_one:
     display_name: "RIM-ONE Retinal Dataset for Assessing Glaucoma"
@@ -82,12 +128,16 @@ datasets:
     local_dir: "data/external/kaggle/rim_one"
     source_url: "https://www.kaggle.com/datasets/orvile/rim-one-retinal-dataset-for-assessing-glaucoma"
     source_role: "public_reference"
-    task_type: "glaucoma_assessment"
-    priority: 6
+    task_type: "glaucoma_assessment_candidate"
+    priority: 5
     download_now: false
+    audit_status: "not_yet_audited"
+    usability_status: "unknown"
     notes: >
-      Candidate glaucoma assessment dataset shared by sponsor/team.
-      Inspect mask/label availability before using for segmentation training.
+      Candidate glaucoma assessment dataset shared by sponsor/team. Keep in the
+      full public dataset registry. Inspect mask and label availability before
+      deciding whether it can support segmentation training or should only be
+      used for classification/reference context.
 
   smdg:
     display_name: "SMDG, A Standardized Fundus Glaucoma Dataset"
@@ -95,9 +145,13 @@ datasets:
     local_dir: "data/external/kaggle/smdg"
     source_url: "https://www.kaggle.com/datasets/deathtrooper/multichannel-glaucoma-benchmark-dataset"
     source_role: "public_reference"
-    task_type: "glaucoma_assessment"
-    priority: 7
+    task_type: "glaucoma_assessment_candidate"
+    priority: 6
     download_now: false
+    audit_status: "not_yet_audited"
+    usability_status: "unknown"
     notes: >
       Candidate standardized fundus glaucoma dataset shared by sponsor/team.
-      Inspect structure and annotation type before including in segmentation work.
+      Keep in the full public dataset registry. Inspect structure and annotation
+      type before deciding whether it can support segmentation work or should
+      only be used for classification/reference context.
