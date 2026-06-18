@@ -1,0 +1,6 @@
+file_id,image_relative_path,mask_relative_path,image_width,image_height,mask_width,mask_height,sizes_match,mask_unique_values,visual_alignment_reviewed,notes
+638,ORIGA/Images/638.jpg,ORIGA/Masks/638.png,2461,2048,2461,2048,True,"[0, 1, 2]",True,Sample reviewed in notebook; mask appears aligned over optic disc/cup region.
+221,ORIGA/Images/221.jpg,ORIGA/Masks/221.png,2591,2048,2591,2048,True,"[0, 1, 2]",True,Sample reviewed in notebook; mask appears aligned over optic disc/cup region.
+429,ORIGA/Images/429.jpg,ORIGA/Masks/429.png,2493,2048,2493,2048,True,"[0, 1, 2]",True,Sample reviewed in notebook; mask appears aligned over optic disc/cup region.
+327,ORIGA/Images/327.jpg,ORIGA/Masks/327.png,2300,2048,2300,2048,True,"[0, 1, 2]",True,Sample reviewed in notebook; mask appears aligned over optic disc/cup region.
+73,ORIGA/Images/073.jpg,ORIGA/Masks/073.png,2468,2048,2468,2048,True,"[0, 1, 2]",True,Sample reviewed in notebook; mask appears aligned over optic disc/cup region.
