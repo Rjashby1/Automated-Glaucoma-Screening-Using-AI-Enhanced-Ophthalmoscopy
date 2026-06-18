@@ -1,0 +1,4 @@
+image_folder,mask_folder,n_images,n_masks,n_exact_id_matches,n_image_without_mask,n_mask_without_image,sample_image_only_ids,sample_mask_only_ids
+ORIGA/Images,ORIGA/Masks,650,650,650,0,0,[],[]
+ORIGA/Images_Cropped,ORIGA/Masks_Cropped,650,650,650,0,0,[],[]
+ORIGA/Images_Square,ORIGA/Masks_Square,651,651,650,1,1,['._003'],['._005']
