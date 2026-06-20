@@ -1,0 +1,4 @@
+check,passed,value,expected
+manifest_row_count_preserved,True,488,488
+no_missing_split_assignments,True,0,0
+no_split_group_crosses_splits,True,0,0

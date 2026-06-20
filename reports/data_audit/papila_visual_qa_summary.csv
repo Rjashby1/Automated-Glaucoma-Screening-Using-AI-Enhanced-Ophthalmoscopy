@@ -1,0 +1,5 @@
+file_id,image_size,mask_shape,sizes_match,mask_unique_values
+RET045OD,"(2576, 1934)","(1934, 2576)",True,"[0, 1, 2]"
+RET164OD,"(2576, 1934)","(1934, 2576)",True,"[0, 1, 2]"
+RET266OS,"(2576, 1934)","(1934, 2576)",True,"[0, 1, 2]"
+RET048OS,"(2576, 1934)","(1934, 2576)",True,"[0, 1, 2]"
