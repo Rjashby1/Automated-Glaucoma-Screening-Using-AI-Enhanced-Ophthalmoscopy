@@ -1,0 +1,17 @@
+        model  seed  n_images  dice_disc  dice_cup  cdr_mae
+deeplabv3plus    41       488   0.829057  0.567817 0.107377
+deeplabv3plus    42       488   0.766574  0.570242 0.154560
+deeplabv3plus    43       488   0.733895  0.515745 0.141545
+         unet    41       488   0.721621  0.493827 0.521625
+         unet    42       488   0.820592  0.520432 0.133641
+         unet    43       488   0.811442  0.539685 0.118341
+ unetplusplus    41       488   0.813644  0.596622 0.121558
+ unetplusplus    42       488   0.821824  0.595891 0.114785
+ unetplusplus    43       488   0.833550  0.607506 0.110490
+
+Mean across seeds per model:
+               dice_disc  dice_cup   cdr_mae
+model                                       
+deeplabv3plus   0.776509  0.551268  0.134494
+unet            0.784551  0.517981  0.257869
+unetplusplus    0.823006  0.600006  0.115611
