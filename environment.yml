@@ -1,6 +1,8 @@
 name: glaucoma-capstone
 
 channels:
+  - pytorch
+  - nvidia
   - conda-forge
 
 dependencies:
@@ -17,18 +19,39 @@ dependencies:
   - pandas
   - tqdm
   - pyyaml
+  - scipy
 
   # Visualization
   - matplotlib
+  - seaborn
+  - tensorboard
 
   # Image processing
   - pillow
   - opencv
   - scikit-image
+  - albumentations
+  - stringzilla
 
-  # Modeling utilities, not deep learning yet
+  # Modeling utilities
   - scikit-learn
+
+  # Deep learning
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+
+  # Testing / repo health
+  - pytest
 
   # Pip-only packages
   - pip:
       - kaggle
+      - segmentation-models-pytorch
+      - timm
+      - torchmetrics
+      - simsimd
+
+variables:
+  PYTHONNOUSERSITE: "1"
