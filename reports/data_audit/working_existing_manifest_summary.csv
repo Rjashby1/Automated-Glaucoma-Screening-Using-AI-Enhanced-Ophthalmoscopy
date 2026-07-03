@@ -1,0 +1,4 @@
+dataset_key,source_dataset,split,n
+glaucoma_fundus_imaging_bundle,ORIGA,test,98
+glaucoma_fundus_imaging_bundle,ORIGA,train,455
+glaucoma_fundus_imaging_bundle,ORIGA,val,97
