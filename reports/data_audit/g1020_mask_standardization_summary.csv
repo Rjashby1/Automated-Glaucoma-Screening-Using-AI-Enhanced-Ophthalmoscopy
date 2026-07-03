@@ -1,0 +1,1021 @@
+source_dataset,file_id,raw_mask_path,standardized_mask_path,raw_mask_unique_values,standardized_mask_unique_values,standardization_status
+G1020,image_0,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_0.png,data/processed/standardized_masks/g1020/image_0.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1.png,data/processed/standardized_masks/g1020/image_1.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_10,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_10.png,data/processed/standardized_masks/g1020/image_10.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1000,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1000.png,data/processed/standardized_masks/g1020/image_1000.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1001,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1001.png,data/processed/standardized_masks/g1020/image_1001.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1002,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1002.png,data/processed/standardized_masks/g1020/image_1002.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1003,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1003.png,data/processed/standardized_masks/g1020/image_1003.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1004,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1004.png,data/processed/standardized_masks/g1020/image_1004.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_103,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_103.png,data/processed/standardized_masks/g1020/image_103.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1032,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1032.png,data/processed/standardized_masks/g1020/image_1032.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1033,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1033.png,data/processed/standardized_masks/g1020/image_1033.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1034,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1034.png,data/processed/standardized_masks/g1020/image_1034.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1035,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1035.png,data/processed/standardized_masks/g1020/image_1035.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_104,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_104.png,data/processed/standardized_masks/g1020/image_104.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_105,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_105.png,data/processed/standardized_masks/g1020/image_105.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_106,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_106.png,data/processed/standardized_masks/g1020/image_106.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_107,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_107.png,data/processed/standardized_masks/g1020/image_107.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1076,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1076.png,data/processed/standardized_masks/g1020/image_1076.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1077,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1077.png,data/processed/standardized_masks/g1020/image_1077.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1080,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1080.png,data/processed/standardized_masks/g1020/image_1080.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1081,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1081.png,data/processed/standardized_masks/g1020/image_1081.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1087,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1087.png,data/processed/standardized_masks/g1020/image_1087.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1088,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1088.png,data/processed/standardized_masks/g1020/image_1088.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1092,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1092.png,data/processed/standardized_masks/g1020/image_1092.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1093,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1093.png,data/processed/standardized_masks/g1020/image_1093.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1094,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1094.png,data/processed/standardized_masks/g1020/image_1094.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1095,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1095.png,data/processed/standardized_masks/g1020/image_1095.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1096,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1096.png,data/processed/standardized_masks/g1020/image_1096.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_11,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_11.png,data/processed/standardized_masks/g1020/image_11.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_110,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_110.png,data/processed/standardized_masks/g1020/image_110.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_111,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_111.png,data/processed/standardized_masks/g1020/image_111.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1112,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1112.png,data/processed/standardized_masks/g1020/image_1112.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1113,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1113.png,data/processed/standardized_masks/g1020/image_1113.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_112,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_112.png,data/processed/standardized_masks/g1020/image_112.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_113,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_113.png,data/processed/standardized_masks/g1020/image_113.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1136,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1136.png,data/processed/standardized_masks/g1020/image_1136.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1137,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1137.png,data/processed/standardized_masks/g1020/image_1137.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1138,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1138.png,data/processed/standardized_masks/g1020/image_1138.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1139,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1139.png,data/processed/standardized_masks/g1020/image_1139.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_114,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_114.png,data/processed/standardized_masks/g1020/image_114.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1140,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1140.png,data/processed/standardized_masks/g1020/image_1140.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1141,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1141.png,data/processed/standardized_masks/g1020/image_1141.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1142,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1142.png,data/processed/standardized_masks/g1020/image_1142.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1143,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1143.png,data/processed/standardized_masks/g1020/image_1143.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1144,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1144.png,data/processed/standardized_masks/g1020/image_1144.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_115,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_115.png,data/processed/standardized_masks/g1020/image_115.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1160,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1160.png,data/processed/standardized_masks/g1020/image_1160.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1161,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1161.png,data/processed/standardized_masks/g1020/image_1161.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1164,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1164.png,data/processed/standardized_masks/g1020/image_1164.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1165,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1165.png,data/processed/standardized_masks/g1020/image_1165.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1187,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1187.png,data/processed/standardized_masks/g1020/image_1187.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1188,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1188.png,data/processed/standardized_masks/g1020/image_1188.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1189,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1189.png,data/processed/standardized_masks/g1020/image_1189.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1190,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1190.png,data/processed/standardized_masks/g1020/image_1190.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1197,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1197.png,data/processed/standardized_masks/g1020/image_1197.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1198,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1198.png,data/processed/standardized_masks/g1020/image_1198.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1199,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1199.png,data/processed/standardized_masks/g1020/image_1199.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_12,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_12.png,data/processed/standardized_masks/g1020/image_12.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_120,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_120.png,data/processed/standardized_masks/g1020/image_120.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1201,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1201.png,data/processed/standardized_masks/g1020/image_1201.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1202,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1202.png,data/processed/standardized_masks/g1020/image_1202.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1203,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1203.png,data/processed/standardized_masks/g1020/image_1203.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1204,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1204.png,data/processed/standardized_masks/g1020/image_1204.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_121,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_121.png,data/processed/standardized_masks/g1020/image_121.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1213,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1213.png,data/processed/standardized_masks/g1020/image_1213.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1214,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1214.png,data/processed/standardized_masks/g1020/image_1214.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1215,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1215.png,data/processed/standardized_masks/g1020/image_1215.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1216,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1216.png,data/processed/standardized_masks/g1020/image_1216.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1217,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1217.png,data/processed/standardized_masks/g1020/image_1217.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1218,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1218.png,data/processed/standardized_masks/g1020/image_1218.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_122,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_122.png,data/processed/standardized_masks/g1020/image_122.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1225,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1225.png,data/processed/standardized_masks/g1020/image_1225.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1226,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1226.png,data/processed/standardized_masks/g1020/image_1226.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1227,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1227.png,data/processed/standardized_masks/g1020/image_1227.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_123,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_123.png,data/processed/standardized_masks/g1020/image_123.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1230,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1230.png,data/processed/standardized_masks/g1020/image_1230.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1231,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1231.png,data/processed/standardized_masks/g1020/image_1231.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1232,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1232.png,data/processed/standardized_masks/g1020/image_1232.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1233,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1233.png,data/processed/standardized_masks/g1020/image_1233.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1234,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1234.png,data/processed/standardized_masks/g1020/image_1234.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1238,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1238.png,data/processed/standardized_masks/g1020/image_1238.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_124,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_124.png,data/processed/standardized_masks/g1020/image_124.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1240,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1240.png,data/processed/standardized_masks/g1020/image_1240.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1241,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1241.png,data/processed/standardized_masks/g1020/image_1241.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1242,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1242.png,data/processed/standardized_masks/g1020/image_1242.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1243,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1243.png,data/processed/standardized_masks/g1020/image_1243.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1246,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1246.png,data/processed/standardized_masks/g1020/image_1246.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1247,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1247.png,data/processed/standardized_masks/g1020/image_1247.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1248,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1248.png,data/processed/standardized_masks/g1020/image_1248.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_125,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_125.png,data/processed/standardized_masks/g1020/image_125.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1250,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1250.png,data/processed/standardized_masks/g1020/image_1250.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1254,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1254.png,data/processed/standardized_masks/g1020/image_1254.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1255,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1255.png,data/processed/standardized_masks/g1020/image_1255.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_126,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_126.png,data/processed/standardized_masks/g1020/image_126.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1260,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1260.png,data/processed/standardized_masks/g1020/image_1260.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1261,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1261.png,data/processed/standardized_masks/g1020/image_1261.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1270,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1270.png,data/processed/standardized_masks/g1020/image_1270.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1271,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1271.png,data/processed/standardized_masks/g1020/image_1271.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1285,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1285.png,data/processed/standardized_masks/g1020/image_1285.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_13,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_13.png,data/processed/standardized_masks/g1020/image_13.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1303,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1303.png,data/processed/standardized_masks/g1020/image_1303.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1304,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1304.png,data/processed/standardized_masks/g1020/image_1304.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1317,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1317.png,data/processed/standardized_masks/g1020/image_1317.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1318,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1318.png,data/processed/standardized_masks/g1020/image_1318.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1319,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1319.png,data/processed/standardized_masks/g1020/image_1319.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1321,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1321.png,data/processed/standardized_masks/g1020/image_1321.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1322,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1322.png,data/processed/standardized_masks/g1020/image_1322.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1325,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1325.png,data/processed/standardized_masks/g1020/image_1325.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1326,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1326.png,data/processed/standardized_masks/g1020/image_1326.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1327,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1327.png,data/processed/standardized_masks/g1020/image_1327.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1328,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1328.png,data/processed/standardized_masks/g1020/image_1328.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1329,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1329.png,data/processed/standardized_masks/g1020/image_1329.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1330,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1330.png,data/processed/standardized_masks/g1020/image_1330.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1331,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1331.png,data/processed/standardized_masks/g1020/image_1331.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1332,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1332.png,data/processed/standardized_masks/g1020/image_1332.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1333,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1333.png,data/processed/standardized_masks/g1020/image_1333.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1334,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1334.png,data/processed/standardized_masks/g1020/image_1334.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1335,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1335.png,data/processed/standardized_masks/g1020/image_1335.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1336,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1336.png,data/processed/standardized_masks/g1020/image_1336.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1337,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1337.png,data/processed/standardized_masks/g1020/image_1337.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1338,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1338.png,data/processed/standardized_masks/g1020/image_1338.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1339,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1339.png,data/processed/standardized_masks/g1020/image_1339.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1344,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1344.png,data/processed/standardized_masks/g1020/image_1344.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1348,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1348.png,data/processed/standardized_masks/g1020/image_1348.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1349,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1349.png,data/processed/standardized_masks/g1020/image_1349.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1350,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1350.png,data/processed/standardized_masks/g1020/image_1350.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1351,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1351.png,data/processed/standardized_masks/g1020/image_1351.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1352,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1352.png,data/processed/standardized_masks/g1020/image_1352.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1355,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1355.png,data/processed/standardized_masks/g1020/image_1355.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1356,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1356.png,data/processed/standardized_masks/g1020/image_1356.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1359,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1359.png,data/processed/standardized_masks/g1020/image_1359.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1360,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1360.png,data/processed/standardized_masks/g1020/image_1360.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1361,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1361.png,data/processed/standardized_masks/g1020/image_1361.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1362,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1362.png,data/processed/standardized_masks/g1020/image_1362.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1366,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1366.png,data/processed/standardized_masks/g1020/image_1366.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1367,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1367.png,data/processed/standardized_masks/g1020/image_1367.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1368,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1368.png,data/processed/standardized_masks/g1020/image_1368.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1377,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1377.png,data/processed/standardized_masks/g1020/image_1377.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1378,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1378.png,data/processed/standardized_masks/g1020/image_1378.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1384,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1384.png,data/processed/standardized_masks/g1020/image_1384.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1386,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1386.png,data/processed/standardized_masks/g1020/image_1386.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1387,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1387.png,data/processed/standardized_masks/g1020/image_1387.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1388,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1388.png,data/processed/standardized_masks/g1020/image_1388.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1389,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1389.png,data/processed/standardized_masks/g1020/image_1389.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1391,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1391.png,data/processed/standardized_masks/g1020/image_1391.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1392,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1392.png,data/processed/standardized_masks/g1020/image_1392.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1401,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1401.png,data/processed/standardized_masks/g1020/image_1401.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1402,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1402.png,data/processed/standardized_masks/g1020/image_1402.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1403,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1403.png,data/processed/standardized_masks/g1020/image_1403.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1404,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1404.png,data/processed/standardized_masks/g1020/image_1404.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1413,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1413.png,data/processed/standardized_masks/g1020/image_1413.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1414,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1414.png,data/processed/standardized_masks/g1020/image_1414.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1415,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1415.png,data/processed/standardized_masks/g1020/image_1415.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1416,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1416.png,data/processed/standardized_masks/g1020/image_1416.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1421,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1421.png,data/processed/standardized_masks/g1020/image_1421.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1422,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1422.png,data/processed/standardized_masks/g1020/image_1422.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1426,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1426.png,data/processed/standardized_masks/g1020/image_1426.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_143,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_143.png,data/processed/standardized_masks/g1020/image_143.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1431,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1431.png,data/processed/standardized_masks/g1020/image_1431.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1432,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1432.png,data/processed/standardized_masks/g1020/image_1432.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_144,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_144.png,data/processed/standardized_masks/g1020/image_144.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1452,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1452.png,data/processed/standardized_masks/g1020/image_1452.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1453,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1453.png,data/processed/standardized_masks/g1020/image_1453.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1462,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1462.png,data/processed/standardized_masks/g1020/image_1462.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1463,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1463.png,data/processed/standardized_masks/g1020/image_1463.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1470,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1470.png,data/processed/standardized_masks/g1020/image_1470.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1471,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1471.png,data/processed/standardized_masks/g1020/image_1471.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1478,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1478.png,data/processed/standardized_masks/g1020/image_1478.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1479,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1479.png,data/processed/standardized_masks/g1020/image_1479.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1480,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1480.png,data/processed/standardized_masks/g1020/image_1480.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1481,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1481.png,data/processed/standardized_masks/g1020/image_1481.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1495,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1495.png,data/processed/standardized_masks/g1020/image_1495.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1496,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1496.png,data/processed/standardized_masks/g1020/image_1496.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1497,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1497.png,data/processed/standardized_masks/g1020/image_1497.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1498,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1498.png,data/processed/standardized_masks/g1020/image_1498.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_150,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_150.png,data/processed/standardized_masks/g1020/image_150.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1504,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1504.png,data/processed/standardized_masks/g1020/image_1504.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1507,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1507.png,data/processed/standardized_masks/g1020/image_1507.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1508,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1508.png,data/processed/standardized_masks/g1020/image_1508.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_151,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_151.png,data/processed/standardized_masks/g1020/image_151.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1515,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1515.png,data/processed/standardized_masks/g1020/image_1515.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1516,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1516.png,data/processed/standardized_masks/g1020/image_1516.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1519,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1519.png,data/processed/standardized_masks/g1020/image_1519.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_152,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_152.png,data/processed/standardized_masks/g1020/image_152.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1520,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1520.png,data/processed/standardized_masks/g1020/image_1520.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1521,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1521.png,data/processed/standardized_masks/g1020/image_1521.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1522,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1522.png,data/processed/standardized_masks/g1020/image_1522.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1524,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1524.png,data/processed/standardized_masks/g1020/image_1524.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1525,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1525.png,data/processed/standardized_masks/g1020/image_1525.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1526,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1526.png,data/processed/standardized_masks/g1020/image_1526.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_153,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_153.png,data/processed/standardized_masks/g1020/image_153.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_154,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_154.png,data/processed/standardized_masks/g1020/image_154.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1543,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1543.png,data/processed/standardized_masks/g1020/image_1543.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1544,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1544.png,data/processed/standardized_masks/g1020/image_1544.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1553,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1553.png,data/processed/standardized_masks/g1020/image_1553.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1554,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1554.png,data/processed/standardized_masks/g1020/image_1554.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1575,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1575.png,data/processed/standardized_masks/g1020/image_1575.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1576,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1576.png,data/processed/standardized_masks/g1020/image_1576.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1579,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1579.png,data/processed/standardized_masks/g1020/image_1579.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1580,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1580.png,data/processed/standardized_masks/g1020/image_1580.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1589,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1589.png,data/processed/standardized_masks/g1020/image_1589.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1590,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1590.png,data/processed/standardized_masks/g1020/image_1590.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1591,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1591.png,data/processed/standardized_masks/g1020/image_1591.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1592,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1592.png,data/processed/standardized_masks/g1020/image_1592.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1594,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1594.png,data/processed/standardized_masks/g1020/image_1594.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1595,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1595.png,data/processed/standardized_masks/g1020/image_1595.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1598,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1598.png,data/processed/standardized_masks/g1020/image_1598.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1599,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1599.png,data/processed/standardized_masks/g1020/image_1599.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1607,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1607.png,data/processed/standardized_masks/g1020/image_1607.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1608,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1608.png,data/processed/standardized_masks/g1020/image_1608.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1609,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1609.png,data/processed/standardized_masks/g1020/image_1609.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1610,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1610.png,data/processed/standardized_masks/g1020/image_1610.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1616,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1616.png,data/processed/standardized_masks/g1020/image_1616.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1623,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1623.png,data/processed/standardized_masks/g1020/image_1623.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1624,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1624.png,data/processed/standardized_masks/g1020/image_1624.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1625,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1625.png,data/processed/standardized_masks/g1020/image_1625.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1626,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1626.png,data/processed/standardized_masks/g1020/image_1626.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_163,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_163.png,data/processed/standardized_masks/g1020/image_163.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_164,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_164.png,data/processed/standardized_masks/g1020/image_164.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1644,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1644.png,data/processed/standardized_masks/g1020/image_1644.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1645,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1645.png,data/processed/standardized_masks/g1020/image_1645.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1652,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1652.png,data/processed/standardized_masks/g1020/image_1652.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1653,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1653.png,data/processed/standardized_masks/g1020/image_1653.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1686,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1686.png,data/processed/standardized_masks/g1020/image_1686.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1687,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1687.png,data/processed/standardized_masks/g1020/image_1687.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1691,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1691.png,data/processed/standardized_masks/g1020/image_1691.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1692,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1692.png,data/processed/standardized_masks/g1020/image_1692.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1693,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1693.png,data/processed/standardized_masks/g1020/image_1693.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1694,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1694.png,data/processed/standardized_masks/g1020/image_1694.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1695,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1695.png,data/processed/standardized_masks/g1020/image_1695.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1696,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1696.png,data/processed/standardized_masks/g1020/image_1696.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1697,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1697.png,data/processed/standardized_masks/g1020/image_1697.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1698,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1698.png,data/processed/standardized_masks/g1020/image_1698.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1699,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1699.png,data/processed/standardized_masks/g1020/image_1699.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_170,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_170.png,data/processed/standardized_masks/g1020/image_170.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1700,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1700.png,data/processed/standardized_masks/g1020/image_1700.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1701,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1701.png,data/processed/standardized_masks/g1020/image_1701.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1702,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1702.png,data/processed/standardized_masks/g1020/image_1702.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1703,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1703.png,data/processed/standardized_masks/g1020/image_1703.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1704,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1704.png,data/processed/standardized_masks/g1020/image_1704.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_171,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_171.png,data/processed/standardized_masks/g1020/image_171.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1710,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1710.png,data/processed/standardized_masks/g1020/image_1710.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1711,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1711.png,data/processed/standardized_masks/g1020/image_1711.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1712,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1712.png,data/processed/standardized_masks/g1020/image_1712.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1713,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1713.png,data/processed/standardized_masks/g1020/image_1713.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1714,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1714.png,data/processed/standardized_masks/g1020/image_1714.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1715,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1715.png,data/processed/standardized_masks/g1020/image_1715.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1716,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1716.png,data/processed/standardized_masks/g1020/image_1716.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1717,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1717.png,data/processed/standardized_masks/g1020/image_1717.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1722,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1722.png,data/processed/standardized_masks/g1020/image_1722.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1723,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1723.png,data/processed/standardized_masks/g1020/image_1723.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1724,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1724.png,data/processed/standardized_masks/g1020/image_1724.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1742,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1742.png,data/processed/standardized_masks/g1020/image_1742.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1745,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1745.png,data/processed/standardized_masks/g1020/image_1745.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1746,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1746.png,data/processed/standardized_masks/g1020/image_1746.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1747,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1747.png,data/processed/standardized_masks/g1020/image_1747.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1748,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1748.png,data/processed/standardized_masks/g1020/image_1748.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1759,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1759.png,data/processed/standardized_masks/g1020/image_1759.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1760,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1760.png,data/processed/standardized_masks/g1020/image_1760.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1765,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1765.png,data/processed/standardized_masks/g1020/image_1765.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1766,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1766.png,data/processed/standardized_masks/g1020/image_1766.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1767,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1767.png,data/processed/standardized_masks/g1020/image_1767.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1768,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1768.png,data/processed/standardized_masks/g1020/image_1768.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1786,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1786.png,data/processed/standardized_masks/g1020/image_1786.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1787,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1787.png,data/processed/standardized_masks/g1020/image_1787.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1788,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1788.png,data/processed/standardized_masks/g1020/image_1788.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1789,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1789.png,data/processed/standardized_masks/g1020/image_1789.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1790,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1790.png,data/processed/standardized_masks/g1020/image_1790.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1791,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1791.png,data/processed/standardized_masks/g1020/image_1791.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1796,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1796.png,data/processed/standardized_masks/g1020/image_1796.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1797,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1797.png,data/processed/standardized_masks/g1020/image_1797.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1798,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1798.png,data/processed/standardized_masks/g1020/image_1798.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1799,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1799.png,data/processed/standardized_masks/g1020/image_1799.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_18,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_18.png,data/processed/standardized_masks/g1020/image_18.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1824,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1824.png,data/processed/standardized_masks/g1020/image_1824.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1825,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1825.png,data/processed/standardized_masks/g1020/image_1825.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1842,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1842.png,data/processed/standardized_masks/g1020/image_1842.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1843,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1843.png,data/processed/standardized_masks/g1020/image_1843.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1844,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1844.png,data/processed/standardized_masks/g1020/image_1844.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1845,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1845.png,data/processed/standardized_masks/g1020/image_1845.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1847,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1847.png,data/processed/standardized_masks/g1020/image_1847.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1860,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1860.png,data/processed/standardized_masks/g1020/image_1860.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1861,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1861.png,data/processed/standardized_masks/g1020/image_1861.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1862,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1862.png,data/processed/standardized_masks/g1020/image_1862.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1865,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1865.png,data/processed/standardized_masks/g1020/image_1865.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1866,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1866.png,data/processed/standardized_masks/g1020/image_1866.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1874,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1874.png,data/processed/standardized_masks/g1020/image_1874.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1875,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1875.png,data/processed/standardized_masks/g1020/image_1875.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1876,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1876.png,data/processed/standardized_masks/g1020/image_1876.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1877,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1877.png,data/processed/standardized_masks/g1020/image_1877.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1892,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1892.png,data/processed/standardized_masks/g1020/image_1892.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1893,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1893.png,data/processed/standardized_masks/g1020/image_1893.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1894,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1894.png,data/processed/standardized_masks/g1020/image_1894.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1895,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1895.png,data/processed/standardized_masks/g1020/image_1895.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1896,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1896.png,data/processed/standardized_masks/g1020/image_1896.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1897,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1897.png,data/processed/standardized_masks/g1020/image_1897.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1898,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1898.png,data/processed/standardized_masks/g1020/image_1898.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1899,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1899.png,data/processed/standardized_masks/g1020/image_1899.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_19,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_19.png,data/processed/standardized_masks/g1020/image_19.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1901,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1901.png,data/processed/standardized_masks/g1020/image_1901.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1902,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1902.png,data/processed/standardized_masks/g1020/image_1902.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1903,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1903.png,data/processed/standardized_masks/g1020/image_1903.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1904,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1904.png,data/processed/standardized_masks/g1020/image_1904.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1912,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1912.png,data/processed/standardized_masks/g1020/image_1912.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1913,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1913.png,data/processed/standardized_masks/g1020/image_1913.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1914,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1914.png,data/processed/standardized_masks/g1020/image_1914.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1915,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1915.png,data/processed/standardized_masks/g1020/image_1915.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1916,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1916.png,data/processed/standardized_masks/g1020/image_1916.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1917,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1917.png,data/processed/standardized_masks/g1020/image_1917.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1922,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1922.png,data/processed/standardized_masks/g1020/image_1922.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1923,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1923.png,data/processed/standardized_masks/g1020/image_1923.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1924,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1924.png,data/processed/standardized_masks/g1020/image_1924.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1925,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1925.png,data/processed/standardized_masks/g1020/image_1925.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1926,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1926.png,data/processed/standardized_masks/g1020/image_1926.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1927,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1927.png,data/processed/standardized_masks/g1020/image_1927.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_193,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_193.png,data/processed/standardized_masks/g1020/image_193.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1931,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1931.png,data/processed/standardized_masks/g1020/image_1931.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1932,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1932.png,data/processed/standardized_masks/g1020/image_1932.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1933,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1933.png,data/processed/standardized_masks/g1020/image_1933.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1934,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1934.png,data/processed/standardized_masks/g1020/image_1934.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1935,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1935.png,data/processed/standardized_masks/g1020/image_1935.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1938,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1938.png,data/processed/standardized_masks/g1020/image_1938.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1939,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1939.png,data/processed/standardized_masks/g1020/image_1939.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_194,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_194.png,data/processed/standardized_masks/g1020/image_194.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1940,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1940.png,data/processed/standardized_masks/g1020/image_1940.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1941,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1941.png,data/processed/standardized_masks/g1020/image_1941.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1956,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1956.png,data/processed/standardized_masks/g1020/image_1956.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1957,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1957.png,data/processed/standardized_masks/g1020/image_1957.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1958,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1958.png,data/processed/standardized_masks/g1020/image_1958.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1959,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1959.png,data/processed/standardized_masks/g1020/image_1959.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1960,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1960.png,data/processed/standardized_masks/g1020/image_1960.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1961,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1961.png,data/processed/standardized_masks/g1020/image_1961.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1977,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1977.png,data/processed/standardized_masks/g1020/image_1977.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1978,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1978.png,data/processed/standardized_masks/g1020/image_1978.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1981,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1981.png,data/processed/standardized_masks/g1020/image_1981.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_1982,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1982.png,data/processed/standardized_masks/g1020/image_1982.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_199,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_199.png,data/processed/standardized_masks/g1020/image_199.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_1999,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_1999.png,data/processed/standardized_masks/g1020/image_1999.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_20,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_20.png,data/processed/standardized_masks/g1020/image_20.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_200,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_200.png,data/processed/standardized_masks/g1020/image_200.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2000,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2000.png,data/processed/standardized_masks/g1020/image_2000.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2001,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2001.png,data/processed/standardized_masks/g1020/image_2001.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2002,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2002.png,data/processed/standardized_masks/g1020/image_2002.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_201,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_201.png,data/processed/standardized_masks/g1020/image_201.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2019,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2019.png,data/processed/standardized_masks/g1020/image_2019.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_202,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_202.png,data/processed/standardized_masks/g1020/image_202.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2020,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2020.png,data/processed/standardized_masks/g1020/image_2020.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2022,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2022.png,data/processed/standardized_masks/g1020/image_2022.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2028,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2028.png,data/processed/standardized_masks/g1020/image_2028.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2030,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2030.png,data/processed/standardized_masks/g1020/image_2030.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2031,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2031.png,data/processed/standardized_masks/g1020/image_2031.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2032,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2032.png,data/processed/standardized_masks/g1020/image_2032.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2033,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2033.png,data/processed/standardized_masks/g1020/image_2033.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2034,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2034.png,data/processed/standardized_masks/g1020/image_2034.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2035,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2035.png,data/processed/standardized_masks/g1020/image_2035.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2036,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2036.png,data/processed/standardized_masks/g1020/image_2036.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2037,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2037.png,data/processed/standardized_masks/g1020/image_2037.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2039,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2039.png,data/processed/standardized_masks/g1020/image_2039.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2041,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2041.png,data/processed/standardized_masks/g1020/image_2041.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2042,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2042.png,data/processed/standardized_masks/g1020/image_2042.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2045,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2045.png,data/processed/standardized_masks/g1020/image_2045.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2046,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2046.png,data/processed/standardized_masks/g1020/image_2046.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2047,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2047.png,data/processed/standardized_masks/g1020/image_2047.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2048,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2048.png,data/processed/standardized_masks/g1020/image_2048.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2049,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2049.png,data/processed/standardized_masks/g1020/image_2049.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2050,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2050.png,data/processed/standardized_masks/g1020/image_2050.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2064,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2064.png,data/processed/standardized_masks/g1020/image_2064.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2065,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2065.png,data/processed/standardized_masks/g1020/image_2065.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2078,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2078.png,data/processed/standardized_masks/g1020/image_2078.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2084,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2084.png,data/processed/standardized_masks/g1020/image_2084.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2085,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2085.png,data/processed/standardized_masks/g1020/image_2085.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2097,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2097.png,data/processed/standardized_masks/g1020/image_2097.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_21,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_21.png,data/processed/standardized_masks/g1020/image_21.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2101,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2101.png,data/processed/standardized_masks/g1020/image_2101.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2102,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2102.png,data/processed/standardized_masks/g1020/image_2102.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2110,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2110.png,data/processed/standardized_masks/g1020/image_2110.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2111,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2111.png,data/processed/standardized_masks/g1020/image_2111.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2116,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2116.png,data/processed/standardized_masks/g1020/image_2116.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2117,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2117.png,data/processed/standardized_masks/g1020/image_2117.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2124,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2124.png,data/processed/standardized_masks/g1020/image_2124.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2125,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2125.png,data/processed/standardized_masks/g1020/image_2125.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2139,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2139.png,data/processed/standardized_masks/g1020/image_2139.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_214,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_214.png,data/processed/standardized_masks/g1020/image_214.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2140,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2140.png,data/processed/standardized_masks/g1020/image_2140.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2141,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2141.png,data/processed/standardized_masks/g1020/image_2141.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2142,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2142.png,data/processed/standardized_masks/g1020/image_2142.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2143,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2143.png,data/processed/standardized_masks/g1020/image_2143.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2144,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2144.png,data/processed/standardized_masks/g1020/image_2144.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2146,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2146.png,data/processed/standardized_masks/g1020/image_2146.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2147,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2147.png,data/processed/standardized_masks/g1020/image_2147.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2148,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2148.png,data/processed/standardized_masks/g1020/image_2148.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2149,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2149.png,data/processed/standardized_masks/g1020/image_2149.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_215,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_215.png,data/processed/standardized_masks/g1020/image_215.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2151,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2151.png,data/processed/standardized_masks/g1020/image_2151.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2152,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2152.png,data/processed/standardized_masks/g1020/image_2152.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2154,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2154.png,data/processed/standardized_masks/g1020/image_2154.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2155,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2155.png,data/processed/standardized_masks/g1020/image_2155.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2156,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2156.png,data/processed/standardized_masks/g1020/image_2156.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_216,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_216.png,data/processed/standardized_masks/g1020/image_216.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2162,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2162.png,data/processed/standardized_masks/g1020/image_2162.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2163,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2163.png,data/processed/standardized_masks/g1020/image_2163.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2164,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2164.png,data/processed/standardized_masks/g1020/image_2164.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_217,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_217.png,data/processed/standardized_masks/g1020/image_217.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2170,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2170.png,data/processed/standardized_masks/g1020/image_2170.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2171,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2171.png,data/processed/standardized_masks/g1020/image_2171.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2172,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2172.png,data/processed/standardized_masks/g1020/image_2172.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2173,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2173.png,data/processed/standardized_masks/g1020/image_2173.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_218,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_218.png,data/processed/standardized_masks/g1020/image_218.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2188,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2188.png,data/processed/standardized_masks/g1020/image_2188.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2189,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2189.png,data/processed/standardized_masks/g1020/image_2189.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_219,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_219.png,data/processed/standardized_masks/g1020/image_219.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2199,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2199.png,data/processed/standardized_masks/g1020/image_2199.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_22,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_22.png,data/processed/standardized_masks/g1020/image_22.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2200,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2200.png,data/processed/standardized_masks/g1020/image_2200.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2201,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2201.png,data/processed/standardized_masks/g1020/image_2201.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2202,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2202.png,data/processed/standardized_masks/g1020/image_2202.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2209,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2209.png,data/processed/standardized_masks/g1020/image_2209.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2210,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2210.png,data/processed/standardized_masks/g1020/image_2210.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2211,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2211.png,data/processed/standardized_masks/g1020/image_2211.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2212,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2212.png,data/processed/standardized_masks/g1020/image_2212.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2215,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2215.png,data/processed/standardized_masks/g1020/image_2215.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2216,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2216.png,data/processed/standardized_masks/g1020/image_2216.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2217,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2217.png,data/processed/standardized_masks/g1020/image_2217.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2218,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2218.png,data/processed/standardized_masks/g1020/image_2218.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2219,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2219.png,data/processed/standardized_masks/g1020/image_2219.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_222,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_222.png,data/processed/standardized_masks/g1020/image_222.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2220,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2220.png,data/processed/standardized_masks/g1020/image_2220.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2223,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2223.png,data/processed/standardized_masks/g1020/image_2223.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2225,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2225.png,data/processed/standardized_masks/g1020/image_2225.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2226,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2226.png,data/processed/standardized_masks/g1020/image_2226.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2229,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2229.png,data/processed/standardized_masks/g1020/image_2229.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_223,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_223.png,data/processed/standardized_masks/g1020/image_223.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2230,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2230.png,data/processed/standardized_masks/g1020/image_2230.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2231,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2231.png,data/processed/standardized_masks/g1020/image_2231.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2232,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2232.png,data/processed/standardized_masks/g1020/image_2232.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2234,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2234.png,data/processed/standardized_masks/g1020/image_2234.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2244,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2244.png,data/processed/standardized_masks/g1020/image_2244.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2245,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2245.png,data/processed/standardized_masks/g1020/image_2245.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2246,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2246.png,data/processed/standardized_masks/g1020/image_2246.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2247,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2247.png,data/processed/standardized_masks/g1020/image_2247.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2248,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2248.png,data/processed/standardized_masks/g1020/image_2248.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2249,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2249.png,data/processed/standardized_masks/g1020/image_2249.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_226,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_226.png,data/processed/standardized_masks/g1020/image_226.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_227,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_227.png,data/processed/standardized_masks/g1020/image_227.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2276,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2276.png,data/processed/standardized_masks/g1020/image_2276.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2277,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2277.png,data/processed/standardized_masks/g1020/image_2277.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2278,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2278.png,data/processed/standardized_masks/g1020/image_2278.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2279,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2279.png,data/processed/standardized_masks/g1020/image_2279.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2289,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2289.png,data/processed/standardized_masks/g1020/image_2289.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2290,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2290.png,data/processed/standardized_masks/g1020/image_2290.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2291,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2291.png,data/processed/standardized_masks/g1020/image_2291.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2292,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2292.png,data/processed/standardized_masks/g1020/image_2292.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2299,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2299.png,data/processed/standardized_masks/g1020/image_2299.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_230,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_230.png,data/processed/standardized_masks/g1020/image_230.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2300,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2300.png,data/processed/standardized_masks/g1020/image_2300.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2303,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2303.png,data/processed/standardized_masks/g1020/image_2303.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2304,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2304.png,data/processed/standardized_masks/g1020/image_2304.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2307,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2307.png,data/processed/standardized_masks/g1020/image_2307.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2308,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2308.png,data/processed/standardized_masks/g1020/image_2308.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2309,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2309.png,data/processed/standardized_masks/g1020/image_2309.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_231,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_231.png,data/processed/standardized_masks/g1020/image_231.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2310,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2310.png,data/processed/standardized_masks/g1020/image_2310.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2313,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2313.png,data/processed/standardized_masks/g1020/image_2313.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2314,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2314.png,data/processed/standardized_masks/g1020/image_2314.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2315,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2315.png,data/processed/standardized_masks/g1020/image_2315.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2316,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2316.png,data/processed/standardized_masks/g1020/image_2316.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2319,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2319.png,data/processed/standardized_masks/g1020/image_2319.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_232,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_232.png,data/processed/standardized_masks/g1020/image_232.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2320,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2320.png,data/processed/standardized_masks/g1020/image_2320.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2321,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2321.png,data/processed/standardized_masks/g1020/image_2321.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2322,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2322.png,data/processed/standardized_masks/g1020/image_2322.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2326,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2326.png,data/processed/standardized_masks/g1020/image_2326.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2327,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2327.png,data/processed/standardized_masks/g1020/image_2327.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_233,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_233.png,data/processed/standardized_masks/g1020/image_233.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_234,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_234.png,data/processed/standardized_masks/g1020/image_234.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2345,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2345.png,data/processed/standardized_masks/g1020/image_2345.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2346,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2346.png,data/processed/standardized_masks/g1020/image_2346.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_235,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_235.png,data/processed/standardized_masks/g1020/image_235.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2354,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2354.png,data/processed/standardized_masks/g1020/image_2354.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2355,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2355.png,data/processed/standardized_masks/g1020/image_2355.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2359,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2359.png,data/processed/standardized_masks/g1020/image_2359.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_236,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_236.png,data/processed/standardized_masks/g1020/image_236.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2360,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2360.png,data/processed/standardized_masks/g1020/image_2360.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2361,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2361.png,data/processed/standardized_masks/g1020/image_2361.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2362,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2362.png,data/processed/standardized_masks/g1020/image_2362.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2363,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2363.png,data/processed/standardized_masks/g1020/image_2363.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2364,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2364.png,data/processed/standardized_masks/g1020/image_2364.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2365,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2365.png,data/processed/standardized_masks/g1020/image_2365.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2366,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2366.png,data/processed/standardized_masks/g1020/image_2366.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2367,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2367.png,data/processed/standardized_masks/g1020/image_2367.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2368,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2368.png,data/processed/standardized_masks/g1020/image_2368.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_237,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_237.png,data/processed/standardized_masks/g1020/image_237.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2375,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2375.png,data/processed/standardized_masks/g1020/image_2375.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2376,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2376.png,data/processed/standardized_masks/g1020/image_2376.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2402,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2402.png,data/processed/standardized_masks/g1020/image_2402.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2403,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2403.png,data/processed/standardized_masks/g1020/image_2403.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2404,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2404.png,data/processed/standardized_masks/g1020/image_2404.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2407,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2407.png,data/processed/standardized_masks/g1020/image_2407.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2408,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2408.png,data/processed/standardized_masks/g1020/image_2408.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2411,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2411.png,data/processed/standardized_masks/g1020/image_2411.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2412,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2412.png,data/processed/standardized_masks/g1020/image_2412.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2413,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2413.png,data/processed/standardized_masks/g1020/image_2413.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2414,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2414.png,data/processed/standardized_masks/g1020/image_2414.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2417,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2417.png,data/processed/standardized_masks/g1020/image_2417.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2418,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2418.png,data/processed/standardized_masks/g1020/image_2418.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2421,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2421.png,data/processed/standardized_masks/g1020/image_2421.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2423,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2423.png,data/processed/standardized_masks/g1020/image_2423.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2424,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2424.png,data/processed/standardized_masks/g1020/image_2424.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2425,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2425.png,data/processed/standardized_masks/g1020/image_2425.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2426,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2426.png,data/processed/standardized_masks/g1020/image_2426.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2430,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2430.png,data/processed/standardized_masks/g1020/image_2430.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2431,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2431.png,data/processed/standardized_masks/g1020/image_2431.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2434,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2434.png,data/processed/standardized_masks/g1020/image_2434.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2435,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2435.png,data/processed/standardized_masks/g1020/image_2435.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2436,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2436.png,data/processed/standardized_masks/g1020/image_2436.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2437,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2437.png,data/processed/standardized_masks/g1020/image_2437.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_244,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_244.png,data/processed/standardized_masks/g1020/image_244.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_245,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_245.png,data/processed/standardized_masks/g1020/image_245.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2455,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2455.png,data/processed/standardized_masks/g1020/image_2455.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2456,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2456.png,data/processed/standardized_masks/g1020/image_2456.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2457,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2457.png,data/processed/standardized_masks/g1020/image_2457.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2458,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2458.png,data/processed/standardized_masks/g1020/image_2458.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2459,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2459.png,data/processed/standardized_masks/g1020/image_2459.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_246,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_246.png,data/processed/standardized_masks/g1020/image_246.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_247,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_247.png,data/processed/standardized_masks/g1020/image_247.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2470,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2470.png,data/processed/standardized_masks/g1020/image_2470.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2471,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2471.png,data/processed/standardized_masks/g1020/image_2471.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2473,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2473.png,data/processed/standardized_masks/g1020/image_2473.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2474,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2474.png,data/processed/standardized_masks/g1020/image_2474.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2475,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2475.png,data/processed/standardized_masks/g1020/image_2475.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_248,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_248.png,data/processed/standardized_masks/g1020/image_248.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2482,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2482.png,data/processed/standardized_masks/g1020/image_2482.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2483,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2483.png,data/processed/standardized_masks/g1020/image_2483.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_249,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_249.png,data/processed/standardized_masks/g1020/image_249.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_250,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_250.png,data/processed/standardized_masks/g1020/image_250.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2503,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2503.png,data/processed/standardized_masks/g1020/image_2503.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2504,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2504.png,data/processed/standardized_masks/g1020/image_2504.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2505,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2505.png,data/processed/standardized_masks/g1020/image_2505.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2507,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2507.png,data/processed/standardized_masks/g1020/image_2507.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2512,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2512.png,data/processed/standardized_masks/g1020/image_2512.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2513,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2513.png,data/processed/standardized_masks/g1020/image_2513.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2514,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2514.png,data/processed/standardized_masks/g1020/image_2514.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2515,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2515.png,data/processed/standardized_masks/g1020/image_2515.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2516,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2516.png,data/processed/standardized_masks/g1020/image_2516.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2523,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2523.png,data/processed/standardized_masks/g1020/image_2523.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2524,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2524.png,data/processed/standardized_masks/g1020/image_2524.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2525,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2525.png,data/processed/standardized_masks/g1020/image_2525.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2526,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2526.png,data/processed/standardized_masks/g1020/image_2526.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2527,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2527.png,data/processed/standardized_masks/g1020/image_2527.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2528,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2528.png,data/processed/standardized_masks/g1020/image_2528.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2529,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2529.png,data/processed/standardized_masks/g1020/image_2529.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2530,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2530.png,data/processed/standardized_masks/g1020/image_2530.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2531,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2531.png,data/processed/standardized_masks/g1020/image_2531.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2532,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2532.png,data/processed/standardized_masks/g1020/image_2532.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2533,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2533.png,data/processed/standardized_masks/g1020/image_2533.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2534,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2534.png,data/processed/standardized_masks/g1020/image_2534.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_255,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_255.png,data/processed/standardized_masks/g1020/image_255.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2550,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2550.png,data/processed/standardized_masks/g1020/image_2550.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2551,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2551.png,data/processed/standardized_masks/g1020/image_2551.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2552,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2552.png,data/processed/standardized_masks/g1020/image_2552.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2553,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2553.png,data/processed/standardized_masks/g1020/image_2553.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2554,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2554.png,data/processed/standardized_masks/g1020/image_2554.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2555,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2555.png,data/processed/standardized_masks/g1020/image_2555.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2558,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2558.png,data/processed/standardized_masks/g1020/image_2558.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2559,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2559.png,data/processed/standardized_masks/g1020/image_2559.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_256,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_256.png,data/processed/standardized_masks/g1020/image_256.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2562,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2562.png,data/processed/standardized_masks/g1020/image_2562.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2563,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2563.png,data/processed/standardized_masks/g1020/image_2563.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2564,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2564.png,data/processed/standardized_masks/g1020/image_2564.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2565,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2565.png,data/processed/standardized_masks/g1020/image_2565.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2566,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2566.png,data/processed/standardized_masks/g1020/image_2566.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2567,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2567.png,data/processed/standardized_masks/g1020/image_2567.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2568,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2568.png,data/processed/standardized_masks/g1020/image_2568.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2569,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2569.png,data/processed/standardized_masks/g1020/image_2569.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2570,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2570.png,data/processed/standardized_masks/g1020/image_2570.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2571,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2571.png,data/processed/standardized_masks/g1020/image_2571.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2572,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2572.png,data/processed/standardized_masks/g1020/image_2572.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2573,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2573.png,data/processed/standardized_masks/g1020/image_2573.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2574,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2574.png,data/processed/standardized_masks/g1020/image_2574.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2575,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2575.png,data/processed/standardized_masks/g1020/image_2575.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2576,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2576.png,data/processed/standardized_masks/g1020/image_2576.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2577,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2577.png,data/processed/standardized_masks/g1020/image_2577.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2578,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2578.png,data/processed/standardized_masks/g1020/image_2578.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2579,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2579.png,data/processed/standardized_masks/g1020/image_2579.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2588,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2588.png,data/processed/standardized_masks/g1020/image_2588.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2589,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2589.png,data/processed/standardized_masks/g1020/image_2589.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2602,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2602.png,data/processed/standardized_masks/g1020/image_2602.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2605,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2605.png,data/processed/standardized_masks/g1020/image_2605.png,"[0, 2]","[0, 2]",already_0_1_2
+G1020,image_2606,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2606.png,data/processed/standardized_masks/g1020/image_2606.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2607,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2607.png,data/processed/standardized_masks/g1020/image_2607.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2608,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2608.png,data/processed/standardized_masks/g1020/image_2608.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_261,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_261.png,data/processed/standardized_masks/g1020/image_261.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2611,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2611.png,data/processed/standardized_masks/g1020/image_2611.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2612,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2612.png,data/processed/standardized_masks/g1020/image_2612.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_262,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_262.png,data/processed/standardized_masks/g1020/image_262.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2622,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2622.png,data/processed/standardized_masks/g1020/image_2622.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2623,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2623.png,data/processed/standardized_masks/g1020/image_2623.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_264,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_264.png,data/processed/standardized_masks/g1020/image_264.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_265,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_265.png,data/processed/standardized_masks/g1020/image_265.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2651,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2651.png,data/processed/standardized_masks/g1020/image_2651.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2652,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2652.png,data/processed/standardized_masks/g1020/image_2652.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2654,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2654.png,data/processed/standardized_masks/g1020/image_2654.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2655,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2655.png,data/processed/standardized_masks/g1020/image_2655.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2656,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2656.png,data/processed/standardized_masks/g1020/image_2656.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2658,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2658.png,data/processed/standardized_masks/g1020/image_2658.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_266,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_266.png,data/processed/standardized_masks/g1020/image_266.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2661,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2661.png,data/processed/standardized_masks/g1020/image_2661.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2662,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2662.png,data/processed/standardized_masks/g1020/image_2662.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2668,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2668.png,data/processed/standardized_masks/g1020/image_2668.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2669,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2669.png,data/processed/standardized_masks/g1020/image_2669.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2676,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2676.png,data/processed/standardized_masks/g1020/image_2676.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2677,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2677.png,data/processed/standardized_masks/g1020/image_2677.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2685,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2685.png,data/processed/standardized_masks/g1020/image_2685.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2686,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2686.png,data/processed/standardized_masks/g1020/image_2686.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2687,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2687.png,data/processed/standardized_masks/g1020/image_2687.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2688,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2688.png,data/processed/standardized_masks/g1020/image_2688.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2689,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2689.png,data/processed/standardized_masks/g1020/image_2689.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2690,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2690.png,data/processed/standardized_masks/g1020/image_2690.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2691,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2691.png,data/processed/standardized_masks/g1020/image_2691.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2692,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2692.png,data/processed/standardized_masks/g1020/image_2692.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2693,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2693.png,data/processed/standardized_masks/g1020/image_2693.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2694,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2694.png,data/processed/standardized_masks/g1020/image_2694.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2695,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2695.png,data/processed/standardized_masks/g1020/image_2695.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2698,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2698.png,data/processed/standardized_masks/g1020/image_2698.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2699,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2699.png,data/processed/standardized_masks/g1020/image_2699.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2700,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2700.png,data/processed/standardized_masks/g1020/image_2700.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2701,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2701.png,data/processed/standardized_masks/g1020/image_2701.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2702,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2702.png,data/processed/standardized_masks/g1020/image_2702.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2703,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2703.png,data/processed/standardized_masks/g1020/image_2703.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2707,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2707.png,data/processed/standardized_masks/g1020/image_2707.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2708,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2708.png,data/processed/standardized_masks/g1020/image_2708.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2709,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2709.png,data/processed/standardized_masks/g1020/image_2709.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2710,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2710.png,data/processed/standardized_masks/g1020/image_2710.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2711,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2711.png,data/processed/standardized_masks/g1020/image_2711.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2712,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2712.png,data/processed/standardized_masks/g1020/image_2712.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2713,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2713.png,data/processed/standardized_masks/g1020/image_2713.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2714,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2714.png,data/processed/standardized_masks/g1020/image_2714.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2728,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2728.png,data/processed/standardized_masks/g1020/image_2728.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2729,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2729.png,data/processed/standardized_masks/g1020/image_2729.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2730,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2730.png,data/processed/standardized_masks/g1020/image_2730.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2731,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2731.png,data/processed/standardized_masks/g1020/image_2731.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2732,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2732.png,data/processed/standardized_masks/g1020/image_2732.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2733,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2733.png,data/processed/standardized_masks/g1020/image_2733.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2734,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2734.png,data/processed/standardized_masks/g1020/image_2734.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2735,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2735.png,data/processed/standardized_masks/g1020/image_2735.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2736,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2736.png,data/processed/standardized_masks/g1020/image_2736.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2737,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2737.png,data/processed/standardized_masks/g1020/image_2737.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2738,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2738.png,data/processed/standardized_masks/g1020/image_2738.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2739,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2739.png,data/processed/standardized_masks/g1020/image_2739.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2765,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2765.png,data/processed/standardized_masks/g1020/image_2765.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2766,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2766.png,data/processed/standardized_masks/g1020/image_2766.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2767,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2767.png,data/processed/standardized_masks/g1020/image_2767.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2768,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2768.png,data/processed/standardized_masks/g1020/image_2768.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2781,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2781.png,data/processed/standardized_masks/g1020/image_2781.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2782,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2782.png,data/processed/standardized_masks/g1020/image_2782.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2783,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2783.png,data/processed/standardized_masks/g1020/image_2783.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2784,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2784.png,data/processed/standardized_masks/g1020/image_2784.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2785,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2785.png,data/processed/standardized_masks/g1020/image_2785.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2786,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2786.png,data/processed/standardized_masks/g1020/image_2786.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2787,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2787.png,data/processed/standardized_masks/g1020/image_2787.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2788,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2788.png,data/processed/standardized_masks/g1020/image_2788.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2795,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2795.png,data/processed/standardized_masks/g1020/image_2795.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2796,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2796.png,data/processed/standardized_masks/g1020/image_2796.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2805,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2805.png,data/processed/standardized_masks/g1020/image_2805.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2806,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2806.png,data/processed/standardized_masks/g1020/image_2806.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2807,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2807.png,data/processed/standardized_masks/g1020/image_2807.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2808,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2808.png,data/processed/standardized_masks/g1020/image_2808.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2809,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2809.png,data/processed/standardized_masks/g1020/image_2809.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2810,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2810.png,data/processed/standardized_masks/g1020/image_2810.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2823,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2823.png,data/processed/standardized_masks/g1020/image_2823.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2824,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2824.png,data/processed/standardized_masks/g1020/image_2824.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2825,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2825.png,data/processed/standardized_masks/g1020/image_2825.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2826,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2826.png,data/processed/standardized_masks/g1020/image_2826.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2827,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2827.png,data/processed/standardized_masks/g1020/image_2827.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2828,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2828.png,data/processed/standardized_masks/g1020/image_2828.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2839,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2839.png,data/processed/standardized_masks/g1020/image_2839.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2840,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2840.png,data/processed/standardized_masks/g1020/image_2840.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2856,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2856.png,data/processed/standardized_masks/g1020/image_2856.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2857,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2857.png,data/processed/standardized_masks/g1020/image_2857.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2860,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2860.png,data/processed/standardized_masks/g1020/image_2860.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2861,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2861.png,data/processed/standardized_masks/g1020/image_2861.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2880,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2880.png,data/processed/standardized_masks/g1020/image_2880.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2881,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2881.png,data/processed/standardized_masks/g1020/image_2881.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2885,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2885.png,data/processed/standardized_masks/g1020/image_2885.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2886,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2886.png,data/processed/standardized_masks/g1020/image_2886.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2887,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2887.png,data/processed/standardized_masks/g1020/image_2887.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2888,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2888.png,data/processed/standardized_masks/g1020/image_2888.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2891,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2891.png,data/processed/standardized_masks/g1020/image_2891.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2892,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2892.png,data/processed/standardized_masks/g1020/image_2892.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2897,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2897.png,data/processed/standardized_masks/g1020/image_2897.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2898,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2898.png,data/processed/standardized_masks/g1020/image_2898.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2899,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2899.png,data/processed/standardized_masks/g1020/image_2899.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2900,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2900.png,data/processed/standardized_masks/g1020/image_2900.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2901,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2901.png,data/processed/standardized_masks/g1020/image_2901.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2902,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2902.png,data/processed/standardized_masks/g1020/image_2902.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2906,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2906.png,data/processed/standardized_masks/g1020/image_2906.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2912,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2912.png,data/processed/standardized_masks/g1020/image_2912.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2913,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2913.png,data/processed/standardized_masks/g1020/image_2913.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2914,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2914.png,data/processed/standardized_masks/g1020/image_2914.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2915,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2915.png,data/processed/standardized_masks/g1020/image_2915.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2916,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2916.png,data/processed/standardized_masks/g1020/image_2916.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2917,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2917.png,data/processed/standardized_masks/g1020/image_2917.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_292,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_292.png,data/processed/standardized_masks/g1020/image_292.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_293,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_293.png,data/processed/standardized_masks/g1020/image_293.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2935,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2935.png,data/processed/standardized_masks/g1020/image_2935.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2936,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2936.png,data/processed/standardized_masks/g1020/image_2936.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2941,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2941.png,data/processed/standardized_masks/g1020/image_2941.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2942,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2942.png,data/processed/standardized_masks/g1020/image_2942.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2945,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2945.png,data/processed/standardized_masks/g1020/image_2945.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2946,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2946.png,data/processed/standardized_masks/g1020/image_2946.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2947,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2947.png,data/processed/standardized_masks/g1020/image_2947.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2949,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2949.png,data/processed/standardized_masks/g1020/image_2949.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_295,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_295.png,data/processed/standardized_masks/g1020/image_295.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2950,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2950.png,data/processed/standardized_masks/g1020/image_2950.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2956,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2956.png,data/processed/standardized_masks/g1020/image_2956.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2957,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2957.png,data/processed/standardized_masks/g1020/image_2957.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2970,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2970.png,data/processed/standardized_masks/g1020/image_2970.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2971,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2971.png,data/processed/standardized_masks/g1020/image_2971.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2972,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2972.png,data/processed/standardized_masks/g1020/image_2972.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2973,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2973.png,data/processed/standardized_masks/g1020/image_2973.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2974,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2974.png,data/processed/standardized_masks/g1020/image_2974.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2975,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2975.png,data/processed/standardized_masks/g1020/image_2975.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2980,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2980.png,data/processed/standardized_masks/g1020/image_2980.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2981,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2981.png,data/processed/standardized_masks/g1020/image_2981.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2984,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2984.png,data/processed/standardized_masks/g1020/image_2984.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2985,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2985.png,data/processed/standardized_masks/g1020/image_2985.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2991,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2991.png,data/processed/standardized_masks/g1020/image_2991.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2992,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2992.png,data/processed/standardized_masks/g1020/image_2992.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_2998,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2998.png,data/processed/standardized_masks/g1020/image_2998.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_2999,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_2999.png,data/processed/standardized_masks/g1020/image_2999.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3.png,data/processed/standardized_masks/g1020/image_3.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3000,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3000.png,data/processed/standardized_masks/g1020/image_3000.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3017,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3017.png,data/processed/standardized_masks/g1020/image_3017.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3018,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3018.png,data/processed/standardized_masks/g1020/image_3018.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_3019,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3019.png,data/processed/standardized_masks/g1020/image_3019.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3020,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3020.png,data/processed/standardized_masks/g1020/image_3020.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_3021,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3021.png,data/processed/standardized_masks/g1020/image_3021.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3022,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3022.png,data/processed/standardized_masks/g1020/image_3022.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3023,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3023.png,data/processed/standardized_masks/g1020/image_3023.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3024,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3024.png,data/processed/standardized_masks/g1020/image_3024.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3025,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3025.png,data/processed/standardized_masks/g1020/image_3025.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3026,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3026.png,data/processed/standardized_masks/g1020/image_3026.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3029,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3029.png,data/processed/standardized_masks/g1020/image_3029.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3038,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3038.png,data/processed/standardized_masks/g1020/image_3038.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3039,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3039.png,data/processed/standardized_masks/g1020/image_3039.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_304,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_304.png,data/processed/standardized_masks/g1020/image_304.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3040,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3040.png,data/processed/standardized_masks/g1020/image_3040.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_3041,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3041.png,data/processed/standardized_masks/g1020/image_3041.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3044,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3044.png,data/processed/standardized_masks/g1020/image_3044.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3045,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3045.png,data/processed/standardized_masks/g1020/image_3045.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_305,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_305.png,data/processed/standardized_masks/g1020/image_305.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3058,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3058.png,data/processed/standardized_masks/g1020/image_3058.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3059,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3059.png,data/processed/standardized_masks/g1020/image_3059.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3064,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3064.png,data/processed/standardized_masks/g1020/image_3064.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3065,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3065.png,data/processed/standardized_masks/g1020/image_3065.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_3066,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3066.png,data/processed/standardized_masks/g1020/image_3066.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3067,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3067.png,data/processed/standardized_masks/g1020/image_3067.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3076,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3076.png,data/processed/standardized_masks/g1020/image_3076.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3080,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3080.png,data/processed/standardized_masks/g1020/image_3080.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3081,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3081.png,data/processed/standardized_masks/g1020/image_3081.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3082,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3082.png,data/processed/standardized_masks/g1020/image_3082.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3084,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3084.png,data/processed/standardized_masks/g1020/image_3084.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3085,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3085.png,data/processed/standardized_masks/g1020/image_3085.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3090,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3090.png,data/processed/standardized_masks/g1020/image_3090.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_3091,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3091.png,data/processed/standardized_masks/g1020/image_3091.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_31,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_31.png,data/processed/standardized_masks/g1020/image_31.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3116,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3116.png,data/processed/standardized_masks/g1020/image_3116.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3117,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3117.png,data/processed/standardized_masks/g1020/image_3117.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3120,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3120.png,data/processed/standardized_masks/g1020/image_3120.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3121,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3121.png,data/processed/standardized_masks/g1020/image_3121.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_3122,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3122.png,data/processed/standardized_masks/g1020/image_3122.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3123,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3123.png,data/processed/standardized_masks/g1020/image_3123.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3124,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3124.png,data/processed/standardized_masks/g1020/image_3124.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3129,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3129.png,data/processed/standardized_masks/g1020/image_3129.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3130,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3130.png,data/processed/standardized_masks/g1020/image_3130.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3131,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3131.png,data/processed/standardized_masks/g1020/image_3131.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3132,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3132.png,data/processed/standardized_masks/g1020/image_3132.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3137,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3137.png,data/processed/standardized_masks/g1020/image_3137.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3138,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3138.png,data/processed/standardized_masks/g1020/image_3138.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3143,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3143.png,data/processed/standardized_masks/g1020/image_3143.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3144,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3144.png,data/processed/standardized_masks/g1020/image_3144.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_315,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_315.png,data/processed/standardized_masks/g1020/image_315.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_3159,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3159.png,data/processed/standardized_masks/g1020/image_3159.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_316,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_316.png,data/processed/standardized_masks/g1020/image_316.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_3160,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3160.png,data/processed/standardized_masks/g1020/image_3160.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3163,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3163.png,data/processed/standardized_masks/g1020/image_3163.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_3164,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3164.png,data/processed/standardized_masks/g1020/image_3164.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3165,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3165.png,data/processed/standardized_masks/g1020/image_3165.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3166,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3166.png,data/processed/standardized_masks/g1020/image_3166.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3167,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3167.png,data/processed/standardized_masks/g1020/image_3167.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3168,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3168.png,data/processed/standardized_masks/g1020/image_3168.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3169,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3169.png,data/processed/standardized_masks/g1020/image_3169.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_3170,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3170.png,data/processed/standardized_masks/g1020/image_3170.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3182,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3182.png,data/processed/standardized_masks/g1020/image_3182.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3183,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3183.png,data/processed/standardized_masks/g1020/image_3183.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3184,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3184.png,data/processed/standardized_masks/g1020/image_3184.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3185,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3185.png,data/processed/standardized_masks/g1020/image_3185.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3198,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3198.png,data/processed/standardized_masks/g1020/image_3198.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3199,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3199.png,data/processed/standardized_masks/g1020/image_3199.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_32,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_32.png,data/processed/standardized_masks/g1020/image_32.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3201,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3201.png,data/processed/standardized_masks/g1020/image_3201.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_3202,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_3202.png,data/processed/standardized_masks/g1020/image_3202.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_327,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_327.png,data/processed/standardized_masks/g1020/image_327.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_328,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_328.png,data/processed/standardized_masks/g1020/image_328.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_334,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_334.png,data/processed/standardized_masks/g1020/image_334.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_335,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_335.png,data/processed/standardized_masks/g1020/image_335.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_336,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_336.png,data/processed/standardized_masks/g1020/image_336.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_337,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_337.png,data/processed/standardized_masks/g1020/image_337.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_338,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_338.png,data/processed/standardized_masks/g1020/image_338.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_339,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_339.png,data/processed/standardized_masks/g1020/image_339.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_353,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_353.png,data/processed/standardized_masks/g1020/image_353.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_354,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_354.png,data/processed/standardized_masks/g1020/image_354.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_356,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_356.png,data/processed/standardized_masks/g1020/image_356.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_360,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_360.png,data/processed/standardized_masks/g1020/image_360.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_361,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_361.png,data/processed/standardized_masks/g1020/image_361.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_363,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_363.png,data/processed/standardized_masks/g1020/image_363.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_366,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_366.png,data/processed/standardized_masks/g1020/image_366.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_367,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_367.png,data/processed/standardized_masks/g1020/image_367.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_372,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_372.png,data/processed/standardized_masks/g1020/image_372.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_373,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_373.png,data/processed/standardized_masks/g1020/image_373.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_384,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_384.png,data/processed/standardized_masks/g1020/image_384.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_385,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_385.png,data/processed/standardized_masks/g1020/image_385.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_386,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_386.png,data/processed/standardized_masks/g1020/image_386.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_387,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_387.png,data/processed/standardized_masks/g1020/image_387.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_4,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_4.png,data/processed/standardized_masks/g1020/image_4.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_420,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_420.png,data/processed/standardized_masks/g1020/image_420.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_421,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_421.png,data/processed/standardized_masks/g1020/image_421.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_436,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_436.png,data/processed/standardized_masks/g1020/image_436.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_437,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_437.png,data/processed/standardized_masks/g1020/image_437.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_444,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_444.png,data/processed/standardized_masks/g1020/image_444.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_445,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_445.png,data/processed/standardized_masks/g1020/image_445.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_446,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_446.png,data/processed/standardized_masks/g1020/image_446.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_453,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_453.png,data/processed/standardized_masks/g1020/image_453.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_454,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_454.png,data/processed/standardized_masks/g1020/image_454.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_457,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_457.png,data/processed/standardized_masks/g1020/image_457.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_458,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_458.png,data/processed/standardized_masks/g1020/image_458.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_459,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_459.png,data/processed/standardized_masks/g1020/image_459.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_46,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_46.png,data/processed/standardized_masks/g1020/image_46.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_460,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_460.png,data/processed/standardized_masks/g1020/image_460.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_467,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_467.png,data/processed/standardized_masks/g1020/image_467.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_468,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_468.png,data/processed/standardized_masks/g1020/image_468.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_469,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_469.png,data/processed/standardized_masks/g1020/image_469.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_47,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_47.png,data/processed/standardized_masks/g1020/image_47.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_470,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_470.png,data/processed/standardized_masks/g1020/image_470.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_48,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_48.png,data/processed/standardized_masks/g1020/image_48.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_482,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_482.png,data/processed/standardized_masks/g1020/image_482.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_483,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_483.png,data/processed/standardized_masks/g1020/image_483.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_484,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_484.png,data/processed/standardized_masks/g1020/image_484.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_485,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_485.png,data/processed/standardized_masks/g1020/image_485.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_486,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_486.png,data/processed/standardized_masks/g1020/image_486.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_487,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_487.png,data/processed/standardized_masks/g1020/image_487.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_488,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_488.png,data/processed/standardized_masks/g1020/image_488.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_489,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_489.png,data/processed/standardized_masks/g1020/image_489.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_49,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_49.png,data/processed/standardized_masks/g1020/image_49.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_490,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_490.png,data/processed/standardized_masks/g1020/image_490.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_491,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_491.png,data/processed/standardized_masks/g1020/image_491.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_492,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_492.png,data/processed/standardized_masks/g1020/image_492.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_493,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_493.png,data/processed/standardized_masks/g1020/image_493.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_494,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_494.png,data/processed/standardized_masks/g1020/image_494.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_496,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_496.png,data/processed/standardized_masks/g1020/image_496.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_498,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_498.png,data/processed/standardized_masks/g1020/image_498.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_5,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_5.png,data/processed/standardized_masks/g1020/image_5.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_50,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_50.png,data/processed/standardized_masks/g1020/image_50.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_505,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_505.png,data/processed/standardized_masks/g1020/image_505.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_512,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_512.png,data/processed/standardized_masks/g1020/image_512.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_513,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_513.png,data/processed/standardized_masks/g1020/image_513.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_518,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_518.png,data/processed/standardized_masks/g1020/image_518.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_519,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_519.png,data/processed/standardized_masks/g1020/image_519.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_526,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_526.png,data/processed/standardized_masks/g1020/image_526.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_527,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_527.png,data/processed/standardized_masks/g1020/image_527.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_53,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_53.png,data/processed/standardized_masks/g1020/image_53.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_532,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_532.png,data/processed/standardized_masks/g1020/image_532.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_533,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_533.png,data/processed/standardized_masks/g1020/image_533.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_534,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_534.png,data/processed/standardized_masks/g1020/image_534.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_535,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_535.png,data/processed/standardized_masks/g1020/image_535.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_536,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_536.png,data/processed/standardized_masks/g1020/image_536.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_537,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_537.png,data/processed/standardized_masks/g1020/image_537.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_54,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_54.png,data/processed/standardized_masks/g1020/image_54.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_542,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_542.png,data/processed/standardized_masks/g1020/image_542.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_543,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_543.png,data/processed/standardized_masks/g1020/image_543.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_545,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_545.png,data/processed/standardized_masks/g1020/image_545.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_55,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_55.png,data/processed/standardized_masks/g1020/image_55.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_550,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_550.png,data/processed/standardized_masks/g1020/image_550.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_551,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_551.png,data/processed/standardized_masks/g1020/image_551.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_56,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_56.png,data/processed/standardized_masks/g1020/image_56.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_560,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_560.png,data/processed/standardized_masks/g1020/image_560.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_561,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_561.png,data/processed/standardized_masks/g1020/image_561.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_562,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_562.png,data/processed/standardized_masks/g1020/image_562.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_563,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_563.png,data/processed/standardized_masks/g1020/image_563.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_566,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_566.png,data/processed/standardized_masks/g1020/image_566.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_567,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_567.png,data/processed/standardized_masks/g1020/image_567.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_570,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_570.png,data/processed/standardized_masks/g1020/image_570.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_571,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_571.png,data/processed/standardized_masks/g1020/image_571.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_580,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_580.png,data/processed/standardized_masks/g1020/image_580.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_581,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_581.png,data/processed/standardized_masks/g1020/image_581.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_583,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_583.png,data/processed/standardized_masks/g1020/image_583.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_584,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_584.png,data/processed/standardized_masks/g1020/image_584.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_585,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_585.png,data/processed/standardized_masks/g1020/image_585.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_595,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_595.png,data/processed/standardized_masks/g1020/image_595.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_596,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_596.png,data/processed/standardized_masks/g1020/image_596.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_597,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_597.png,data/processed/standardized_masks/g1020/image_597.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_598,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_598.png,data/processed/standardized_masks/g1020/image_598.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_599,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_599.png,data/processed/standardized_masks/g1020/image_599.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_6,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_6.png,data/processed/standardized_masks/g1020/image_6.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_600,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_600.png,data/processed/standardized_masks/g1020/image_600.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_601,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_601.png,data/processed/standardized_masks/g1020/image_601.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_602,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_602.png,data/processed/standardized_masks/g1020/image_602.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_607,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_607.png,data/processed/standardized_masks/g1020/image_607.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_608,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_608.png,data/processed/standardized_masks/g1020/image_608.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_609,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_609.png,data/processed/standardized_masks/g1020/image_609.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_610,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_610.png,data/processed/standardized_masks/g1020/image_610.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_613,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_613.png,data/processed/standardized_masks/g1020/image_613.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_614,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_614.png,data/processed/standardized_masks/g1020/image_614.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_626,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_626.png,data/processed/standardized_masks/g1020/image_626.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_627,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_627.png,data/processed/standardized_masks/g1020/image_627.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_628,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_628.png,data/processed/standardized_masks/g1020/image_628.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_63,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_63.png,data/processed/standardized_masks/g1020/image_63.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_630,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_630.png,data/processed/standardized_masks/g1020/image_630.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_631,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_631.png,data/processed/standardized_masks/g1020/image_631.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_64,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_64.png,data/processed/standardized_masks/g1020/image_64.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_642,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_642.png,data/processed/standardized_masks/g1020/image_642.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_643,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_643.png,data/processed/standardized_masks/g1020/image_643.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_646,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_646.png,data/processed/standardized_masks/g1020/image_646.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_647,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_647.png,data/processed/standardized_masks/g1020/image_647.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_65,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_65.png,data/processed/standardized_masks/g1020/image_65.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_654,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_654.png,data/processed/standardized_masks/g1020/image_654.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_655,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_655.png,data/processed/standardized_masks/g1020/image_655.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_657,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_657.png,data/processed/standardized_masks/g1020/image_657.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_658,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_658.png,data/processed/standardized_masks/g1020/image_658.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_659,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_659.png,data/processed/standardized_masks/g1020/image_659.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_66,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_66.png,data/processed/standardized_masks/g1020/image_66.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_698,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_698.png,data/processed/standardized_masks/g1020/image_698.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_699,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_699.png,data/processed/standardized_masks/g1020/image_699.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_700,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_700.png,data/processed/standardized_masks/g1020/image_700.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_703,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_703.png,data/processed/standardized_masks/g1020/image_703.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_704,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_704.png,data/processed/standardized_masks/g1020/image_704.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_708,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_708.png,data/processed/standardized_masks/g1020/image_708.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_709,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_709.png,data/processed/standardized_masks/g1020/image_709.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_726,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_726.png,data/processed/standardized_masks/g1020/image_726.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_727,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_727.png,data/processed/standardized_masks/g1020/image_727.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_745,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_745.png,data/processed/standardized_masks/g1020/image_745.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_746,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_746.png,data/processed/standardized_masks/g1020/image_746.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_747,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_747.png,data/processed/standardized_masks/g1020/image_747.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_748,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_748.png,data/processed/standardized_masks/g1020/image_748.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_756,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_756.png,data/processed/standardized_masks/g1020/image_756.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_757,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_757.png,data/processed/standardized_masks/g1020/image_757.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_764,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_764.png,data/processed/standardized_masks/g1020/image_764.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_765,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_765.png,data/processed/standardized_masks/g1020/image_765.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_768,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_768.png,data/processed/standardized_masks/g1020/image_768.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_769,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_769.png,data/processed/standardized_masks/g1020/image_769.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_77,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_77.png,data/processed/standardized_masks/g1020/image_77.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_772,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_772.png,data/processed/standardized_masks/g1020/image_772.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_773,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_773.png,data/processed/standardized_masks/g1020/image_773.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_774,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_774.png,data/processed/standardized_masks/g1020/image_774.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_775,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_775.png,data/processed/standardized_masks/g1020/image_775.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_776,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_776.png,data/processed/standardized_masks/g1020/image_776.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_777,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_777.png,data/processed/standardized_masks/g1020/image_777.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_778,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_778.png,data/processed/standardized_masks/g1020/image_778.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_779,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_779.png,data/processed/standardized_masks/g1020/image_779.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_78,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_78.png,data/processed/standardized_masks/g1020/image_78.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_780,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_780.png,data/processed/standardized_masks/g1020/image_780.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_781,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_781.png,data/processed/standardized_masks/g1020/image_781.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_791,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_791.png,data/processed/standardized_masks/g1020/image_791.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_805,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_805.png,data/processed/standardized_masks/g1020/image_805.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_806,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_806.png,data/processed/standardized_masks/g1020/image_806.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_807,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_807.png,data/processed/standardized_masks/g1020/image_807.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_808,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_808.png,data/processed/standardized_masks/g1020/image_808.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_815,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_815.png,data/processed/standardized_masks/g1020/image_815.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_816,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_816.png,data/processed/standardized_masks/g1020/image_816.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_819,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_819.png,data/processed/standardized_masks/g1020/image_819.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_820,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_820.png,data/processed/standardized_masks/g1020/image_820.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_821,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_821.png,data/processed/standardized_masks/g1020/image_821.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_840,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_840.png,data/processed/standardized_masks/g1020/image_840.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_841,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_841.png,data/processed/standardized_masks/g1020/image_841.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_856,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_856.png,data/processed/standardized_masks/g1020/image_856.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_857,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_857.png,data/processed/standardized_masks/g1020/image_857.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_860,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_860.png,data/processed/standardized_masks/g1020/image_860.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_861,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_861.png,data/processed/standardized_masks/g1020/image_861.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_868,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_868.png,data/processed/standardized_masks/g1020/image_868.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_869,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_869.png,data/processed/standardized_masks/g1020/image_869.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_874,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_874.png,data/processed/standardized_masks/g1020/image_874.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_875,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_875.png,data/processed/standardized_masks/g1020/image_875.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_878,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_878.png,data/processed/standardized_masks/g1020/image_878.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_879,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_879.png,data/processed/standardized_masks/g1020/image_879.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_880,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_880.png,data/processed/standardized_masks/g1020/image_880.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_881,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_881.png,data/processed/standardized_masks/g1020/image_881.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_882,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_882.png,data/processed/standardized_masks/g1020/image_882.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_883,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_883.png,data/processed/standardized_masks/g1020/image_883.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_896,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_896.png,data/processed/standardized_masks/g1020/image_896.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_897,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_897.png,data/processed/standardized_masks/g1020/image_897.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_9,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_9.png,data/processed/standardized_masks/g1020/image_9.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_903,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_903.png,data/processed/standardized_masks/g1020/image_903.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_904,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_904.png,data/processed/standardized_masks/g1020/image_904.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_910,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_910.png,data/processed/standardized_masks/g1020/image_910.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_911,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_911.png,data/processed/standardized_masks/g1020/image_911.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_912,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_912.png,data/processed/standardized_masks/g1020/image_912.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_915,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_915.png,data/processed/standardized_masks/g1020/image_915.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_916,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_916.png,data/processed/standardized_masks/g1020/image_916.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_924,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_924.png,data/processed/standardized_masks/g1020/image_924.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_930,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_930.png,data/processed/standardized_masks/g1020/image_930.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_931,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_931.png,data/processed/standardized_masks/g1020/image_931.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_936,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_936.png,data/processed/standardized_masks/g1020/image_936.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_940,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_940.png,data/processed/standardized_masks/g1020/image_940.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_941,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_941.png,data/processed/standardized_masks/g1020/image_941.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_942,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_942.png,data/processed/standardized_masks/g1020/image_942.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_943,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_943.png,data/processed/standardized_masks/g1020/image_943.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_944,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_944.png,data/processed/standardized_masks/g1020/image_944.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_945,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_945.png,data/processed/standardized_masks/g1020/image_945.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_952,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_952.png,data/processed/standardized_masks/g1020/image_952.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_953,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_953.png,data/processed/standardized_masks/g1020/image_953.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_954,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_954.png,data/processed/standardized_masks/g1020/image_954.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_955,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_955.png,data/processed/standardized_masks/g1020/image_955.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_956,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_956.png,data/processed/standardized_masks/g1020/image_956.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_957,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_957.png,data/processed/standardized_masks/g1020/image_957.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_958,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_958.png,data/processed/standardized_masks/g1020/image_958.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_959,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_959.png,data/processed/standardized_masks/g1020/image_959.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_964,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_964.png,data/processed/standardized_masks/g1020/image_964.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_965,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_965.png,data/processed/standardized_masks/g1020/image_965.png,"[0, 1]","[0, 1]",already_0_1_2
+G1020,image_980,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_980.png,data/processed/standardized_masks/g1020/image_980.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2
+G1020,image_981,data/external/kaggle/glaucoma_fundus_imaging_bundle/G1020/Masks/image_981.png,data/processed/standardized_masks/g1020/image_981.png,"[0, 1, 2]","[0, 1, 2]",already_0_1_2

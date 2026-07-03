@@ -1,5 +1,5 @@
-file_id,image_size,mask_shape,sizes_match,mask_unique_values
-T0379,"(1634, 1634)","(1634, 1634)",True,"[0, 1, 2]"
-T0066,"(1634, 1634)","(1634, 1634)",True,"[0, 1, 2]"
-n0062,"(2124, 2056)","(2056, 2124)",True,"[0, 1, 2]"
-V0040,"(1634, 1634)","(1634, 1634)",True,"[0, 1, 2]"
+source_dataset,file_id,image_size,mask_shape,sizes_match,mask_unique_values
+REFUGE,T0379,"(1634, 1634)","(1634, 1634)",True,"[0, 1, 2]"
+REFUGE,T0066,"(1634, 1634)","(1634, 1634)",True,"[0, 1, 2]"
+REFUGE,n0062,"(2124, 2056)","(2056, 2124)",True,"[0, 1, 2]"
+REFUGE,V0040,"(1634, 1634)","(1634, 1634)",True,"[0, 1, 2]"

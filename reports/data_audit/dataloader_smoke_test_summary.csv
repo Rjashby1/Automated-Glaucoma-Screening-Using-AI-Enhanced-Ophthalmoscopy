@@ -1,0 +1,4 @@
+split,dataset_length,batch_image_shape,batch_image_dtype,batch_mask_shape,batch_mask_dtype,batch_mask_unique_values
+train,1911,"(4, 3, 256, 256)",torch.float32,"(4, 256, 256)",torch.int64,"[0, 1, 2]"
+val,725,"(4, 3, 256, 256)",torch.float32,"(4, 256, 256)",torch.int64,"[0, 1, 2]"
+test,722,"(4, 3, 256, 256)",torch.float32,"(4, 256, 256)",torch.int64,"[0, 1, 2]"
