@@ -1,4 +1,5 @@
-dataset_key,source_dataset,split,n
-glaucoma_fundus_imaging_bundle,ORIGA,test,98
-glaucoma_fundus_imaging_bundle,ORIGA,train,455
-glaucoma_fundus_imaging_bundle,ORIGA,val,97
+metric,value
+working_manifest_rows,650
+unique_source_datasets,1
+unique_splits,3
+working_manifest_path,data/processed/manifests/working_existing_segmentation_manifest_with_splits.csv

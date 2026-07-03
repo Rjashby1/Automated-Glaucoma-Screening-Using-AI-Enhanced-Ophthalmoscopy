@@ -1,0 +1,11 @@
+folder,extension,file_class,n_files
+ORIGA/Images,.jpg,image,650
+ORIGA/Images_Cropped,.jpg,image,650
+ORIGA/Images_Square,.jpg,image,651
+ORIGA/Masks,.png,possible_mask_image,650
+ORIGA/Masks_Cropped,.png,possible_mask_image,650
+ORIGA/Masks_Square,.png,possible_mask_image,651
+ORIGA/OrigaList.csv,.csv,possible_annotation,1
+ORIGA/Semi-automatic-annotations,.mat,possible_annotation,650
+ORIGA/Semi-automatic-annotations,.tif,possible_mask_image,2
+ORIGA/origa_info.csv,.csv,possible_annotation,1
