@@ -1,0 +1,2 @@
+dataset_label,source,used_for,mask_source,model_input_source,rows,unique_patient_groups,eye_od_rows,eye_os_rows,eye_unknown_rows,contains_raw_clinical_paths,contains_patient_hashes,private_files_committed,image_size_for_model
+clinical_psd_derived_mask_ready,annotated_clinical_psd_composites,quantitative_clinical_generalization,red_blue_annotation_overlay_extraction,annotation_inpainted_clinical_psd_composite,59,20,21,13,25,False,False,False,"(256, 256)"
