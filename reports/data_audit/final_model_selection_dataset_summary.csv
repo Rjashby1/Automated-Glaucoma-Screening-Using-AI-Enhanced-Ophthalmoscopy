@@ -1,0 +1,6 @@
+dataset_label,split,rows,image_size,is_virtual_synthetic,strategy_name,synthetic_copy_count,materializes_synthetic_files,used_for,base_rows,original_rows_exposed,synthetic_rows_exposed,total_rows_exposed,base_seed,include_original
+public_train_original,train,1911,"(256, 256)",False,none,0,False,training,,,,,,
+public_val_original,val,725,"(256, 256)",False,none,0,False,evaluation,,,,,,
+public_test_original,test,722,"(256, 256)",False,none,0,False,evaluation,,,,,,
+final_unetplusplus_resnet18_small_affine_virtual_synthetic_256px_5epoch_train_virtual,train,3822,"(256, 256)",True,small_affine,1,False,training,1911.0,1911.0,1911.0,3822.0,42.0,True
+final_unet_resnet18_vignette_virtual_synthetic_256px_5epoch_train_virtual,train,3822,"(256, 256)",True,vignette_illumination,1,False,training,1911.0,1911.0,1911.0,3822.0,42.0,True
