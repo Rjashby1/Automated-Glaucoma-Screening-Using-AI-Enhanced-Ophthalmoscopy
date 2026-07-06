@@ -13,7 +13,10 @@ from pathlib import Path
 import torch
 from torch.utils.data import DataLoader
 
-from glaucoma_segmentation.data.segmentation_dataset import GlaucomaSegmentationDataset
+from glaucoma_segmentation.data.segmentation_dataset import (
+    GlaucomaSegmentationDataset,
+    SampleTransform,
+)
 
 
 DEFAULT_MANIFEST_PATH = (
@@ -51,6 +54,7 @@ def make_segmentation_dataset(
     image_size: tuple[int, int] | None = None,
     validate_paths: bool = True,
     validate_masks: bool = True,
+    transform: SampleTransform | None = None,
 ) -> GlaucomaSegmentationDataset:
     """
     Create one segmentation dataset for a requested split.
@@ -63,6 +67,7 @@ def make_segmentation_dataset(
         image_size=image_size,
         validate_paths=validate_paths,
         validate_masks=validate_masks,
+        transform=transform,
     )
 
 
@@ -74,11 +79,23 @@ def make_segmentation_datasets(
     image_size: tuple[int, int] | None = None,
     validate_paths: bool = True,
     validate_masks: bool = True,
+    train_transform: SampleTransform | None = None,
+    val_transform: SampleTransform | None = None,
+    test_transform: SampleTransform | None = None,
 ) -> SegmentationDatasets:
     """
     Create train/validation/test segmentation datasets.
+
+    Split-specific transforms are optional. In typical training notebooks,
+    augmentation is applied only to the train split, while validation and test
+    splits remain deterministic.
     """
     datasets: dict[str, GlaucomaSegmentationDataset] = {}
+    transforms_by_split = {
+        "train": train_transform,
+        "val": val_transform,
+        "test": test_transform,
+    }
 
     for split in splits:
         datasets[split] = make_segmentation_dataset(
@@ -89,6 +106,7 @@ def make_segmentation_datasets(
             image_size=image_size,
             validate_paths=validate_paths,
             validate_masks=validate_masks,
+            transform=transforms_by_split.get(split),
         )
 
     return SegmentationDatasets(
@@ -135,11 +153,15 @@ def make_segmentation_dataloaders(
     validate_paths: bool = True,
     validate_masks: bool = True,
     pin_memory: bool | None = None,
+    train_transform: SampleTransform | None = None,
+    val_transform: SampleTransform | None = None,
+    test_transform: SampleTransform | None = None,
 ) -> SegmentationDataLoaders:
     """
     Create train/validation/test DataLoaders from a manifest.
 
     The train loader shuffles. Validation and test loaders do not.
+    Optional transforms can be supplied per split.
     """
     datasets = make_segmentation_datasets(
         manifest_path=manifest_path,
@@ -149,6 +171,9 @@ def make_segmentation_dataloaders(
         image_size=image_size,
         validate_paths=validate_paths,
         validate_masks=validate_masks,
+        train_transform=train_transform,
+        val_transform=val_transform,
+        test_transform=test_transform,
     )
 
     train_loader = None

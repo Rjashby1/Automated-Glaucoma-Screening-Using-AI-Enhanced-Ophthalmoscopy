@@ -1,0 +1,9 @@
+strategy_name,preset_name,augmentation_family,applies_to,mask_handling,description,included_in_independent_screen
+none,none,reference,reference only,mask unchanged,No online augmentation.,False
+horizontal_flip,horizontal_flip,spatial,image and mask,paired horizontal flip,Left/right flip invariance for local cup-disc anatomy.,True
+small_affine,small_affine,spatial,image and mask,paired affine transform with nearest-neighbor mask interpolation,"Mild rotation, translation, and scale variation.",True
+global_photometric,global_photometric,photometric,image only,mask unchanged,"Brightness, contrast, gamma, and mild saturation changes.",True
+defocus_blur,defocus_blur,image_quality,image only,mask unchanged,Mild blur to approximate imperfect focus.,True
+low_resolution,low_resolution,image_quality,image only,mask unchanged,Downsample and restore resolution to approximate lower-resolution capture.,True
+jpeg_compression,jpeg_compression,image_quality,image only,mask unchanged,JPEG compression artifacts to approximate screen/video compression.,True
+vignette_illumination,vignette_illumination,illumination,image only,mask unchanged,Mild uneven illumination / edge darkening.,True

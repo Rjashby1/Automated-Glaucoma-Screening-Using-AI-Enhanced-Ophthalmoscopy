@@ -1,0 +1,15 @@
+run_name,model,encoder,encoder_weights,augmentation_strategy,image_size,batch_size,epochs,learning_rate,weight_decay,num_workers,device,dataset_size_mode
+online_aug_unetplusplus_resnet18_horizontal_flip_256px_5epoch,unetplusplus,resnet18,,horizontal_flip,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unetplusplus_resnet18_small_affine_256px_5epoch,unetplusplus,resnet18,,small_affine,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unetplusplus_resnet18_global_photometric_256px_5epoch,unetplusplus,resnet18,,global_photometric,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unetplusplus_resnet18_defocus_blur_256px_5epoch,unetplusplus,resnet18,,defocus_blur,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unetplusplus_resnet18_low_resolution_256px_5epoch,unetplusplus,resnet18,,low_resolution,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unetplusplus_resnet18_jpeg_compression_256px_5epoch,unetplusplus,resnet18,,jpeg_compression,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unetplusplus_resnet18_vignette_illumination_256px_5epoch,unetplusplus,resnet18,,vignette_illumination,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unet_resnet18_horizontal_flip_256px_5epoch,unet,resnet18,,horizontal_flip,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unet_resnet18_small_affine_256px_5epoch,unet,resnet18,,small_affine,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unet_resnet18_global_photometric_256px_5epoch,unet,resnet18,,global_photometric,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unet_resnet18_defocus_blur_256px_5epoch,unet,resnet18,,defocus_blur,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unet_resnet18_low_resolution_256px_5epoch,unet,resnet18,,low_resolution,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unet_resnet18_jpeg_compression_256px_5epoch,unet,resnet18,,jpeg_compression,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged
+online_aug_unet_resnet18_vignette_illumination_256px_5epoch,unet,resnet18,,vignette_illumination,"(256, 256)",8,5,0.0001,0.0001,2,cuda,online augmentation only; original row count unchanged

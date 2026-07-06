@@ -20,6 +20,7 @@ Mask convention:
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
@@ -31,6 +32,9 @@ from torch.utils.data import Dataset
 
 
 EXPECTED_MASK_VALUES = {0, 1, 2}
+
+Sample = dict[str, Any]
+SampleTransform = Callable[[Sample], Sample]
 
 
 def find_project_root(start: Path | None = None) -> Path:
@@ -65,12 +69,14 @@ def load_rgb_image(path: str | Path, image_size: tuple[int, int] | None = None) 
     """
     Load an RGB image as a float tensor with shape (3, H, W), scaled to [0, 1].
     """
-    image = Image.open(path).convert("RGB")
+    with Image.open(path) as image:
+        image = image.convert("RGB")
 
-    if image_size is not None:
-        image = image.resize(image_size, resample=Image.BILINEAR)
+        if image_size is not None:
+            image = image.resize(image_size, resample=Image.BILINEAR)
 
-    array = np.asarray(image, dtype=np.float32) / 255.0
+        array = np.asarray(image, dtype=np.float32) / 255.0
+
     tensor = torch.from_numpy(array).permute(2, 0, 1)
 
     return tensor
@@ -89,12 +95,14 @@ def load_mask(
     1 = optic disc
     2 = optic cup
     """
-    mask = Image.open(path).convert("L")
+    with Image.open(path) as mask:
+        mask = mask.convert("L")
 
-    if image_size is not None:
-        mask = mask.resize(image_size, resample=Image.NEAREST)
+        if image_size is not None:
+            mask = mask.resize(image_size, resample=Image.NEAREST)
 
-    array = np.asarray(mask, dtype=np.int64)
+        array = np.asarray(mask, dtype=np.int64)
+
     unique_values = set(np.unique(array).tolist())
 
     if expected_values is not None and not unique_values.issubset(expected_values):
@@ -131,7 +139,14 @@ class GlaucomaSegmentationDataset(Dataset):
         If True, verify all image and mask paths exist during initialization.
 
     validate_masks:
-        If True, verify mask values are in {0, 1, 2} when each item is loaded.
+        If True, verify mask values are in {0, 1, 2} when each item is loaded
+        and after optional transforms are applied.
+
+    transform:
+        Optional callable that receives and returns a sample dictionary. For
+        segmentation augmentation, paired spatial transforms must apply the same
+        geometry to image and mask, while photometric transforms should only
+        modify the image.
     """
 
     required_columns = {"image_path", "mask_path"}
@@ -145,6 +160,7 @@ class GlaucomaSegmentationDataset(Dataset):
         image_size: tuple[int, int] | None = None,
         validate_paths: bool = True,
         validate_masks: bool = True,
+        transform: SampleTransform | None = None,
     ) -> None:
         self.project_root = find_project_root()
         self.manifest_path = resolve_project_path(manifest_path, self.project_root)
@@ -154,6 +170,7 @@ class GlaucomaSegmentationDataset(Dataset):
         self.image_size = image_size
         self.validate_paths = validate_paths
         self.validate_masks = validate_masks
+        self.transform = transform
 
         if not self.manifest_path.exists():
             raise FileNotFoundError(f"Manifest not found: {self.manifest_path}")
@@ -227,10 +244,45 @@ class GlaucomaSegmentationDataset(Dataset):
                 f"{preview}"
             )
 
+    def _validate_sample_tensors(self, sample: Sample, context: str) -> None:
+        if "image" not in sample or "mask" not in sample:
+            raise KeyError(f"{context} sample must contain 'image' and 'mask' keys.")
+
+        image = sample["image"]
+        mask = sample["mask"]
+
+        if not torch.is_tensor(image):
+            raise TypeError(f"{context} image must be a torch.Tensor, got {type(image)!r}.")
+        if not torch.is_tensor(mask):
+            raise TypeError(f"{context} mask must be a torch.Tensor, got {type(mask)!r}.")
+
+        if image.ndim != 3:
+            raise ValueError(
+                f"{context} image must have shape (C, H, W), got {tuple(image.shape)}."
+            )
+        if mask.ndim != 2:
+            raise ValueError(
+                f"{context} mask must have shape (H, W), got {tuple(mask.shape)}."
+            )
+        if image.shape[1:] != mask.shape:
+            raise ValueError(
+                f"{context} image and mask spatial dimensions do not match. "
+                f"image={tuple(image.shape)}, mask={tuple(mask.shape)}."
+            )
+
+        if self.validate_masks:
+            unique_values = set(torch.unique(mask.detach().cpu()).tolist())
+            unique_values = {int(value) for value in unique_values}
+            if not unique_values.issubset(EXPECTED_MASK_VALUES):
+                raise ValueError(
+                    f"{context} mask has unexpected values: {sorted(unique_values)}. "
+                    f"Expected values to be subset of {sorted(EXPECTED_MASK_VALUES)}."
+                )
+
     def __len__(self) -> int:
         return len(self.manifest)
 
-    def __getitem__(self, index: int) -> dict[str, Any]:
+    def __getitem__(self, index: int) -> Sample:
         row = self.manifest.iloc[index]
 
         image_path = resolve_project_path(row["image_path"], self.project_root)
@@ -243,13 +295,7 @@ class GlaucomaSegmentationDataset(Dataset):
             expected_values=EXPECTED_MASK_VALUES if self.validate_masks else None,
         )
 
-        if image.shape[1:] != mask.shape:
-            raise ValueError(
-                "Image and mask spatial dimensions do not match after loading. "
-                f"image={tuple(image.shape)}, mask={tuple(mask.shape)}"
-            )
-
-        sample = {
+        sample: Sample = {
             "image": image,
             "mask": mask,
             "image_path": str(image_path),
@@ -260,12 +306,34 @@ class GlaucomaSegmentationDataset(Dataset):
             if column in row:
                 sample[column] = row[column]
 
+        self._validate_sample_tensors(sample, context="Loaded")
+
+        if self.transform is not None:
+            transformed = self.transform(sample)
+
+            if transformed is None:
+                raise ValueError("Dataset transform returned None; expected a sample dictionary.")
+            if not isinstance(transformed, dict):
+                raise TypeError(
+                    "Dataset transform must return a sample dictionary, "
+                    f"got {type(transformed)!r}."
+                )
+
+            sample = transformed
+
+        sample["image"] = sample["image"].float()
+        sample["mask"] = sample["mask"].long()
+
+        self._validate_sample_tensors(sample, context="Transformed")
+
         return sample
 
 
 __all__ = [
     "EXPECTED_MASK_VALUES",
     "GlaucomaSegmentationDataset",
+    "Sample",
+    "SampleTransform",
     "find_project_root",
     "load_mask",
     "load_rgb_image",
