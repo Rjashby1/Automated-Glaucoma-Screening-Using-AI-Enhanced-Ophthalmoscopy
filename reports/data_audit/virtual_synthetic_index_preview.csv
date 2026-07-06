@@ -1,0 +1,7 @@
+virtual_index,source_index,is_synthetic,strategy_name,copy_index,synthetic_seed
+0,0,False,none,-1,-1
+1,1,False,none,-1,-1
+1910,1910,False,none,-1,-1
+1911,0,True,small_affine,0,1823203
+1912,1,True,small_affine,0,2823206
+3821,1910,True,small_affine,0,1911828933
