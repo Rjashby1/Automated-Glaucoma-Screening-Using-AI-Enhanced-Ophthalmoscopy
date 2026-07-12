@@ -1,0 +1,7 @@
+dataset_label,condition,train_fraction,rows,patient_groups,used_for,contains_raw_paths,contains_sample_hashes,contains_patient_hashes
+clinical_adaptation_validation,all_conditions,,4,3,clinical_validation_model_selection,False,False,False
+clinical_adaptation_test,all_conditions,,19,5,heldout_clinical_test_evaluation,False,False,False
+clinical_adaptation_train_pool,all_conditions,,36,12,clinical_adaptation_pool,False,False,False
+clinical_adaptation_train_25pct,clinical_adapt_25pct,0.25,16,3,clinical_domain_adaptation_training,False,False,False
+clinical_adaptation_train_50pct,clinical_adapt_50pct,0.5,22,6,clinical_domain_adaptation_training,False,False,False
+clinical_adaptation_train_75pct,clinical_adapt_75pct,0.75,27,9,clinical_domain_adaptation_training,False,False,False

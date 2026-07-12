@@ -1,0 +1,7 @@
+condition,train_fraction,split,rows,patient_groups,eye_od_rows,eye_os_rows,eye_unknown_rows,contains_raw_paths,contains_sample_hashes,contains_patient_hashes
+base_clinical_group_split,,test,19,5,5,6,8,False,False,False
+base_clinical_group_split,,validation,4,3,2,2,0,False,False,False
+base_clinical_group_split,,train_pool,36,12,14,5,17,False,False,False
+clinical_adapt_25pct,0.25,train,16,3,5,1,10,False,False,False
+clinical_adapt_50pct,0.5,train,22,6,7,5,10,False,False,False
+clinical_adapt_75pct,0.75,train,27,9,12,5,10,False,False,False

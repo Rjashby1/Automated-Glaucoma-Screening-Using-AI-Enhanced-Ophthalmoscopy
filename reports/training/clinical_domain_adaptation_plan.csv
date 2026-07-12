@@ -1,0 +1,5 @@
+condition,train_fraction,model_initialization,clinical_training_rows,clinical_training_groups,clinical_validation_rows,clinical_validation_groups,heldout_test_rows,heldout_test_groups,epochs,learning_rate,weight_decay,selection_metric,clinical_data_usage
+zero_shot_notebook_10_on_clinical_test,0.0,Notebook 10 best public-data checkpoint,0,0,4,3,19,5,0,,,none_zero_shot,heldout_test_evaluation_only
+clinical_adapt_25pct,0.25,Notebook 10 best public-data checkpoint,16,3,4,3,19,5,25,3e-05,0.0001,clinical_validation_mean_foreground_dice,clinical_domain_adaptation
+clinical_adapt_50pct,0.5,Notebook 10 best public-data checkpoint,22,6,4,3,19,5,25,3e-05,0.0001,clinical_validation_mean_foreground_dice,clinical_domain_adaptation
+clinical_adapt_75pct,0.75,Notebook 10 best public-data checkpoint,27,9,4,3,19,5,25,3e-05,0.0001,clinical_validation_mean_foreground_dice,clinical_domain_adaptation
