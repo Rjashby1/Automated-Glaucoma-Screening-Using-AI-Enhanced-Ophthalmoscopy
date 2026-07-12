@@ -55,7 +55,7 @@ class SyntheticExpansionSpec:
     copy_count: int = 1
 
     def __post_init__(self) -> None:
-        supported = set(supported_online_augmentation_presets())
+        supported = set(supported_online_augmentation_presets(include_combinations=True))
 
         if self.strategy_name not in supported:
             raise ValueError(
