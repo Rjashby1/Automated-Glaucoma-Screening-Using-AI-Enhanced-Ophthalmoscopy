@@ -8,6 +8,10 @@ Transforms operate on sample dictionaries with:
 Spatial transforms apply the same geometry to image and mask. Masks are always
 resampled with nearest-neighbor interpolation to preserve class labels.
 Photometric and image-quality transforms modify only the image.
+
+The original atomic presets are preserved for Notebooks 05–07. Combined presets
+are added for later public-data robustness experiments without changing the
+default list returned by supported_online_augmentation_presets().
 """
 
 from __future__ import annotations
@@ -22,20 +26,22 @@ from PIL import Image
 from torchvision.transforms import InterpolationMode
 from torchvision.transforms import functional as TF
 
-
 Sample = dict[str, Any]
 SampleTransform = Callable[[Sample], Sample]
 
 
 def _random_probability() -> float:
+    """Draw a random probability from the active torch RNG."""
     return float(torch.rand(1).item())
 
 
 def _random_uniform(low: float, high: float) -> float:
+    """Draw a random float from the active torch RNG."""
     return float(torch.empty(1).uniform_(low, high).item())
 
 
 def _random_int(low: int, high: int) -> int:
+    """Draw a random integer from the active torch RNG, inclusive."""
     if low == high:
         return int(low)
     return int(torch.randint(low, high + 1, size=(1,)).item())
@@ -46,10 +52,12 @@ def _copy_sample(
     image: torch.Tensor | None = None,
     mask: torch.Tensor | None = None,
 ) -> Sample:
+    """Return a shallow sample copy with optional image/mask replacement."""
     updated = dict(sample)
 
     if image is not None:
         updated["image"] = image
+
     if mask is not None:
         updated["mask"] = mask
 
@@ -57,6 +65,7 @@ def _copy_sample(
 
 
 def _require_image_and_mask(sample: Sample) -> tuple[torch.Tensor, torch.Tensor]:
+    """Validate and return the image/mask tensors from a sample dictionary."""
     if "image" not in sample or "mask" not in sample:
         raise KeyError("Augmentation sample must contain 'image' and 'mask' keys.")
 
@@ -72,6 +81,7 @@ def _require_image_and_mask(sample: Sample) -> tuple[torch.Tensor, torch.Tensor]
         raise ValueError(f"Sample image must have shape (C, H, W), got {tuple(image.shape)}.")
     if mask.ndim != 2:
         raise ValueError(f"Sample mask must have shape (H, W), got {tuple(mask.shape)}.")
+
     if image.shape[1:] != mask.shape:
         raise ValueError(
             "Sample image and mask must have matching spatial dimensions. "
@@ -83,9 +93,7 @@ def _require_image_and_mask(sample: Sample) -> tuple[torch.Tensor, torch.Tensor]
 
 @dataclass(frozen=True)
 class ComposeSampleTransforms:
-    """
-    Compose several sample-level transforms.
-    """
+    """Compose several sample-level transforms."""
 
     transforms: Sequence[SampleTransform]
 
@@ -100,9 +108,7 @@ class ComposeSampleTransforms:
 
 @dataclass(frozen=True)
 class ClampImageSample:
-    """
-    Clamp image intensities to a valid tensor image range.
-    """
+    """Clamp image intensities to a valid tensor image range."""
 
     min_value: float = 0.0
     max_value: float = 1.0
@@ -115,9 +121,7 @@ class ClampImageSample:
 
 @dataclass(frozen=True)
 class RandomHorizontalFlipSample:
-    """
-    Randomly flip image and mask horizontally.
-    """
+    """Randomly flip image and mask horizontally."""
 
     p: float = 0.5
 
@@ -185,7 +189,6 @@ class RandomSmallAffineSample:
             interpolation=InterpolationMode.NEAREST,
             fill=0.0,
         )
-
         mask = transformed_mask.squeeze(0).round().long()
 
         return _copy_sample(sample, image=image, mask=mask)
@@ -249,9 +252,7 @@ class RandomGlobalPhotometricSample:
 
 @dataclass(frozen=True)
 class RandomDefocusBlurSample:
-    """
-    Randomly apply mild Gaussian blur to approximate defocus.
-    """
+    """Randomly apply mild Gaussian blur to approximate defocus."""
 
     kernel_size: int = 5
     sigma_min: float = 0.3
@@ -294,7 +295,6 @@ class RandomLowResolutionSample:
 
         height, width = image.shape[-2:]
         scale = _random_uniform(self.scale_min, self.scale_max)
-
         degraded_height = max(16, int(round(height * scale)))
         degraded_width = max(16, int(round(width * scale)))
 
@@ -334,7 +334,6 @@ class RandomJPEGCompressionSample:
             return _copy_sample(sample, image=image, mask=mask)
 
         quality = _random_int(self.quality_min, self.quality_max)
-
         image_cpu = image.detach().cpu().clamp(0.0, 1.0)
         pil_image = TF.to_pil_image(image_cpu)
 
@@ -376,7 +375,6 @@ class RandomVignetteIlluminationSample:
 
         y = torch.linspace(-1.0, 1.0, steps=height, dtype=dtype, device=device)
         x = torch.linspace(-1.0, 1.0, steps=width, dtype=dtype, device=device)
-
         yy, xx = torch.meshgrid(y, x, indexing="ij")
 
         center_y = _random_uniform(-self.center_shift_fraction, self.center_shift_fraction)
@@ -394,7 +392,7 @@ class RandomVignetteIlluminationSample:
         return _copy_sample(sample, image=image, mask=mask)
 
 
-_STRATEGY_DESCRIPTIONS: dict[str, dict[str, object]] = {
+_ATOMIC_STRATEGY_DESCRIPTIONS: dict[str, dict[str, object]] = {
     "none": {
         "strategy_name": "none",
         "preset_name": "none",
@@ -462,43 +460,166 @@ _STRATEGY_DESCRIPTIONS: dict[str, dict[str, object]] = {
 }
 
 
-def supported_online_augmentation_presets() -> tuple[str, ...]:
-    """
-    Return supported online augmentation strategy names.
-    """
-    return tuple(_STRATEGY_DESCRIPTIONS)
+_COMBINED_STRATEGY_COMPONENTS: dict[str, tuple[str, ...]] = {
+    "combo_small_affine_photometric": (
+        "small_affine",
+        "global_photometric",
+    ),
+    "combo_small_affine_blur": (
+        "small_affine",
+        "defocus_blur",
+    ),
+    "combo_small_affine_vignette": (
+        "small_affine",
+        "vignette_illumination",
+    ),
+    "combo_affine_photometric_blur": (
+        "small_affine",
+        "global_photometric",
+        "defocus_blur",
+    ),
+    "combo_affine_vignette_blur": (
+        "small_affine",
+        "vignette_illumination",
+        "defocus_blur",
+    ),
+    "combo_full_robustness": (
+        "small_affine",
+        "global_photometric",
+        "defocus_blur",
+        "low_resolution",
+        "jpeg_compression",
+        "vignette_illumination",
+    ),
+}
 
 
-def describe_online_augmentation_presets() -> list[dict[str, object]]:
+_COMBINED_STRATEGY_DESCRIPTIONS: dict[str, dict[str, object]] = {
+    "combo_small_affine_photometric": {
+        "strategy_name": "combo_small_affine_photometric",
+        "preset_name": "combo_small_affine_photometric",
+        "augmentation_family": "combined_spatial_photometric",
+        "applies_to": "image and mask for spatial components; image only for photometric components",
+        "mask_handling": "paired affine transform for masks; mask unchanged for photometric components",
+        "description": "Mild affine variation followed by global brightness/contrast/gamma/color perturbation.",
+        "component_strategies": "small_affine;global_photometric",
+    },
+    "combo_small_affine_blur": {
+        "strategy_name": "combo_small_affine_blur",
+        "preset_name": "combo_small_affine_blur",
+        "augmentation_family": "combined_spatial_quality",
+        "applies_to": "image and mask for spatial components; image only for blur",
+        "mask_handling": "paired affine transform for masks; mask unchanged for blur",
+        "description": "Mild affine variation followed by defocus blur.",
+        "component_strategies": "small_affine;defocus_blur",
+    },
+    "combo_small_affine_vignette": {
+        "strategy_name": "combo_small_affine_vignette",
+        "preset_name": "combo_small_affine_vignette",
+        "augmentation_family": "combined_spatial_illumination",
+        "applies_to": "image and mask for spatial components; image only for illumination",
+        "mask_handling": "paired affine transform for masks; mask unchanged for vignette",
+        "description": "Mild affine variation followed by uneven illumination / edge darkening.",
+        "component_strategies": "small_affine;vignette_illumination",
+    },
+    "combo_affine_photometric_blur": {
+        "strategy_name": "combo_affine_photometric_blur",
+        "preset_name": "combo_affine_photometric_blur",
+        "augmentation_family": "combined_spatial_photometric_quality",
+        "applies_to": "image and mask for spatial components; image only for photometric/blur components",
+        "mask_handling": "paired affine transform for masks; mask unchanged for image-quality components",
+        "description": "Mild affine variation, global photometric perturbation, and defocus blur.",
+        "component_strategies": "small_affine;global_photometric;defocus_blur",
+    },
+    "combo_affine_vignette_blur": {
+        "strategy_name": "combo_affine_vignette_blur",
+        "preset_name": "combo_affine_vignette_blur",
+        "augmentation_family": "combined_spatial_illumination_quality",
+        "applies_to": "image and mask for spatial components; image only for illumination/blur components",
+        "mask_handling": "paired affine transform for masks; mask unchanged for image-quality components",
+        "description": "Mild affine variation, uneven illumination, and defocus blur.",
+        "component_strategies": "small_affine;vignette_illumination;defocus_blur",
+    },
+    "combo_full_robustness": {
+        "strategy_name": "combo_full_robustness",
+        "preset_name": "combo_full_robustness",
+        "augmentation_family": "combined_spatial_photometric_quality_illumination",
+        "applies_to": "image and mask for spatial components; image only for quality/illumination components",
+        "mask_handling": "paired affine transform for masks; mask unchanged for image-only components",
+        "description": (
+            "Full public-data robustness recipe combining affine variation, photometric changes, "
+            "blur, low-resolution degradation, JPEG artifacts, and uneven illumination."
+        ),
+        "component_strategies": (
+            "small_affine;global_photometric;defocus_blur;"
+            "low_resolution;jpeg_compression;vignette_illumination"
+        ),
+    },
+}
+
+
+def _all_strategy_descriptions(include_combinations: bool = False) -> dict[str, dict[str, object]]:
+    """Return strategy descriptions, optionally including combined presets."""
+    descriptions = dict(_ATOMIC_STRATEGY_DESCRIPTIONS)
+
+    if include_combinations:
+        descriptions.update(_COMBINED_STRATEGY_DESCRIPTIONS)
+
+    return descriptions
+
+
+def supported_online_augmentation_presets(
+    include_combinations: bool = False,
+) -> tuple[str, ...]:
+    """
+    Return supported online augmentation preset names.
+
+    By default, only the original atomic presets are returned. This preserves
+    the behavior of earlier notebooks that screen all supported presets. Pass
+    include_combinations=True to include combined Notebook 09 robustness presets.
+    """
+    return tuple(_all_strategy_descriptions(include_combinations=include_combinations))
+
+
+def supported_combined_online_augmentation_presets() -> tuple[str, ...]:
+    """Return only the combined augmentation preset names."""
+    return tuple(_COMBINED_STRATEGY_DESCRIPTIONS)
+
+
+def describe_online_augmentation_presets(
+    include_combinations: bool = False,
+) -> list[dict[str, object]]:
     """
     Return human-readable descriptions for available augmentation strategies.
+
+    By default, only original atomic presets are described. Pass
+    include_combinations=True to include later combined robustness presets.
     """
-    return [dict(value) for value in _STRATEGY_DESCRIPTIONS.values()]
+    descriptions = _all_strategy_descriptions(include_combinations=include_combinations)
+    return [dict(value) for value in descriptions.values()]
 
 
-def build_online_augmentation_preset(preset_name: str | None) -> SampleTransform | None:
-    """
-    Build one atomic sample-level online augmentation strategy.
+def describe_combined_online_augmentation_presets() -> list[dict[str, object]]:
+    """Return human-readable descriptions for combined augmentation presets."""
+    return [dict(value) for value in _COMBINED_STRATEGY_DESCRIPTIONS.values()]
 
-    Parameters
-    ----------
-    preset_name:
-        One of:
-        - none
-        - horizontal_flip
-        - small_affine
-        - global_photometric
-        - defocus_blur
-        - low_resolution
-        - jpeg_compression
-        - vignette_illumination
 
-    Returns
-    -------
-    callable or None
-        Transform callable for use as a train_transform in the dataloader
-        helpers. The "none" preset returns None.
-    """
+def combined_online_augmentation_components(preset_name: str) -> tuple[str, ...]:
+    """Return the atomic component strategies for a combined preset."""
+    normalized_name = preset_name.strip().lower()
+
+    if normalized_name not in _COMBINED_STRATEGY_COMPONENTS:
+        supported = ", ".join(supported_combined_online_augmentation_presets())
+        raise ValueError(
+            f"Unknown combined online augmentation preset: {preset_name!r}. "
+            f"Supported combined presets: {supported}."
+        )
+
+    return _COMBINED_STRATEGY_COMPONENTS[normalized_name]
+
+
+def _build_atomic_online_augmentation_preset(preset_name: str | None) -> SampleTransform | None:
+    """Build one original atomic online augmentation strategy."""
     normalized_name = "none" if preset_name is None else preset_name.strip().lower()
 
     if normalized_name == "none":
@@ -558,10 +679,56 @@ def build_online_augmentation_preset(preset_name: str | None) -> SampleTransform
 
     supported = ", ".join(supported_online_augmentation_presets())
     raise ValueError(
-        f"Unknown online augmentation preset: {preset_name!r}. "
-        f"Supported presets: {supported}."
+        f"Unknown atomic online augmentation preset: {preset_name!r}. "
+        f"Supported atomic presets: {supported}."
     )
 
+
+def build_online_augmentation_preset(preset_name: str | None) -> SampleTransform | None:
+    """
+    Build one online augmentation preset.
+
+    Supported atomic presets:
+    - none
+    - horizontal_flip
+    - small_affine
+    - global_photometric
+    - defocus_blur
+    - low_resolution
+    - jpeg_compression
+    - vignette_illumination
+
+    Supported combined presets:
+    - combo_small_affine_photometric
+    - combo_small_affine_blur
+    - combo_small_affine_vignette
+    - combo_affine_photometric_blur
+    - combo_affine_vignette_blur
+    - combo_full_robustness
+
+    The "none" preset returns None.
+    """
+    normalized_name = "none" if preset_name is None else preset_name.strip().lower()
+
+    if normalized_name == "none":
+        return None
+
+    if normalized_name in _COMBINED_STRATEGY_COMPONENTS:
+        component_transforms = [
+            _build_atomic_online_augmentation_preset(component_name)
+            for component_name in _COMBINED_STRATEGY_COMPONENTS[normalized_name]
+        ]
+        transforms = [transform for transform in component_transforms if transform is not None]
+        return ComposeSampleTransforms(transforms)
+
+    try:
+        return _build_atomic_online_augmentation_preset(normalized_name)
+    except ValueError as exc:
+        supported = ", ".join(supported_online_augmentation_presets(include_combinations=True))
+        raise ValueError(
+            f"Unknown online augmentation preset: {preset_name!r}. "
+            f"Supported presets: {supported}."
+        ) from exc
 
 def build_online_augmentation_pipeline(
     strategy_names: Sequence[str],
@@ -569,13 +736,14 @@ def build_online_augmentation_pipeline(
     """
     Build a composed online augmentation pipeline from several strategies.
 
-    The "none" strategy is ignored inside composed pipelines.
+    The "none" strategy is ignored inside composed pipelines. Strategy names may
+    be atomic or combined, though Notebook 09 should usually prefer one combined
+    preset name to keep virtual synthetic row counts controlled.
     """
     transforms: list[SampleTransform] = []
 
     for strategy_name in strategy_names:
         transform = build_online_augmentation_preset(strategy_name)
-
         if transform is not None:
             transforms.append(transform)
 
@@ -599,6 +767,9 @@ __all__ = [
     "SampleTransform",
     "build_online_augmentation_pipeline",
     "build_online_augmentation_preset",
+    "combined_online_augmentation_components",
+    "describe_combined_online_augmentation_presets",
     "describe_online_augmentation_presets",
+    "supported_combined_online_augmentation_presets",
     "supported_online_augmentation_presets",
 ]

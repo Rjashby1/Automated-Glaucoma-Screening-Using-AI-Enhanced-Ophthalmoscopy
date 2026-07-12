@@ -1,6 +1,4 @@
-"""
-Augmentation utilities for glaucoma segmentation experiments.
-"""
+"""Augmentation utilities for glaucoma segmentation experiments."""
 
 from glaucoma_segmentation.augmentation.offline_synthetic import (
     SyntheticExpansionSpec,
@@ -22,9 +20,14 @@ from glaucoma_segmentation.augmentation.online_presets import (
     RandomLowResolutionSample,
     RandomSmallAffineSample,
     RandomVignetteIlluminationSample,
+    Sample,
+    SampleTransform,
     build_online_augmentation_pipeline,
     build_online_augmentation_preset,
+    combined_online_augmentation_components,
+    describe_combined_online_augmentation_presets,
     describe_online_augmentation_presets,
+    supported_combined_online_augmentation_presets,
     supported_online_augmentation_presets,
 )
 
@@ -38,6 +41,8 @@ __all__ = [
     "RandomLowResolutionSample",
     "RandomSmallAffineSample",
     "RandomVignetteIlluminationSample",
+    "Sample",
+    "SampleTransform",
     "SyntheticExpansionSpec",
     "VirtualSyntheticExpansionDataset",
     "VirtualSyntheticExpansionSummary",
@@ -45,9 +50,12 @@ __all__ = [
     "build_online_augmentation_pipeline",
     "build_online_augmentation_preset",
     "build_virtual_synthetic_expansion_dataset",
+    "combined_online_augmentation_components",
+    "describe_combined_online_augmentation_presets",
     "describe_online_augmentation_presets",
     "deterministic_synthetic_seed",
     "summarize_virtual_synthetic_expansion",
+    "supported_combined_online_augmentation_presets",
     "supported_online_augmentation_presets",
     "temporary_rng_seed",
 ]
