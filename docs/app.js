@@ -12,13 +12,49 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function prettyCondition(value) {
+  const text = String(value ?? "");
+  const mapping = {
+    "zero_shot_notebook_10_on_clinical_test": "N12 zero-shot",
+    "clinical_adapt_25pct": "N12 clinical-only 25%",
+    "clinical_adapt_50pct": "N12 clinical-only 50%",
+    "clinical_adapt_75pct": "N12 clinical-only 75%",
+    "zero_shot_notebook10_on_hybrid50_clinical_holdout": "N13 zero-shot",
+    "hybrid_public_plus_50pct_clinical_preaugmentation": "N13 hybrid public + clinical",
+  };
+  return mapping[text] || text.replaceAll("_", " ");
+}
+
+function prettyStrategy(value) {
+  const text = String(value ?? "");
+  const mapping = {
+    "clinical_only_fine_tuning": "Clinical-only fine-tuning",
+    "hybrid_public_clinical_preaugmentation": "Hybrid public + clinical",
+  };
+  return mapping[text] || text.replaceAll("_", " ");
+}
+
+function prettyScope(value) {
+  return String(value ?? "")
+    .replace("within_notebook_same_clinical_split", "Within-notebook same clinical split")
+    .replace("same_public_test_split", "Same public test split")
+    .replaceAll("_", " ");
+}
+
+function prettyStage(value) {
+  return String(value ?? "")
+    .replace("Notebook 07 selected public model", "N07 selected public")
+    .replace("Notebook 10 long public model", "N10 long public")
+    .replace("Notebook 13 hybrid public-clinical model", "N13 hybrid");
+}
+
 function showError(container, error) {
   container.classList.remove("loading");
   container.innerHTML = `<div class="error-box">Could not load this dashboard section.\n${escapeHtml(error.message || error)}</div>`;
 }
 
 async function fetchText(path) {
-  const response = await fetch(path, { cache: "no-store" });
+  const response = await fetch(`${path}?v=${Date.now()}`, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`${path}: HTTP ${response.status}`);
   }
@@ -160,7 +196,7 @@ function renderStory(sections) {
           <p>${escapeHtml(section.long_takeaway)}</p>
           <div class="story-meta">
             ${notebooks.map((nb) => `<span class="pill">Notebook ${escapeHtml(nb)}</span>`).join("")}
-            ${figures.map((fig) => `<span class="pill">${escapeHtml(fig)}</span>`).join("")}
+            ${figures.map((fig) => `<span class="pill">${escapeHtml(String(fig).replaceAll("_", " "))}</span>`).join("")}
           </div>
         </article>
       `;
@@ -204,7 +240,7 @@ function renderPublicPerformance(rows) {
         const width = Math.max(2, Math.min(100, (value / maxDice) * 100));
         return `
           <div class="bar-row">
-            <div class="bar-label">${escapeHtml(row.model_stage)}</div>
+            <div class="bar-label">${escapeHtml(prettyStage(row.model_stage))}</div>
             <div class="bar-track"><div class="bar-fill" style="--w:${width}%"></div></div>
             <div class="bar-value">${fmt(value)}</div>
           </div>
@@ -215,7 +251,7 @@ function renderPublicPerformance(rows) {
 
   renderTable(table, rows, [
     { key: "notebook", label: "Notebook" },
-    { key: "model_stage", label: "Model stage" },
+    { key: "model_stage", label: "Model stage", render: (row) => prettyStage(row.model_stage) },
     { key: "public_test_mean_foreground_dice", label: "Mean Dice", render: (row) => fmt(row.public_test_mean_foreground_dice) },
     { key: "public_test_cdr_mae", label: "CDR MAE", render: (row) => fmt(row.public_test_cdr_mae) },
     { key: "delta_public_mean_dice_vs_notebook07", label: "Δ Mean Dice vs N07", render: (row) => fmt(row.delta_public_mean_dice_vs_notebook07) },
@@ -235,10 +271,11 @@ function renderClinicalStrategy(rows) {
       ${rows.map((row) => {
         const value = number(row.patient_weighted_mean_foreground_dice) || 0;
         const width = Math.max(2, Math.min(100, (value / maxDice) * 100));
+        const fillClass = String(row.notebook) === "13" ? "bar-fill clinical" : "bar-fill";
         return `
           <div class="bar-row">
-            <div class="bar-label">N${escapeHtml(row.notebook)} — ${escapeHtml(row.condition)}</div>
-            <div class="bar-track"><div class="bar-fill" style="--w:${width}%"></div></div>
+            <div class="bar-label">${escapeHtml(prettyCondition(row.condition))}</div>
+            <div class="bar-track"><div class="${fillClass}" style="--w:${width}%"></div></div>
             <div class="bar-value">${fmt(value)}</div>
           </div>
         `;
@@ -248,12 +285,12 @@ function renderClinicalStrategy(rows) {
 
   renderTable(table, rows, [
     { key: "notebook", label: "Notebook" },
-    { key: "strategy_family", label: "Strategy family" },
-    { key: "condition", label: "Condition" },
+    { key: "strategy_family", label: "Strategy family", render: (row) => prettyStrategy(row.strategy_family) },
+    { key: "condition", label: "Condition", render: (row) => prettyCondition(row.condition) },
     { key: "patient_weighted_mean_foreground_dice", label: "Patient Dice", render: (row) => fmt(row.patient_weighted_mean_foreground_dice) },
     { key: "delta_vs_internal_zero_patient_weighted_mean_dice", label: "Δ vs internal zero-shot", render: (row) => fmt(row.delta_vs_internal_zero_patient_weighted_mean_dice) },
     { key: "patient_weighted_cdr_abs_error", label: "Patient CDR error", render: (row) => fmt(row.patient_weighted_cdr_abs_error) },
-    { key: "comparison_scope", label: "Comparison scope" },
+    { key: "comparison_scope", label: "Comparison scope", render: (row) => prettyScope(row.comparison_scope) },
   ]);
 }
 
@@ -307,15 +344,16 @@ const figures = [
 function renderFigures() {
   const grid = $("#figure-grid");
   grid.innerHTML = figures.map((figure) => {
-    const src = `${FIG}${figure.file}`;
+    const src = `${FIG}${figure.file}?v=${Date.now()}`;
+    const cleanSrc = `${FIG}${figure.file}`;
     return `
       <article class="figure-card ${figure.featured ? "featured" : ""}">
-        <img src="${src}" alt="${escapeHtml(figure.title)}" data-src="${src}" data-title="${escapeHtml(figure.title)}" data-caption="${escapeHtml(figure.caption)}">
+        <img src="${src}" alt="${escapeHtml(figure.title)}" data-src="${cleanSrc}" data-title="${escapeHtml(figure.title)}" data-caption="${escapeHtml(figure.caption)}">
         <h3>${escapeHtml(figure.title)}</h3>
         <p class="figure-caption">${escapeHtml(figure.caption)}</p>
         <div class="figure-actions">
-          <button class="button enlarge-button" type="button" data-src="${src}" data-title="${escapeHtml(figure.title)}" data-caption="${escapeHtml(figure.caption)}">View enlarged</button>
-          <a class="button secondary" href="${src}" target="_blank" rel="noopener">Open full-size PNG</a>
+          <button class="button enlarge-button" type="button" data-src="${cleanSrc}" data-title="${escapeHtml(figure.title)}" data-caption="${escapeHtml(figure.caption)}">View enlarged</button>
+          <a class="button secondary" href="${cleanSrc}" target="_blank" rel="noopener">Open full-size PNG</a>
         </div>
       </article>
     `;
@@ -330,7 +368,7 @@ function openFigure(src, title, caption) {
   const dialog = $("#figure-dialog");
   $("#dialog-title").textContent = title || "Figure";
   $("#dialog-caption").textContent = caption || "";
-  $("#dialog-image").src = src;
+  $("#dialog-image").src = `${src}?v=${Date.now()}`;
   $("#dialog-image").alt = title || "Figure";
   $("#dialog-open").href = src;
   if (typeof dialog.showModal === "function") {
@@ -358,8 +396,8 @@ function renderClaims(claims) {
       <div class="claim-evidence">
         <div class="evidence-item"><small>Evidence</small><div>${escapeHtml(claim.supporting_metric)}</div></div>
         <div class="evidence-item"><small>Value</small><div>${claim.value === null || claim.value === "" ? "—" : escapeHtml(fmt(claim.value))}</div></div>
-        <div class="evidence-item"><small>Strength</small><div>${escapeHtml(claim.interpretation_strength)}</div></div>
-        <div class="evidence-item"><small>Notebooks</small><div>${escapeHtml(claim.supporting_notebooks)}</div></div>
+        <div class="evidence-item"><small>Strength</small><div>${escapeHtml(String(claim.interpretation_strength).replaceAll("_", " "))}</div></div>
+        <div class="evidence-item"><small>Notebooks</small><div>${escapeHtml(String(claim.supporting_notebooks).replaceAll(";", ", "))}</div></div>
       </div>
       <p><strong>Caveat:</strong> ${escapeHtml(claim.caveat)}</p>
     </article>
