@@ -1,0 +1,12 @@
+source,destination,size_bytes
+reports/final/tables/model_development_registry.csv,docs/dashboard_data/model_development_registry.csv,3097
+reports/final/tables/public_model_performance_summary.csv,docs/dashboard_data/public_model_performance_summary.csv,849
+reports/final/tables/clinical_transfer_summary.csv,docs/dashboard_data/clinical_transfer_summary.csv,665
+reports/final/tables/clinical_strategy_comparison_summary.csv,docs/dashboard_data/clinical_strategy_comparison_summary.csv,1778
+reports/final/tables/public_clinical_tradeoff_summary.csv,docs/dashboard_data/public_clinical_tradeoff_summary.csv,1021
+reports/final/tables/final_claims_evidence_matrix.csv,docs/dashboard_data/final_claims_evidence_matrix.csv,2411
+reports/final/tables/dashboard_data_dictionary.csv,docs/dashboard_data/dashboard_data_dictionary.csv,1223
+reports/final/tables/dashboard_assets_manifest.csv,docs/dashboard_data/dashboard_assets_manifest.csv,4091
+reports/final/dashboard_kpi_cards.json,docs/dashboard_data/dashboard_kpi_cards.json,1935
+reports/final/dashboard_story_sections.json,docs/dashboard_data/dashboard_story_sections.json,4643
+reports/final/final_claims_evidence_matrix.json,docs/dashboard_data/final_claims_evidence_matrix.json,3823

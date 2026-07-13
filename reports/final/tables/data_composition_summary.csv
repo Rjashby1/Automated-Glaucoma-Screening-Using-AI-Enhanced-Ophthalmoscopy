@@ -1,0 +1,7 @@
+label,rows
+Public train,1911
+Public validation,725
+Public test,722
+Clinical mask-ready,59
+N13 clinical train,21
+N13 clinical holdout,38

@@ -1,0 +1,9 @@
+file,field,type,description,source_notebook,dashboard_usage,public_safe
+model_development_registry.csv,*,csv_or_json,Ordered model-development timeline and experiment registry.,14,timeline and storyboard navigation,True
+public_model_performance_summary.csv,*,csv_or_json,Public held-out test performance for the key final models.,14,public performance charts and KPI context,True
+clinical_transfer_summary.csv,*,csv_or_json,Pure clinical generalization comparison for public-only models.,14,clinical domain-shift section,True
+clinical_strategy_comparison_summary.csv,*,csv_or_json,Clinical-only adaptation and hybrid training comparison table.,14,clinical strategy comparison charts,True
+public_clinical_tradeoff_summary.csv,*,csv_or_json,Public versus clinical tradeoff table for key final model states.,14,public-to-clinical gap panel,True
+dashboard_kpi_cards.json,*,csv_or_json,Dashboard KPI card values and labels.,14,top-line dashboard cards,True
+dashboard_story_sections.json,*,csv_or_json,Dashboard storyboard sections and takeaways.,14,narrative dashboard text,True
+final_claims_evidence_matrix.csv,*,csv_or_json,"Final claims, supporting evidence, caveats, and dashboard sections.",14,claims/evidence section,True

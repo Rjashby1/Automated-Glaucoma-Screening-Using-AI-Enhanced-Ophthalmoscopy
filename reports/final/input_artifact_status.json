@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-07-12T23:59:08+00:00",
+  "artifact_count": 23,
+  "required_artifact_count": 18,
+  "missing_required_artifacts": [],
+  "missing_optional_artifacts": [
+    "reports/training/baseline_unet_resnet18_256px_5epoch_summary.csv",
+    "reports/training/online_augmentation_summary.csv",
+    "reports/training/offline_synthetic_expansion_summary.csv"
+  ]
+}

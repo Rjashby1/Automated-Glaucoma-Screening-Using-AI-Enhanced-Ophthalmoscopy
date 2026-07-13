@@ -1,0 +1,124 @@
+[
+  {
+    "section_id": "objective",
+    "title": "Project Objective",
+    "one_sentence_takeaway": "Build a reproducible optic disc/cup segmentation workflow for glaucoma-screening research.",
+    "long_takeaway": "The project organizes public fundus datasets, trains segmentation models, evaluates public held-out performance, and stress-tests transfer to PSD-derived clinical/head-mounted imagery.",
+    "primary_metric_ids": [],
+    "figure_ids": [
+      "pipeline_storyboard"
+    ],
+    "source_notebooks": [
+      "00",
+      "01",
+      "02"
+    ],
+    "dashboard_priority": 1
+  },
+  {
+    "section_id": "data_sources",
+    "title": "Data Sources and Privacy Boundary",
+    "one_sentence_takeaway": "Public data drive training while clinical artifacts remain aggregate and public-safe.",
+    "long_takeaway": "Clinical PSD-derived data are represented in public outputs only through aggregate summaries; private paths, patient hashes, and image-level clinical metrics remain ignored.",
+    "primary_metric_ids": [
+      "clinical_mask_ready_rows",
+      "clinical_patient_groups"
+    ],
+    "figure_ids": [
+      "data_composition"
+    ],
+    "source_notebooks": [
+      "02",
+      "08"
+    ],
+    "dashboard_priority": 2
+  },
+  {
+    "section_id": "public_performance",
+    "title": "Public Performance Gains",
+    "one_sentence_takeaway": "The public-data model-development pipeline improved and stabilized held-out public segmentation performance.",
+    "long_takeaway": "Notebook 10 improved public test mean Dice over the Notebook 07 selected model, and Notebook 13 preserved strong public test performance after adding clinical-domain signal.",
+    "primary_metric_ids": [
+      "best_public_test_mean_dice",
+      "n10_public_gain_vs_n07"
+    ],
+    "figure_ids": [
+      "public_performance_trajectory"
+    ],
+    "source_notebooks": [
+      "07",
+      "09",
+      "10",
+      "13"
+    ],
+    "dashboard_priority": 3
+  },
+  {
+    "section_id": "clinical_transfer",
+    "title": "Clinical Domain Shift",
+    "one_sentence_takeaway": "Public-only training did not fully transfer to clinical/head-mounted PSD-derived imagery.",
+    "long_takeaway": "Clinical generalization remained much weaker than public test performance, highlighting a domain shift between public fundus datasets and clinical/head-mounted imagery.",
+    "primary_metric_ids": [],
+    "figure_ids": [
+      "clinical_strategy_dice",
+      "clinical_strategy_cdr"
+    ],
+    "source_notebooks": [
+      "08",
+      "11"
+    ],
+    "dashboard_priority": 4
+  },
+  {
+    "section_id": "clinical_adaptation",
+    "title": "Clinical-Only Adaptation",
+    "one_sentence_takeaway": "Fine-tuning on tiny clinical-only subsets was unstable and did not reliably improve held-out patient-weighted metrics.",
+    "long_takeaway": "Notebook 12 tested controlled clinical fine-tuning fractions with patient-group holdout. The adapted models did not beat the internal zero-shot baseline by patient-weighted Dice.",
+    "primary_metric_ids": [],
+    "figure_ids": [
+      "clinical_strategy_dice",
+      "clinical_strategy_cdr"
+    ],
+    "source_notebooks": [
+      "12"
+    ],
+    "dashboard_priority": 5
+  },
+  {
+    "section_id": "hybrid_training",
+    "title": "Hybrid Public + Clinical Training",
+    "one_sentence_takeaway": "Adding clinical examples before augmentation improved held-out patient-weighted clinical Dice and CDR error.",
+    "long_takeaway": "Notebook 13 added 50% of clinical patient groups into the public training pool before virtual synthetic expansion. This hybrid approach improved patient-weighted clinical metrics on the held-out clinical half while preserving strong public test performance.",
+    "primary_metric_ids": [
+      "n13_patient_weighted_dice_delta",
+      "n13_patient_weighted_cdr_error_improvement"
+    ],
+    "figure_ids": [
+      "clinical_strategy_dice",
+      "clinical_strategy_cdr",
+      "evidence_matrix"
+    ],
+    "source_notebooks": [
+      "13"
+    ],
+    "dashboard_priority": 6
+  },
+  {
+    "section_id": "limitations",
+    "title": "Limitations and Next Steps",
+    "one_sentence_takeaway": "The workflow is research-grade and not clinically deployable.",
+    "long_takeaway": "The clinical set is small, labels are approximate PSD-derived masks, and image-level performance remains uneven. The next step is larger patient-group clinical annotation, stronger domain adaptation, and prospective validation.",
+    "primary_metric_ids": [],
+    "figure_ids": [
+      "evidence_matrix"
+    ],
+    "source_notebooks": [
+      "08",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "dashboard_priority": 7
+  }
+]

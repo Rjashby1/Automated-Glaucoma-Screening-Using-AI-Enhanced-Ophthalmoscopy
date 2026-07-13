@@ -1,0 +1,5 @@
+path,role
+docs/index.html,GitHub Pages starter dashboard
+docs/styles.css,dashboard styling
+docs/app.js,dashboard data loading and rendering
+docs/.nojekyll,GitHub Pages static-file compatibility marker

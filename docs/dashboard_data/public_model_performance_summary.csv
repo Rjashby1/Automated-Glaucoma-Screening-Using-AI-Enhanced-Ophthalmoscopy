@@ -1,0 +1,4 @@
+model_stage,notebook,training_regime,public_test_mean_foreground_dice,public_test_disc_dice,public_test_cup_dice,public_test_cdr_mae,comparison_scope,delta_public_mean_dice_vs_notebook07,delta_public_cdr_mae_vs_notebook07
+Notebook 07 selected public model,07,public train split only,0.817976,0.83995,0.796002,0.063602,same_public_test_split,0.0,0.0
+Notebook 10 long public model,10,public train split plus selected virtual synthetic add-back recipe,0.8421364225096368,0.8643466075922849,0.8199262374269887,0.06298489215029,same_public_test_split,0.024160422509636792,-0.0006171078497100024
+Notebook 13 hybrid public-clinical model,13,public train split plus 50% clinical patient groups before augmentation,0.8439296368467932,0.8709100008108138,0.8169492728827727,0.0632070527025289,same_public_test_split,0.025953636846793193,-0.0003949472974711099

@@ -1,0 +1,7 @@
+metric_id,label,value,display_value,context,source,priority
+best_public_test_mean_dice,Best held-out public mean Dice,0.84393,0.844,Highest public held-out mean foreground Dice across final public and hybrid models.,"Notebooks 07, 10, 13",1
+n10_public_gain_vs_n07,Long public-training gain,0.02416,+0.024,Notebook 10 public test mean Dice improvement over the Notebook 07 selected public model.,Notebooks 07 and 10,2
+clinical_mask_ready_rows,Mask-ready clinical PSD-derived samples,59.0,59,Clinical PSD-derived samples with usable approximate disc/cup masks.,Notebook 08,3
+clinical_patient_groups,Clinical patient/encounter groups,20.0,20,Patient/encounter groups represented in mask-ready clinical PSD-derived data.,Notebook 08,4
+n13_patient_weighted_dice_delta,Hybrid patient-weighted clinical Dice gain,0.065245,+0.065,Notebook 13 hybrid model improvement over Notebook 10 zero-shot baseline on the same held-out clinical half.,Notebook 13,5
+n13_patient_weighted_cdr_error_improvement,Hybrid patient-weighted CDR error improvement,0.122274,+0.122,Reduction in patient-weighted CDR absolute error for the Notebook 13 hybrid model relative to the internal zero-shot baseline.,Notebook 13,6

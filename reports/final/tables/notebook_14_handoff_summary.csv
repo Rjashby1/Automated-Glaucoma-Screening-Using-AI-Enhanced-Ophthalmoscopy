@@ -1,0 +1,2 @@
+notebook,created_utc,final_tables_dir,final_figures_dir,docs_dir,dashboard_data_dir,dashboard_assets_dir,kpi_count,story_section_count,claim_count,figure_count,github_pages_starter_created,next_step
+14_final_comparative_analysis_and_dashboard_assets,2026-07-12T23:59:08+00:00,reports/final/tables,reports/final/figures,docs,docs/dashboard_data,docs/dashboard_assets,6,7,7,7,True,"Audit, commit Notebook 14 outputs, then enable GitHub Pages from the docs directory."

@@ -1,0 +1,56 @@
+[
+  {
+    "metric_id": "best_public_test_mean_dice",
+    "label": "Best held-out public mean Dice",
+    "value": 0.84393,
+    "display_value": "0.844",
+    "context": "Highest public held-out mean foreground Dice across final public and hybrid models.",
+    "source": "Notebooks 07, 10, 13",
+    "priority": 1
+  },
+  {
+    "metric_id": "n10_public_gain_vs_n07",
+    "label": "Long public-training gain",
+    "value": 0.02416,
+    "display_value": "+0.024",
+    "context": "Notebook 10 public test mean Dice improvement over the Notebook 07 selected public model.",
+    "source": "Notebooks 07 and 10",
+    "priority": 2
+  },
+  {
+    "metric_id": "clinical_mask_ready_rows",
+    "label": "Mask-ready clinical PSD-derived samples",
+    "value": 59.0,
+    "display_value": "59",
+    "context": "Clinical PSD-derived samples with usable approximate disc/cup masks.",
+    "source": "Notebook 08",
+    "priority": 3
+  },
+  {
+    "metric_id": "clinical_patient_groups",
+    "label": "Clinical patient/encounter groups",
+    "value": 20.0,
+    "display_value": "20",
+    "context": "Patient/encounter groups represented in mask-ready clinical PSD-derived data.",
+    "source": "Notebook 08",
+    "priority": 4
+  },
+  {
+    "metric_id": "n13_patient_weighted_dice_delta",
+    "label": "Hybrid patient-weighted clinical Dice gain",
+    "value": 0.065245,
+    "display_value": "+0.065",
+    "context": "Notebook 13 hybrid model improvement over Notebook 10 zero-shot baseline on the same held-out clinical half.",
+    "source": "Notebook 13",
+    "priority": 5
+  },
+  {
+    "metric_id": "n13_patient_weighted_cdr_error_improvement",
+    "label": "Hybrid patient-weighted CDR error improvement",
+    "value": 0.122274,
+    "display_value": "+0.122",
+    "context": "Reduction in patient-weighted CDR absolute error for the Notebook 13 hybrid model relative to the internal zero-shot baseline.",
+    "source": "Notebook 13",
+    "priority": 6
+  }
+]
