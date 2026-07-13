@@ -1,192 +1,941 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI-Enhanced Ophthalmoscopy Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-Enhanced Ophthalmoscopy Dashboard</title>
+<style>
+:root {
+  --bg: #f3f6fa;
+  --panel: #fff;
+  --ink: #17212f;
+  --muted: #5b6778;
+  --line: #dbe4ef;
+  --navy: #232D4B;
+  --orange: #E57200;
+  --blue: #0073CF;
+  --blue-soft: #eef7ff;
+  --orange-soft: #fff2e8;
+  --shadow: 0 18px 48px rgba(35,45,75,.10);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); }
+a { color: var(--blue); }
+.hero { padding: 28px clamp(22px,7vw,120px) 76px; color: #fff; background: radial-gradient(circle at 80% 20%, rgba(229,114,0,.30), transparent 28rem), radial-gradient(circle at 15% 10%, rgba(0,115,207,.30), transparent 30rem), linear-gradient(135deg,#08111f,var(--navy)); }
+.nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 56px; }
+.nav a { color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,.25); padding: 8px 13px; border-radius: 999px; font-weight: 800; }
+.nav a:hover { background: var(--orange); border-color: var(--orange); }
+.hero-grid { display: grid; grid-template-columns: minmax(0,1.35fr) minmax(280px,.65fr); gap: 42px; align-items: end; }
+.eyebrow, .kicker { color: var(--orange); text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 950; }
+.hero .eyebrow { color: rgba(255,255,255,.74); }
+h1 { font-size: clamp(3.2rem,7vw,7rem); line-height: .94; letter-spacing: -.065em; margin: 0; }
+.subtitle { max-width: 980px; font-size: clamp(1.1rem,2vw,1.5rem); line-height: 1.55; color: rgba(255,255,255,.9); margin: 26px 0 0; }
+.thesis-card { background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.20); border-left: 6px solid var(--orange); border-radius: 22px; padding: 24px; line-height: 1.55; }
+main { padding: 34px clamp(18px,5vw,88px) 80px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 24px; padding: clamp(24px,3vw,40px); margin: 0 0 30px; box-shadow: var(--shadow); }
+.section-head { display: flex; justify-content: space-between; gap: 28px; align-items: end; margin-bottom: 24px; }
+h2 { font-size: clamp(1.9rem,3.6vw,3.4rem); line-height: 1.06; letter-spacing: -.045em; margin: .15rem 0 0; }
+h3 { margin: 0 0 .65rem; }
+.note, .muted { color: var(--muted); line-height: 1.48; }
+.lead { font-size: 1.15rem; line-height: 1.65; color: #334155; }
+.summary-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 30px; }
+.takeaways { display: grid; gap: 12px; margin-top: 22px; }
+.takeaway { border: 1px solid var(--line); background: linear-gradient(90deg,var(--blue-soft),#fff); border-radius: 15px; padding: 15px 17px; line-height: 1.5; }
+.takeaway:nth-child(even) { background: linear-gradient(90deg,var(--orange-soft),#fff); }
+.side-card { border: 1px solid var(--line); border-top: 5px solid var(--orange); border-radius: 18px; padding: 22px; background: #fff; }
+.button { display: inline-flex; align-items: center; justify-content: center; color: #fff; background: var(--navy); border-radius: 999px; padding: 10px 15px; text-decoration: none; font-weight: 900; border: 0; }
+.button.secondary { color: var(--navy); background: #e8eef7; }
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 16px; }
+.kpi-card { min-height: 190px; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 18px; padding: 20px; background: radial-gradient(circle at 92% 10%, rgba(229,114,0,.14), transparent 6rem), #fff; }
+.kpi-card:nth-child(odd) { background: radial-gradient(circle at 92% 10%, rgba(0,115,207,.14), transparent 6rem), #fff; }
+.kpi-label { font-weight: 950; font-size: 1.05rem; }
+.kpi-value { color: var(--navy); font-size: 3rem; line-height: 1; letter-spacing: -.06em; font-weight: 950; margin: 16px 0 10px; }
+.kpi-card p { color: var(--muted); line-height: 1.45; flex: 1; }
+.chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; text-decoration: none; border-radius: 999px; padding: 5px 9px; font-size: .78rem; font-weight: 900; background: #eef2ff; color: var(--navy); border: 1px solid #dfe6ff; }
+.chip:hover { background: var(--orange-soft); }
+.method-group { margin-top: 28px; }
+.method-group > h3 { color: var(--navy); font-size: 1.35rem; }
+.method-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 14px; }
+.method-step { border: 1px solid var(--line); border-top: 5px solid var(--blue); border-radius: 16px; padding: 16px; background: #fff; }
+.method-step.orange { border-top-color: var(--orange); }
+.method-step.navy { border-top-color: var(--navy); }
+.method-step p { color: var(--muted); line-height: 1.45; }
+.interpretation-box, .clinical-guide > div { border: 1px solid var(--line); border-left: 5px solid var(--orange); background: #fffaf5; border-radius: 15px; padding: 15px; line-height: 1.5; }
+.clinical-guide { display: grid; grid-template-columns: repeat(auto-fit,minmax(245px,1fr)); gap: 14px; margin-bottom: 22px; }
+.clinical-guide > div:first-child { border-left-color: var(--blue); background: #f7fbff; }
+.metric-block { display: grid; gap: 10px; margin: 20px 0 24px; }
+.metric-row { display: grid; grid-template-columns: minmax(220px,360px) 1fr minmax(70px,auto); gap: 12px; align-items: center; }
+.metric-name { font-weight: 900; line-height: 1.2; }
+.bar { height: 28px; background: #e5e7eb; border-radius: 999px; overflow: hidden; }
+.fill { height: 100%; border-radius: 999px; }
+.fill.blue { background: linear-gradient(90deg,var(--blue),#60a5fa); }
+.fill.orange { background: linear-gradient(90deg,var(--orange),#ffb26b); }
+.metric-value { font-weight: 950; font-variant-numeric: tabular-nums; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 16px; margin-top: 18px; }
+table { width: 100%; border-collapse: collapse; font-size: .94rem; }
+th, td { padding: 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { color: var(--navy); background: #f8fafc; font-weight: 950; }
+.good { color: #047857; font-weight: 900; }
+.bad { color: #b91c1c; font-weight: 900; }
+.figure-stack { display: grid; gap: 22px; }
+.figure-card { display: grid; grid-template-columns: minmax(340px, 1.05fr) minmax(280px,.95fr); gap: 24px; border: 1px solid var(--line); border-radius: 20px; padding: 18px; background: #fff; }
+.figure-card img { width: 100%; max-height: 520px; object-fit: contain; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+.figure-card p { color: var(--muted); font-size: 1.03rem; line-height: 1.58; }
+.claims { display: grid; gap: 12px; }
+.claim-card { display: grid; grid-template-columns: 56px 1fr; gap: 14px; border: 1px solid var(--line); border-left: 6px solid var(--blue); border-radius: 18px; padding: 16px; background: #fff; }
+.claim-card:nth-child(5), .claim-card:nth-child(6) { border-left-color: var(--orange); }
+.claim-id { width: 44px; height: 44px; border-radius: 999px; display: grid; place-items: center; color: #fff; background: var(--navy); font-weight: 950; }
+.claim-card:nth-child(5) .claim-id, .claim-card:nth-child(6) .claim-id { background: var(--orange); }
+.claim-main h3 { font-size: 1.1rem; line-height: 1.25; }
+.claim-details { display: grid; grid-template-columns: repeat(4,minmax(160px,1fr)); gap: 8px; margin: 10px 0; }
+.claim-details div { background: #f8fafc; border-radius: 12px; padding: 10px; overflow-wrap: anywhere; }
+.claim-details span { display: block; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: .72rem; font-weight: 950; margin-bottom: 4px; }
+.claim-card p { color: var(--muted); margin: 8px 0 0; line-height: 1.48; }
+.data-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 14px; }
+.data-link { min-width: 0; text-decoration: none; color: var(--ink); border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 16px; padding: 16px; background: #fff; }
+.data-link:nth-child(even) { border-top-color: var(--orange); }
+.data-link strong, .data-link span { display: block; overflow-wrap: anywhere; word-break: break-word; }
+.data-link span { color: var(--muted); margin-top: 5px; }
+.floating-guide { position: fixed; right: 22px; bottom: 22px; z-index: 99; width: min(360px,calc(100vw - 44px)); }
+.floating-guide details { border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: rgba(255,255,255,.97); box-shadow: 0 18px 50px rgba(35,45,75,.20); }
+.floating-guide summary { cursor: pointer; padding: 14px 16px; color: #fff; background: linear-gradient(90deg,var(--navy),var(--blue)); font-weight: 950; }
+.floating-guide-body { max-height: 58vh; overflow-y: auto; padding: 10px; display: grid; gap: 8px; }
+.floating-guide-body a { display: grid; grid-template-columns: 95px 1fr; gap: 8px; text-decoration: none; color: var(--ink); border: 1px solid var(--line); border-left: 4px solid var(--blue); border-radius: 12px; padding: 9px; background: #fff; }
+.floating-guide-body a:nth-child(n+9) { border-left-color: var(--orange); }
+.floating-guide-body span { color: var(--muted); font-size: .82rem; }
+footer { padding: 28px clamp(18px,5vw,88px) 48px; color: var(--muted); }
+@media (max-width: 900px) {
+  .hero-grid, .summary-grid, .figure-card { grid-template-columns: 1fr; }
+  .section-head { display: block; }
+  .metric-row { grid-template-columns: 1fr; }
+  .claim-card { grid-template-columns: 1fr; }
+  .claim-details { grid-template-columns: 1fr; }
+}
+</style>
 </head>
 <body>
-  <header class="hero" id="top">
-    <nav class="topnav" aria-label="Dashboard navigation">
-      <a href="#summary">Summary</a>
-      <a href="#metrics">Metrics</a>
-      <a href="#story">Story</a>
-      <a href="#performance">Performance</a>
-      <a href="#clinical">Clinical</a>
-      <a href="#figures">Figures</a>
-      <a href="#claims">Evidence</a>
-      <a href="#data">Data</a>
-    </nav>
+<header class="hero" id="top">
+  <nav class="nav"><a href="#summary">Summary</a><a href="#metrics">Metrics</a><a href="#method">Method</a><a href="#public">Public</a><a href="#clinical">Clinical</a><a href="#figures">Evidence visuals</a><a href="#claims">Claims</a><a href="#data">Data</a></nav>
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">UVA MSDS Capstone</p>
+      <h1>AI-Enhanced Ophthalmoscopy</h1>
+      <p class="subtitle">Segmentation model development, clinical-transfer analysis, and public-safe evidence storyboard.</p>
+    </div>
+    <aside class="thesis-card">
+      <p class="eyebrow">Final project thesis</p>
+      <p>Public segmentation performance became strong, but clinical/head-mounted transfer remained the central challenge. Hybrid public + clinical training produced the strongest patient-weighted clinical improvement while preserving public performance.</p>
+    </aside>
+  </div>
+</header>
 
-    <div class="hero-grid">
-      <div>
-        <p class="eyebrow">UVA MSDS Capstone</p>
-        <h1>AI-Enhanced Ophthalmoscopy</h1>
-        <p class="subtitle">Segmentation model development, clinical-transfer analysis, and public-safe dashboard evidence base.</p>
-      </div>
-      <div class="hero-card">
-        <p class="hero-card-label">Final project thesis</p>
-        <p>
-          Public segmentation performance became strong, but clinical/head-mounted transfer remained the central challenge.
-          Hybrid public + clinical training produced the strongest patient-weighted clinical improvement while preserving public performance.
-        </p>
+<main>
+<section class="panel" id="summary">
+  <div class="summary-grid">
+    <div>
+      <p class="kicker">Executive summary</p>
+      <h2>What the project shows</h2>
+      <p class="lead">This capstone built a reproducible optic disc/cup segmentation pipeline from public fundus datasets, tested model-selection and augmentation strategies, evaluated clinical transfer, and compared clinical-only adaptation with hybrid public-clinical training.</p>
+      <div class="takeaways">
+        <div class="takeaway"><strong>Public performance improved.</strong> <span>Long public training raised held-out public mean Dice over the selected public finalist model.</span></div>
+        <div class="takeaway"><strong>Clinical transfer remained hard.</strong> <span>Public-only models did not fully generalize to PSD-derived clinical/head-mounted imagery.</span></div>
+        <div class="takeaway"><strong>Clinical-only fine-tuning was unstable.</strong> <span>Tiny clinical-only subsets did not reliably improve held-out patient-weighted performance.</span></div>
+        <div class="takeaway"><strong>Hybrid training helped most.</strong> <span>Adding clinical examples before augmentation improved held-out patient-weighted clinical Dice and CDR error.</span></div>
       </div>
     </div>
-  </header>
+    <aside class="side-card">
+      <h3>Dashboard purpose</h3>
+      <p>This public-safe storyboard links final metrics, methods, claims, figures, and source assets. It is designed to be readable even without opening the codebase.</p>
+      <a class="button" href="dashboard_data/final_project_interpretation.md" target="_blank" rel="noopener">Open final interpretation</a>
+    </aside>
+  </div>
+</section>
 
-  <main>
-    <section class="panel executive" id="summary">
-      <div>
-        <p class="section-kicker">Executive summary</p>
-        <h2>What the project shows</h2>
-        <p class="lead">
-          This capstone built a reproducible optic disc/cup segmentation pipeline from public fundus datasets, tested model-selection and augmentation strategies,
-          evaluated clinical transfer, and then compared clinical-only adaptation with hybrid public-clinical training.
-        </p>
-        <div class="takeaway-list">
-          <div><strong>Public performance improved.</strong><span> Long public training raised held-out public mean Dice over the selected Notebook 07 model.</span></div>
-          <div><strong>Clinical transfer remained hard.</strong><span> Public-only models did not fully generalize to PSD-derived clinical/head-mounted imagery.</span></div>
-          <div><strong>Clinical-only fine-tuning was unstable.</strong><span> Tiny clinical-only subsets did not reliably improve held-out patient-weighted performance.</span></div>
-          <div><strong>Hybrid training helped most.</strong><span> Adding clinical examples before augmentation improved held-out patient-weighted clinical Dice and CDR error.</span></div>
+<section class="panel" id="metrics">
+  <div class="section-head">
+    <div><p class="kicker">Top-line results</p><h2>Key metrics</h2></div>
+    <p class="note">Metrics are final public-safe aggregate values generated by the final synthesis notebook.</p>
+  </div>
+  <div class="kpi-grid">
+        <article class="kpi-card">
+          <div class="kpi-label">Best held-out public mean Dice</div>
+          <div class="kpi-value">0.844</div>
+          <p>Highest public held-out mean foreground Dice across final public and hybrid models.</p>
+          <div class="chip-row"><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/10_long_training_selected_public_model.ipynb" target="_blank" rel="noopener" title="25-epoch public training run">Long public model</a><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener" title="Public plus clinical pre-augmentation training">Hybrid training</a></div>
+        </article>
+        
+
+        <article class="kpi-card">
+          <div class="kpi-label">Long public-training gain</div>
+          <div class="kpi-value">+0.024</div>
+          <p>Notebook 10 public test mean Dice improvement over the Notebook 07 selected public model.</p>
+          <div class="chip-row"></div>
+        </article>
+        
+
+        <article class="kpi-card">
+          <div class="kpi-label">Mask-ready clinical PSD-derived samples</div>
+          <div class="kpi-value">59</div>
+          <p>Clinical PSD-derived samples with usable approximate disc/cup masks.</p>
+          <div class="chip-row"></div>
+        </article>
+        
+
+        <article class="kpi-card">
+          <div class="kpi-label">Clinical patient/encounter groups</div>
+          <div class="kpi-value">20</div>
+          <p>Patient/encounter groups represented in mask-ready clinical PSD-derived data.</p>
+          <div class="chip-row"></div>
+        </article>
+        
+
+        <article class="kpi-card">
+          <div class="kpi-label">Hybrid patient-weighted clinical Dice gain</div>
+          <div class="kpi-value">+0.065</div>
+          <p>Notebook 13 hybrid model improvement over Notebook 10 zero-shot baseline on the same held-out clinical half.</p>
+          <div class="chip-row"></div>
+        </article>
+        
+
+        <article class="kpi-card">
+          <div class="kpi-label">Hybrid patient-weighted CDR error improvement</div>
+          <div class="kpi-value">+0.122</div>
+          <p>Reduction in patient-weighted CDR absolute error for the Notebook 13 hybrid model relative to the internal zero-shot baseline.</p>
+          <div class="chip-row"></div>
+        </article>
         </div>
-      </div>
-      <aside class="summary-card">
-        <h3>Dashboard purpose</h3>
-        <p>
-          This site is a public-safe storyboard. It links final metrics, claims, figures, and data assets produced by Notebook 14.
-        </p>
-        <a class="button" href="dashboard_data/final_project_interpretation.md" target="_blank" rel="noopener">Open final interpretation</a>
-      </aside>
-    </section>
+</section>
 
-    <section class="panel" id="metrics">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Top-line results</p>
-          <h2>Key metrics</h2>
-        </div>
-        <p class="section-note">Loaded from <code>docs/dashboard_data/dashboard_kpi_cards.json</code>.</p>
-      </div>
-      <div id="kpi-grid" class="kpi-grid loading">Loading KPI cards…</div>
-    </section>
+<section class="panel" id="method">
+  <div class="section-head">
+    <div><p class="kicker">Method and provenance</p><h2>Pipeline and notebook map</h2></div>
+    <p class="note">Each stage links to the notebook that produced or analyzed that part of the project.</p>
+  </div>
+  
+        <section class="method-group">
+          <h3>Public-data foundation</h3>
+          <div class="method-grid">
+            <article class="method-step blue">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/00_project_setup.ipynb" target="_blank" rel="noopener" title="Environment, paths, and reproducibility setup">Setup</a></div>
+              <h3>Project setup</h3>
+              <p>Configured a reproducible environment and established repo paths.</p>
+            </article>
+            
+            <article class="method-step blue">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/01_data_audit_and_manifest.ipynb" target="_blank" rel="noopener" title="Dataset audit and initial manifest work">Data audit</a></div>
+              <h3>Dataset audit</h3>
+              <p>Audited available public data and began manifest construction.</p>
+            </article>
+            
+            <article class="method-step blue">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/02_split_strategy.ipynb" target="_blank" rel="noopener" title="Public manifest and train/validation/test split design">Split strategy</a></div>
+              <h3>Split strategy</h3>
+              <p>Created public manifests and train/validation/test splits across ORIGA, G1020, REFUGE, and PAPILA.</p>
+            </article>
+            
+            <article class="method-step blue">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/03_baseline_unet_reproduction.ipynb" target="_blank" rel="noopener" title="Baseline segmentation model reproduction">Baseline U-Net</a></div>
+              <h3>Baseline U-Net</h3>
+              <p>Established a baseline segmentation model and metrics pipeline.</p>
+            </article>
+            
+            <article class="method-step blue">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/04_model_comparison.ipynb" target="_blank" rel="noopener" title="U-Net, U-Net++, and DeepLabV3+ comparison">Architecture comparison</a></div>
+              <h3>Architecture comparison</h3>
+              <p>Compared U-Net, U-Net++, and DeepLabV3+ under the same public-data training budget.</p>
+            </article>
+            
+            <article class="method-step blue">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/05_online_augmentation_ablation.ipynb" target="_blank" rel="noopener" title="Online augmentation ablation">Online augmentation</a></div>
+              <h3>Online augmentation</h3>
+              <p>Tested online augmentation strength and stability.</p>
+            </article>
+            
+            <article class="method-step blue">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/06_offline_synthetic_expansion.ipynb" target="_blank" rel="noopener" title="Virtual synthetic add-back experiments">Synthetic expansion</a></div>
+              <h3>Virtual synthetic expansion</h3>
+              <p>Tested synthetic add-back strategies without materializing synthetic image files.</p>
+            </article>
+            
+            <article class="method-step blue">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/07_final_model_selection_and_test_evaluation.ipynb" target="_blank" rel="noopener" title="Selected public model and held-out public test evaluation">Public finalist</a></div>
+              <h3>Public finalist selection</h3>
+              <p>Evaluated the selected public-data model once on the held-out public test split.</p>
+            </article>
+            
+            <article class="method-step blue">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/09_combined_public_augmentation_expansion.ipynb" target="_blank" rel="noopener" title="Combined public augmentation recipe screen">Combined augmentation</a></div>
+              <h3>Combined augmentation screen</h3>
+              <p>Screened combined augmentation recipes using public validation only.</p>
+            </article>
+            
+            <article class="method-step blue">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/10_long_training_selected_public_model.ipynb" target="_blank" rel="noopener" title="25-epoch public training run">Long public model</a></div>
+              <h3>Long public training</h3>
+              <p>Trained the selected recipe for 25 epochs and improved held-out public performance.</p>
+            </article>
+            </div>
+        </section>
+        
 
-    <section class="panel" id="story">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Narrative</p>
-          <h2>Project storyboard</h2>
-        </div>
-        <p class="section-note">Each card is linked to source notebooks and supporting figures.</p>
-      </div>
-      <div id="story-sections" class="story-grid loading">Loading project storyboard…</div>
-    </section>
+        <section class="method-group">
+          <h3>Clinical transfer and adaptation</h3>
+          <div class="method-grid">
+            <article class="method-step orange">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/08_clinical_data_generalization.ipynb" target="_blank" rel="noopener" title="PSD-derived clinical mask extraction and first transfer test">Clinical set extraction</a></div>
+              <h3>Clinical PSD-derived data</h3>
+              <p>Converted annotated clinical PSD files into approximate disc/cup masks for exploratory transfer evaluation.</p>
+            </article>
+            
+            <article class="method-step orange">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/11_long_training_clinical_generalization.ipynb" target="_blank" rel="noopener" title="Long public model evaluated on clinical PSD-derived data">Clinical transfer</a></div>
+              <h3>Pure clinical transfer</h3>
+              <p>Evaluated the long public-trained model on PSD-derived clinical data without clinical training.</p>
+            </article>
+            
+            <article class="method-step orange">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/12_clinical_domain_adaptation_experiments.ipynb" target="_blank" rel="noopener" title="Clinical-only adaptation fractions">Clinical fine-tuning</a></div>
+              <h3>Clinical-only fine-tuning</h3>
+              <p>Tested small clinical fine-tuning fractions with patient/encounter-group holdout.</p>
+            </article>
+            
+            <article class="method-step orange">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener" title="Public plus clinical pre-augmentation training">Hybrid training</a></div>
+              <h3>Hybrid public + clinical training</h3>
+              <p>Added 50% of clinical patient groups before augmentation and evaluated the remaining held-out clinical half.</p>
+            </article>
+            </div>
+        </section>
+        
 
-    <section class="panel" id="performance">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Public test results</p>
-          <h2>Public model performance</h2>
-        </div>
-        <p class="section-note">Same public held-out test split for the final public and hybrid models.</p>
-      </div>
-      <div id="public-summary" class="chart-area loading">Loading public performance summary…</div>
-      <div id="public-table" class="table-wrap"></div>
-    </section>
+        <section class="method-group">
+          <h3>Final synthesis</h3>
+          <div class="method-grid">
+            <article class="method-step navy">
+              <div><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/14_final_comparative_analysis_and_dashboard_assets.ipynb" target="_blank" rel="noopener" title="Final comparative analysis and dashboard assets">Final synthesis</a></div>
+              <h3>Final analysis and dashboard</h3>
+              <p>Built public-safe tables, claims, figures, and this GitHub Pages storyboard.</p>
+            </article>
+            </div>
+        </section>
+        
+</section>
 
-    <section class="panel" id="clinical">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Clinical transfer and adaptation</p>
-          <h2>Clinical strategy comparison</h2>
-        </div>
-        <p class="section-note">
-          Notebook 12 and Notebook 13 comparisons are valid within their own held-out clinical splits; cross-notebook clinical comparisons are contextual.
-        </p>
-      </div>
-      <div id="clinical-summary" class="chart-area loading">Loading clinical strategy summary…</div>
-      <div id="clinical-table" class="table-wrap"></div>
-    </section>
-
-    <section class="panel" id="figures">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Visual evidence</p>
-          <h2>Final figures</h2>
-        </div>
-        <p class="section-note">Click any figure to enlarge, or open the full-size PNG in a new tab.</p>
-      </div>
-      <div id="figure-grid" class="figure-grid"></div>
-    </section>
-
-    <section class="panel" id="claims">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Evidence-backed conclusions</p>
-          <h2>Claims and evidence</h2>
-        </div>
-        <p class="section-note">Loaded from the final claims/evidence matrix.</p>
-      </div>
-      <div id="claims-table" class="claims-grid loading">Loading claims and evidence…</div>
-    </section>
-
-    <section class="panel" id="data">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Public-safe assets</p>
-          <h2>Dashboard data and source files</h2>
-        </div>
-        <p class="section-note">These files are committed public-safe aggregate outputs, not private clinical artifacts.</p>
-      </div>
-      <div id="data-links" class="link-grid"></div>
-    </section>
-  </main>
-
-  <dialog id="figure-dialog" class="figure-dialog">
-    <div class="dialog-header">
-      <div>
-        <h3 id="dialog-title">Figure</h3>
-        <p id="dialog-caption"></p>
-      </div>
-      <button id="dialog-close" class="button secondary" type="button">Close</button>
+<section class="panel" id="public">
+  <div class="section-head">
+    <div><p class="kicker">Public test results</p><h2>Public model performance</h2></div>
+    <p class="note">These comparisons use the same held-out public test split.</p>
+  </div>
+  
+    <div class="interpretation-box">
+      <strong>How to read this:</strong> these rows share the same held-out public test split. Higher Dice is better; lower CDR MAE is better. The hybrid model preserved the public performance gains while adding clinical-domain signal during training.
     </div>
-    <img id="dialog-image" alt="">
-    <div class="dialog-actions">
-      <a id="dialog-open" class="button" href="#" target="_blank" rel="noopener">Open full-size image</a>
+    <div class="metric-block">
+        <div class="metric-row">
+          <div class="metric-name">Public finalist model</div>
+          <div class="bar"><div class="fill blue" style="width:90.9%"></div></div>
+          <div class="metric-value">0.818</div>
+        </div>
+        
+        <div class="metric-row">
+          <div class="metric-name">Long-trained public model</div>
+          <div class="bar"><div class="fill blue" style="width:93.6%"></div></div>
+          <div class="metric-value">0.842</div>
+        </div>
+        
+        <div class="metric-row">
+          <div class="metric-name">Hybrid public + clinical model</div>
+          <div class="bar"><div class="fill blue" style="width:93.8%"></div></div>
+          <div class="metric-value">0.844</div>
+        </div>
+        </div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Notebook</th><th>Model stage</th><th>Mean Dice</th><th>Disc Dice</th><th>Cup Dice</th><th>CDR MAE</th><th>Δ mean Dice vs public finalist</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/07_final_model_selection_and_test_evaluation.ipynb" target="_blank" rel="noopener" title="Selected public model and held-out public test evaluation">Public finalist</a></td>
+          <td>Public finalist model</td>
+          <td>0.818</td>
+          <td>0.840</td>
+          <td>0.796</td>
+          <td>0.064</td>
+          <td>0.000</td>
+        </tr>
+        
+        <tr>
+          <td><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/10_long_training_selected_public_model.ipynb" target="_blank" rel="noopener" title="25-epoch public training run">Long public model</a></td>
+          <td>Long-trained public model</td>
+          <td>0.842</td>
+          <td>0.864</td>
+          <td>0.820</td>
+          <td>0.063</td>
+          <td>0.024</td>
+        </tr>
+        
+        <tr>
+          <td><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener" title="Public plus clinical pre-augmentation training">Hybrid training</a></td>
+          <td>Hybrid public + clinical model</td>
+          <td>0.844</td>
+          <td>0.871</td>
+          <td>0.817</td>
+          <td>0.063</td>
+          <td>0.026</td>
+        </tr>
+        </tbody>
+      </table>
     </div>
-  </dialog>
+    
+</section>
 
-  <footer>
-    <p>
-      Generated from public-safe aggregate artifacts in <code>reports/final/</code> and <code>docs/dashboard_data/</code>.
-      <a href="#top">Back to top</a>
-    </p>
-  </footer>
+<section class="panel" id="clinical">
+  <div class="section-head">
+    <div><p class="kicker">Clinical transfer and adaptation</p><h2>Clinical strategy comparison</h2></div>
+    <p class="note">This section separates clinical-only adaptation from hybrid public-clinical training and explains how to interpret improvement.</p>
+  </div>
+  
+    <div class="clinical-guide">
+      <div><strong>Dice improvement:</strong><span>Higher patient-weighted Dice is better. Patient weighting prevents patients or encounters with more images from dominating the result.</span></div>
+      <div><strong>CDR error improvement:</strong><span>Lower cup-to-disc-ratio absolute error is better. A positive improvement means error fell relative to that notebook’s internal zero-shot baseline.</span></div>
+      <div><strong>Scope warning:</strong><span>Notebook 12 and Notebook 13 use different held-out clinical splits. Compare each strategy against its own zero-shot row, not as one universal leaderboard.</span></div>
+    </div>
+    <div class="metric-block">
+        <div class="metric-row">
+          <div class="metric-name">Zero-shot public model on clinical holdout</div>
+          <div class="bar"><div class="fill blue" style="width:48.2%"></div></div>
+          <div class="metric-value">0.193</div>
+        </div>
+        
+        <div class="metric-row">
+          <div class="metric-name">Clinical-only fine-tuning, 25% training groups</div>
+          <div class="bar"><div class="fill blue" style="width:35.1%"></div></div>
+          <div class="metric-value">0.140</div>
+        </div>
+        
+        <div class="metric-row">
+          <div class="metric-name">Clinical-only fine-tuning, 50% training groups</div>
+          <div class="bar"><div class="fill blue" style="width:37.2%"></div></div>
+          <div class="metric-value">0.149</div>
+        </div>
+        
+        <div class="metric-row">
+          <div class="metric-name">Clinical-only fine-tuning, 75% training groups</div>
+          <div class="bar"><div class="fill blue" style="width:40.7%"></div></div>
+          <div class="metric-value">0.163</div>
+        </div>
+        
+        <div class="metric-row">
+          <div class="metric-name">Zero-shot long public model on 50% clinical holdout</div>
+          <div class="bar"><div class="fill orange" style="width:66.2%"></div></div>
+          <div class="metric-value">0.265</div>
+        </div>
+        
+        <div class="metric-row">
+          <div class="metric-name">Hybrid public + clinical training</div>
+          <div class="bar"><div class="fill orange" style="width:82.5%"></div></div>
+          <div class="metric-value">0.330</div>
+        </div>
+        </div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Notebook</th><th>Strategy</th><th>Condition</th><th>Patient-weighted Dice</th><th>Δ vs internal zero-shot</th><th>Patient CDR error</th><th>Comparison scope</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/12_clinical_domain_adaptation_experiments.ipynb" target="_blank" rel="noopener" title="Clinical-only adaptation fractions">Clinical fine-tuning</a></td>
+          <td>Clinical-only fine-tuning</td>
+          <td>Zero-shot public model on clinical holdout</td>
+          <td>0.193</td>
+          <td class="">0.000</td>
+          <td>0.351</td>
+          <td>Within-notebook same clinical split</td>
+        </tr>
+        
+        <tr>
+          <td><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/12_clinical_domain_adaptation_experiments.ipynb" target="_blank" rel="noopener" title="Clinical-only adaptation fractions">Clinical fine-tuning</a></td>
+          <td>Clinical-only fine-tuning</td>
+          <td>Clinical-only fine-tuning, 25% training groups</td>
+          <td>0.140</td>
+          <td class="bad">-0.053</td>
+          <td>0.543</td>
+          <td>Within-notebook same clinical split</td>
+        </tr>
+        
+        <tr>
+          <td><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/12_clinical_domain_adaptation_experiments.ipynb" target="_blank" rel="noopener" title="Clinical-only adaptation fractions">Clinical fine-tuning</a></td>
+          <td>Clinical-only fine-tuning</td>
+          <td>Clinical-only fine-tuning, 50% training groups</td>
+          <td>0.149</td>
+          <td class="bad">-0.044</td>
+          <td>0.525</td>
+          <td>Within-notebook same clinical split</td>
+        </tr>
+        
+        <tr>
+          <td><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/12_clinical_domain_adaptation_experiments.ipynb" target="_blank" rel="noopener" title="Clinical-only adaptation fractions">Clinical fine-tuning</a></td>
+          <td>Clinical-only fine-tuning</td>
+          <td>Clinical-only fine-tuning, 75% training groups</td>
+          <td>0.163</td>
+          <td class="bad">-0.030</td>
+          <td>0.495</td>
+          <td>Within-notebook same clinical split</td>
+        </tr>
+        
+        <tr>
+          <td><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener" title="Public plus clinical pre-augmentation training">Hybrid training</a></td>
+          <td>Hybrid public + clinical pre-augmentation</td>
+          <td>Zero-shot long public model on 50% clinical holdout</td>
+          <td>0.265</td>
+          <td class="">0.000</td>
+          <td>0.385</td>
+          <td>Within-notebook same clinical split</td>
+        </tr>
+        
+        <tr>
+          <td><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener" title="Public plus clinical pre-augmentation training">Hybrid training</a></td>
+          <td>Hybrid public + clinical pre-augmentation</td>
+          <td>Hybrid public + clinical training</td>
+          <td>0.330</td>
+          <td class="good">0.065</td>
+          <td>0.263</td>
+          <td>Within-notebook same clinical split</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    
+</section>
 
-  <script src="app.js"></script>
+<section class="panel" id="figures">
+  <div class="section-head">
+    <div><p class="kicker">Visual evidence</p><h2>Figures with interpretation</h2></div>
+    <p class="note">Figures support the story; the surrounding text explains what each result means and what should happen next.</p>
+  </div>
+  <div class="figure-stack">
+        <article class="figure-card">
+          <a href="dashboard_assets/figures/data_composition.png" target="_blank" rel="noopener">
+            <img src="dashboard_assets/figures/data_composition.png" alt="Data composition and clinical-data limitation">
+          </a>
+          <div>
+            <h3>Data composition and clinical-data limitation</h3>
+            <p>This figure shows the imbalance between the large public training corpus and the very small PSD-derived clinical set. That imbalance is central to the project’s conclusion: the best next step is not simply another architecture tweak, but a larger, cleaner, segmentation-ready clinical dataset with proper layered disc/cup masks.</p>
+            <a class="button secondary" href="dashboard_assets/figures/data_composition.png" target="_blank" rel="noopener">Open full-size figure</a>
+          </div>
+        </article>
+        
 
-  <aside class="notebook-guide" aria-label="Notebook guide">
-    <details>
-      <summary>Notebook guide</summary>
-      <div class="notebook-guide-body">
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/00_project_setup.ipynb" target="_blank" rel="noopener"><strong>Setup</strong><span>00 project setup</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/01_data_audit_and_manifest.ipynb" target="_blank" rel="noopener"><strong>Audit</strong><span>01 data audit</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/02_split_strategy.ipynb" target="_blank" rel="noopener"><strong>Splits</strong><span>02 split strategy</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/03_baseline_unet_reproduction.ipynb" target="_blank" rel="noopener"><strong>Baseline</strong><span>03 U-Net reproduction</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/04_model_comparison.ipynb" target="_blank" rel="noopener"><strong>Compare</strong><span>04 model comparison</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/05_online_augmentation_ablation.ipynb" target="_blank" rel="noopener"><strong>Augment</strong><span>05 online augmentation</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/06_offline_synthetic_expansion.ipynb" target="_blank" rel="noopener"><strong>Synthetic</strong><span>06 virtual synthetic expansion</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/07_final_model_selection_and_test_evaluation.ipynb" target="_blank" rel="noopener"><strong>Select</strong><span>07 public test finalist</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/08_clinical_data_generalization.ipynb" target="_blank" rel="noopener"><strong>Clinical set</strong><span>08 PSD generalization</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/09_combined_public_augmentation_expansion.ipynb" target="_blank" rel="noopener"><strong>Combo aug</strong><span>09 combined public augmentation</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/10_long_training_selected_public_model.ipynb" target="_blank" rel="noopener"><strong>Long public</strong><span>10 25-epoch public model</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/11_long_training_clinical_generalization.ipynb" target="_blank" rel="noopener"><strong>Transfer</strong><span>11 clinical generalization</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/12_clinical_domain_adaptation_experiments.ipynb" target="_blank" rel="noopener"><strong>Adapt</strong><span>12 clinical fine-tuning</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener"><strong>Hybrid</strong><span>13 public + clinical</span></a>
-        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/14_final_comparative_analysis_and_dashboard_assets.ipynb" target="_blank" rel="noopener"><strong>Synthesis</strong><span>14 dashboard assets</span></a>
-      </div>
-    </details>
-  </aside>
+        <article class="figure-card">
+          <a href="dashboard_assets/figures/public_performance_trajectory.png" target="_blank" rel="noopener">
+            <img src="dashboard_assets/figures/public_performance_trajectory.png" alt="Public performance trajectory">
+          </a>
+          <div>
+            <h3>Public performance trajectory</h3>
+            <p>The public-data pipeline improved from the selected public finalist to the longer public-training run and stayed strong after the hybrid public-clinical training experiment. This supports the claim that the final hybrid step did not sacrifice public test performance.</p>
+            <a class="button secondary" href="dashboard_assets/figures/public_performance_trajectory.png" target="_blank" rel="noopener">Open full-size figure</a>
+          </div>
+        </article>
+        
 
+        <article class="figure-card">
+          <a href="dashboard_assets/figures/public_to_clinical_gap.png" target="_blank" rel="noopener">
+            <img src="dashboard_assets/figures/public_to_clinical_gap.png" alt="Public-to-clinical transfer gap">
+          </a>
+          <div>
+            <h3>Public-to-clinical transfer gap</h3>
+            <p>This figure is the main domain-shift evidence. Public test Dice remained high, while clinical patient-weighted Dice remained much lower. The model learned public fundus segmentation well, but public performance alone did not make it clinically robust.</p>
+            <a class="button secondary" href="dashboard_assets/figures/public_to_clinical_gap.png" target="_blank" rel="noopener">Open full-size figure</a>
+          </div>
+        </article>
+        
+
+        <article class="figure-card">
+          <a href="dashboard_assets/figures/clinical_strategy_dice.png" target="_blank" rel="noopener">
+            <img src="dashboard_assets/figures/clinical_strategy_dice.png" alt="Clinical strategy Dice comparison">
+          </a>
+          <div>
+            <h3>Clinical strategy Dice comparison</h3>
+            <p>Clinical-only fine-tuning did not beat its internal zero-shot baseline, while the hybrid public-clinical training strategy improved patient-weighted Dice on its held-out clinical split. This suggests clinical signal was more useful when integrated before augmentation rather than used as a tiny fine-tuning-only dataset.</p>
+            <a class="button secondary" href="dashboard_assets/figures/clinical_strategy_dice.png" target="_blank" rel="noopener">Open full-size figure</a>
+          </div>
+        </article>
+        
+
+        <article class="figure-card">
+          <a href="dashboard_assets/figures/clinical_strategy_cdr.png" target="_blank" rel="noopener">
+            <img src="dashboard_assets/figures/clinical_strategy_cdr.png" alt="Clinical strategy CDR error comparison">
+          </a>
+          <div>
+            <h3>Clinical strategy CDR error comparison</h3>
+            <p>This figure tracks the downstream cup-to-disc-ratio error. Lower is better. The hybrid model reduced patient-weighted CDR error relative to its zero-shot baseline, but the result remains exploratory because clinical labels were approximate PSD-derived masks.</p>
+            <a class="button secondary" href="dashboard_assets/figures/clinical_strategy_cdr.png" target="_blank" rel="noopener">Open full-size figure</a>
+          </div>
+        </article>
+        </div>
+</section>
+
+<section class="panel" id="claims">
+  <div class="section-head">
+    <div><p class="kicker">Evidence-backed conclusions</p><h2>Claims and evidence</h2></div>
+    <p class="note">This is the readable version of the final claims matrix. It is more important than the static exported matrix image.</p>
+  </div>
+  <div class="claims">
+        <article class="claim-card">
+          <div class="claim-id">C1</div>
+          <div class="claim-main">
+            <h3>The public-data segmentation pipeline achieved strong held-out public performance.</h3>
+            <div class="claim-details">
+              <div><span>Evidence</span><strong>best public test mean foreground Dice</strong></div>
+              <div><span>Value</span><strong>0.844</strong></div>
+              <div><span>Strength</span><strong>strong</strong></div>
+              <div><span>Notebooks</span><strong><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/07_final_model_selection_and_test_evaluation.ipynb" target="_blank" rel="noopener" title="Selected public model and held-out public test evaluation">Public finalist</a><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/10_long_training_selected_public_model.ipynb" target="_blank" rel="noopener" title="25-epoch public training run">Long public model</a><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener" title="Public plus clinical pre-augmentation training">Hybrid training</a></strong></div>
+            </div>
+            <p><strong>Caveat:</strong> Public fundus test performance does not guarantee clinical/head-mounted transfer.</p>
+          </div>
+        </article>
+        
+
+        <article class="claim-card">
+          <div class="claim-id">C2</div>
+          <div class="claim-main">
+            <h3>Longer public-data training improved public test performance relative to the Notebook 07 selected public model.</h3>
+            <div class="claim-details">
+              <div><span>Evidence</span><strong>Notebook 10 minus Notebook 07 public test mean foreground Dice</strong></div>
+              <div><span>Value</span><strong>0.024</strong></div>
+              <div><span>Strength</span><strong>strong</strong></div>
+              <div><span>Notebooks</span><strong><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/07_final_model_selection_and_test_evaluation.ipynb" target="_blank" rel="noopener" title="Selected public model and held-out public test evaluation">Public finalist</a><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/10_long_training_selected_public_model.ipynb" target="_blank" rel="noopener" title="25-epoch public training run">Long public model</a></strong></div>
+            </div>
+            <p><strong>Caveat:</strong> This comparison is public-domain only.</p>
+          </div>
+        </article>
+        
+
+        <article class="claim-card">
+          <div class="claim-id">C3</div>
+          <div class="claim-main">
+            <h3>Public-only training did not eliminate the clinical/head-mounted domain shift.</h3>
+            <div class="claim-details">
+              <div><span>Evidence</span><strong>Notebook 11 patient-weighted clinical mean foreground Dice</strong></div>
+              <div><span>Value</span><strong>0.251</strong></div>
+              <div><span>Strength</span><strong>strong</strong></div>
+              <div><span>Notebooks</span><strong><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/11_long_training_clinical_generalization.ipynb" target="_blank" rel="noopener" title="Long public model evaluated on clinical PSD-derived data">Clinical transfer</a></strong></div>
+            </div>
+            <p><strong>Caveat:</strong> Clinical masks are approximate PSD-derived labels and the sample size is small.</p>
+          </div>
+        </article>
+        
+
+        <article class="claim-card">
+          <div class="claim-id">C4</div>
+          <div class="claim-main">
+            <h3>Clinical-only fine-tuning on tiny PSD-derived subsets did not reliably improve held-out patient-weighted clinical performance.</h3>
+            <div class="claim-details">
+              <div><span>Evidence</span><strong>best Notebook 12 patient-weighted Dice versus Notebook 12 zero-shot patient-weighted Dice</strong></div>
+              <div><span>Value</span><strong>0.000</strong></div>
+              <div><span>Strength</span><strong>moderate</strong></div>
+              <div><span>Notebooks</span><strong><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/12_clinical_domain_adaptation_experiments.ipynb" target="_blank" rel="noopener" title="Clinical-only adaptation fractions">Clinical fine-tuning</a></strong></div>
+            </div>
+            <p><strong>Caveat:</strong> Best Notebook 12 condition was zero_shot_notebook_10_on_clinical_test; clinical training splits were very small.</p>
+          </div>
+        </article>
+        
+
+        <article class="claim-card">
+          <div class="claim-id">C5</div>
+          <div class="claim-main">
+            <h3>Hybrid public plus clinical pre-augmentation training improved held-out patient-weighted clinical Dice on the Notebook 13 split.</h3>
+            <div class="claim-details">
+              <div><span>Evidence</span><strong>Notebook 13 hybrid minus zero-shot patient-weighted mean foreground Dice</strong></div>
+              <div><span>Value</span><strong>0.065</strong></div>
+              <div><span>Strength</span><strong>moderate to strong</strong></div>
+              <div><span>Notebooks</span><strong><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener" title="Public plus clinical pre-augmentation training">Hybrid training</a></strong></div>
+            </div>
+            <p><strong>Caveat:</strong> The improvement is on a small held-out clinical split and should be treated as exploratory.</p>
+          </div>
+        </article>
+        
+
+        <article class="claim-card">
+          <div class="claim-id">C6</div>
+          <div class="claim-main">
+            <h3>Hybrid training improved patient-weighted clinical CDR error on the Notebook 13 split.</h3>
+            <div class="claim-details">
+              <div><span>Evidence</span><strong>Notebook 13 patient-weighted CDR absolute error improvement</strong></div>
+              <div><span>Value</span><strong>0.122</strong></div>
+              <div><span>Strength</span><strong>moderate to strong</strong></div>
+              <div><span>Notebooks</span><strong><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener" title="Public plus clinical pre-augmentation training">Hybrid training</a></strong></div>
+            </div>
+            <p><strong>Caveat:</strong> CDR is sensitive to approximate cup/disc mask quality and clinical labels remain limited.</p>
+          </div>
+        </article>
+        
+
+        <article class="claim-card">
+          <div class="claim-id">C7</div>
+          <div class="claim-main">
+            <h3>The model remains exploratory and is not clinically deployable.</h3>
+            <div class="claim-details">
+              <div><span>Evidence</span><strong>small clinical sample, approximate labels, uneven image-level performance</strong></div>
+              <div><span>Value</span><strong>—</strong></div>
+              <div><span>Strength</span><strong>strong</strong></div>
+              <div><span>Notebooks</span><strong><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/08_clinical_data_generalization.ipynb" target="_blank" rel="noopener" title="PSD-derived clinical mask extraction and first transfer test">Clinical set extraction</a><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/11_long_training_clinical_generalization.ipynb" target="_blank" rel="noopener" title="Long public model evaluated on clinical PSD-derived data">Clinical transfer</a><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/12_clinical_domain_adaptation_experiments.ipynb" target="_blank" rel="noopener" title="Clinical-only adaptation fractions">Clinical fine-tuning</a><a class="chip notebook" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener" title="Public plus clinical pre-augmentation training">Hybrid training</a></strong></div>
+            </div>
+            <p><strong>Caveat:</strong> A deployable system would require larger clinical annotation, prospective validation, and clinical workflow review.</p>
+          </div>
+        </article>
+        </div>
+</section>
+
+<section class="panel" id="data">
+  <div class="section-head">
+    <div><p class="kicker">Public-safe assets</p><h2>Dashboard data, notebooks, and source files</h2></div>
+    <p class="note">These are committed aggregate outputs and source notebooks. Private clinical images, paths, patient hashes, and image-level private metrics are not included.</p>
+  </div>
+  <div class="data-grid">
+        <a class="data-link" href="dashboard_data/dashboard_kpi_cards.json" target="_blank" rel="noopener">
+          <strong>KPI cards</strong>
+          <span>dashboard_kpi_cards.json</span>
+        </a>
+        
+
+        <a class="data-link" href="dashboard_data/dashboard_story_sections.json" target="_blank" rel="noopener">
+          <strong>Storyboard sections</strong>
+          <span>dashboard_story_sections.json</span>
+        </a>
+        
+
+        <a class="data-link" href="dashboard_data/model_development_registry.csv" target="_blank" rel="noopener">
+          <strong>Model development registry</strong>
+          <span>model_development_registry.csv</span>
+        </a>
+        
+
+        <a class="data-link" href="dashboard_data/public_model_performance_summary.csv" target="_blank" rel="noopener">
+          <strong>Public model performance</strong>
+          <span>public_model_performance_summary.csv</span>
+        </a>
+        
+
+        <a class="data-link" href="dashboard_data/clinical_transfer_summary.csv" target="_blank" rel="noopener">
+          <strong>Clinical transfer summary</strong>
+          <span>clinical_transfer_summary.csv</span>
+        </a>
+        
+
+        <a class="data-link" href="dashboard_data/clinical_strategy_comparison_summary.csv" target="_blank" rel="noopener">
+          <strong>Clinical strategy comparison</strong>
+          <span>clinical_strategy_comparison_summary.csv</span>
+        </a>
+        
+
+        <a class="data-link" href="dashboard_data/public_clinical_tradeoff_summary.csv" target="_blank" rel="noopener">
+          <strong>Public-clinical tradeoff</strong>
+          <span>public_clinical_tradeoff_summary.csv</span>
+        </a>
+        
+
+        <a class="data-link" href="dashboard_data/final_claims_evidence_matrix.csv" target="_blank" rel="noopener">
+          <strong>Claims/evidence matrix</strong>
+          <span>final_claims_evidence_matrix.csv</span>
+        </a>
+        
+
+        <a class="data-link" href="dashboard_data/dashboard_data_dictionary.csv" target="_blank" rel="noopener">
+          <strong>Dashboard data dictionary</strong>
+          <span>dashboard_data_dictionary.csv</span>
+        </a>
+        
+
+        <a class="data-link" href="dashboard_data/dashboard_assets_manifest.csv" target="_blank" rel="noopener">
+          <strong>Dashboard asset manifest</strong>
+          <span>dashboard_assets_manifest.csv</span>
+        </a>
+        
+
+        <a class="data-link" href="dashboard_data/final_project_interpretation.md" target="_blank" rel="noopener">
+          <strong>Final interpretation</strong>
+          <span>final_project_interpretation.md</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/00_project_setup.ipynb" target="_blank" rel="noopener">
+          <strong>Setup</strong>
+          <span>00. Environment, paths, and reproducibility setup</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/01_data_audit_and_manifest.ipynb" target="_blank" rel="noopener">
+          <strong>Data audit</strong>
+          <span>01. Dataset audit and initial manifest work</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/02_split_strategy.ipynb" target="_blank" rel="noopener">
+          <strong>Split strategy</strong>
+          <span>02. Public manifest and train/validation/test split design</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/03_baseline_unet_reproduction.ipynb" target="_blank" rel="noopener">
+          <strong>Baseline U-Net</strong>
+          <span>03. Baseline segmentation model reproduction</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/04_model_comparison.ipynb" target="_blank" rel="noopener">
+          <strong>Architecture comparison</strong>
+          <span>04. U-Net, U-Net++, and DeepLabV3+ comparison</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/05_online_augmentation_ablation.ipynb" target="_blank" rel="noopener">
+          <strong>Online augmentation</strong>
+          <span>05. Online augmentation ablation</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/06_offline_synthetic_expansion.ipynb" target="_blank" rel="noopener">
+          <strong>Synthetic expansion</strong>
+          <span>06. Virtual synthetic add-back experiments</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/07_final_model_selection_and_test_evaluation.ipynb" target="_blank" rel="noopener">
+          <strong>Public finalist</strong>
+          <span>07. Selected public model and held-out public test evaluation</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/08_clinical_data_generalization.ipynb" target="_blank" rel="noopener">
+          <strong>Clinical set extraction</strong>
+          <span>08. PSD-derived clinical mask extraction and first transfer test</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/09_combined_public_augmentation_expansion.ipynb" target="_blank" rel="noopener">
+          <strong>Combined augmentation</strong>
+          <span>09. Combined public augmentation recipe screen</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/10_long_training_selected_public_model.ipynb" target="_blank" rel="noopener">
+          <strong>Long public model</strong>
+          <span>10. 25-epoch public training run</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/11_long_training_clinical_generalization.ipynb" target="_blank" rel="noopener">
+          <strong>Clinical transfer</strong>
+          <span>11. Long public model evaluated on clinical PSD-derived data</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/12_clinical_domain_adaptation_experiments.ipynb" target="_blank" rel="noopener">
+          <strong>Clinical fine-tuning</strong>
+          <span>12. Clinical-only adaptation fractions</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener">
+          <strong>Hybrid training</strong>
+          <span>13. Public plus clinical pre-augmentation training</span>
+        </a>
+        
+
+        <a class="data-link notebook-data" href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/14_final_comparative_analysis_and_dashboard_assets.ipynb" target="_blank" rel="noopener">
+          <strong>Final synthesis</strong>
+          <span>14. Final comparative analysis and dashboard assets</span>
+        </a>
+        </div>
+</section>
+</main>
+
+
+    <aside class="floating-guide">
+      <details>
+        <summary>Notebook guide</summary>
+        <div class="floating-guide-body">
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/00_project_setup.ipynb" target="_blank" rel="noopener">
+          <strong>Setup</strong>
+          <span>00. Environment, paths, and reproducibility setup</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/01_data_audit_and_manifest.ipynb" target="_blank" rel="noopener">
+          <strong>Data audit</strong>
+          <span>01. Dataset audit and initial manifest work</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/02_split_strategy.ipynb" target="_blank" rel="noopener">
+          <strong>Split strategy</strong>
+          <span>02. Public manifest and train/validation/test split design</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/03_baseline_unet_reproduction.ipynb" target="_blank" rel="noopener">
+          <strong>Baseline U-Net</strong>
+          <span>03. Baseline segmentation model reproduction</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/04_model_comparison.ipynb" target="_blank" rel="noopener">
+          <strong>Architecture comparison</strong>
+          <span>04. U-Net, U-Net++, and DeepLabV3+ comparison</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/05_online_augmentation_ablation.ipynb" target="_blank" rel="noopener">
+          <strong>Online augmentation</strong>
+          <span>05. Online augmentation ablation</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/06_offline_synthetic_expansion.ipynb" target="_blank" rel="noopener">
+          <strong>Synthetic expansion</strong>
+          <span>06. Virtual synthetic add-back experiments</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/07_final_model_selection_and_test_evaluation.ipynb" target="_blank" rel="noopener">
+          <strong>Public finalist</strong>
+          <span>07. Selected public model and held-out public test evaluation</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/08_clinical_data_generalization.ipynb" target="_blank" rel="noopener">
+          <strong>Clinical set extraction</strong>
+          <span>08. PSD-derived clinical mask extraction and first transfer test</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/09_combined_public_augmentation_expansion.ipynb" target="_blank" rel="noopener">
+          <strong>Combined augmentation</strong>
+          <span>09. Combined public augmentation recipe screen</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/10_long_training_selected_public_model.ipynb" target="_blank" rel="noopener">
+          <strong>Long public model</strong>
+          <span>10. 25-epoch public training run</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/11_long_training_clinical_generalization.ipynb" target="_blank" rel="noopener">
+          <strong>Clinical transfer</strong>
+          <span>11. Long public model evaluated on clinical PSD-derived data</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/12_clinical_domain_adaptation_experiments.ipynb" target="_blank" rel="noopener">
+          <strong>Clinical fine-tuning</strong>
+          <span>12. Clinical-only adaptation fractions</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/13_hybrid_public_clinical_training_experiment.ipynb" target="_blank" rel="noopener">
+          <strong>Hybrid training</strong>
+          <span>13. Public plus clinical pre-augmentation training</span>
+        </a>
+        
+        <a href="https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/14_final_comparative_analysis_and_dashboard_assets.ipynb" target="_blank" rel="noopener">
+          <strong>Final synthesis</strong>
+          <span>14. Final comparative analysis and dashboard assets</span>
+        </a>
+        </div>
+      </details>
+    </aside>
+    
+
+<footer>
+Generated from public-safe aggregate artifacts in <code>reports/final/</code> and <code>docs/dashboard_data/</code>. <a href="#top">Back to top</a>
+</footer>
 </body>
 </html>
