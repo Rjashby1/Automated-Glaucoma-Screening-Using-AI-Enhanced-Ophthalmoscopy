@@ -1,4 +1,42 @@
 const DATA = "dashboard_data/";
+
+const REPO_NOTEBOOK_BASE = "https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy/blob/main/notebooks/";
+
+const NOTEBOOKS = {
+  "00": { label: "Setup", title: "00 project setup", file: "00_project_setup.ipynb" },
+  "01": { label: "Audit", title: "01 data audit and manifest", file: "01_data_audit_and_manifest.ipynb" },
+  "02": { label: "Splits", title: "02 split strategy", file: "02_split_strategy.ipynb" },
+  "03": { label: "Baseline", title: "03 baseline U-Net reproduction", file: "03_baseline_unet_reproduction.ipynb" },
+  "04": { label: "Compare", title: "04 model comparison", file: "04_model_comparison.ipynb" },
+  "05": { label: "Augment", title: "05 online augmentation ablation", file: "05_online_augmentation_ablation.ipynb" },
+  "06": { label: "Synthetic", title: "06 offline synthetic expansion", file: "06_offline_synthetic_expansion.ipynb" },
+  "07": { label: "Select", title: "07 final model selection and test evaluation", file: "07_final_model_selection_and_test_evaluation.ipynb" },
+  "08": { label: "Clinical set", title: "08 clinical data generalization", file: "08_clinical_data_generalization.ipynb" },
+  "09": { label: "Combo aug", title: "09 combined public augmentation expansion", file: "09_combined_public_augmentation_expansion.ipynb" },
+  "10": { label: "Long public", title: "10 long training selected public model", file: "10_long_training_selected_public_model.ipynb" },
+  "11": { label: "Transfer", title: "11 long training clinical generalization", file: "11_long_training_clinical_generalization.ipynb" },
+  "12": { label: "Adapt", title: "12 clinical domain adaptation experiments", file: "12_clinical_domain_adaptation_experiments.ipynb" },
+  "13": { label: "Hybrid", title: "13 hybrid public clinical training experiment", file: "13_hybrid_public_clinical_training_experiment.ipynb" },
+  "14": { label: "Synthesis", title: "14 final comparative analysis and dashboard assets", file: "14_final_comparative_analysis_and_dashboard_assets.ipynb" },
+};
+
+function notebookUrl(id) {
+  const nb = NOTEBOOKS[String(id).padStart(2, "0")];
+  return nb ? `${REPO_NOTEBOOK_BASE}${nb.file}` : REPO_NOTEBOOK_BASE;
+}
+
+function notebookChip(id) {
+  const key = String(id).padStart(2, "0");
+  const nb = NOTEBOOKS[key];
+  if (!nb) return `<span class="pill">Notebook ${escapeHtml(key)}</span>`;
+  return `<a class="notebook-chip" href="${notebookUrl(key)}" target="_blank" rel="noopener" title="${escapeHtml(nb.title)}">${escapeHtml(nb.label)}</a>`;
+}
+
+function notebookChipsFromText(value) {
+  const ids = String(value ?? "").match(/\d{1,2}/g) || [];
+  return ids.map((id) => notebookChip(id)).join("");
+}
+
 const FIG = "dashboard_assets/figures/";
 
 const $ = (selector) => document.querySelector(selector);
@@ -167,7 +205,7 @@ function renderKpis(kpis) {
         <div class="kpi-label">${escapeHtml(kpi.label)}</div>
         <div class="kpi-value">${escapeHtml(kpi.display_value)}</div>
         <div class="kpi-context">${escapeHtml(kpi.context)}</div>
-        <div class="kpi-source">${escapeHtml(kpi.source)}</div>
+        <div class="kpi-source">${notebookChipsFromText(kpi.source) || escapeHtml(kpi.source)}</div>
       </article>
     `)
     .join("");
@@ -195,7 +233,7 @@ function renderStory(sections) {
           <p><strong>${escapeHtml(section.one_sentence_takeaway)}</strong></p>
           <p>${escapeHtml(section.long_takeaway)}</p>
           <div class="story-meta">
-            ${notebooks.map((nb) => `<span class="pill">Notebook ${escapeHtml(nb)}</span>`).join("")}
+            ${notebooks.map((nb) => notebookChip(nb)).join("")}
             ${figures.map((fig) => `<span class="pill">${escapeHtml(String(fig).replaceAll("_", " "))}</span>`).join("")}
           </div>
         </article>
@@ -266,6 +304,11 @@ function renderClinicalStrategy(rows) {
   const maxDice = Math.max(...rows.map((row) => number(row.patient_weighted_mean_foreground_dice) || 0), 0.4);
 
   container.innerHTML = `
+    <div class="clinical-reading-guide">
+      <div class="guide-card"><strong>How to read Dice</strong><span>Higher patient-weighted Dice is better. It summarizes segmentation overlap after weighting each held-out patient/encounter group equally.</span></div>
+      <div class="guide-card"><strong>How to read CDR error</strong><span>Lower CDR absolute error is better. In the table, a positive “CDR error improvement” means the model reduced error against its internal zero-shot baseline.</span></div>
+      <div class="guide-card"><strong>Comparison scope</strong><span>Notebook 12 and Notebook 13 use different held-out clinical splits. Compare improvements within each notebook, not as a universal leaderboard.</span></div>
+    </div>
     <div>
       <h3>Patient-weighted clinical mean Dice</h3>
       ${rows.map((row) => {
@@ -300,44 +343,44 @@ const figures = [
     title: "Pipeline storyboard",
     file: "pipeline_storyboard.png",
     featured: true,
-    caption: "End-to-end project pipeline from public data engineering through hybrid training and dashboard assets."
+    caption: "A no-crossing timeline of how the project moved from public data engineering to model comparison, robustness experiments, clinical transfer testing, clinical-only adaptation, hybrid public-clinical training, and final public-safe dashboard outputs."
   },
   {
     id: "data_composition",
     title: "Data composition",
     file: "data_composition.png",
-    caption: "Public split sizes, clinical mask-ready sample count, and Notebook 13 clinical train/holdout split."
+    caption: "Shows the scale mismatch between the public training corpus and the much smaller clinical PSD-derived sample. This is important context for why clinical conclusions are exploratory and why more segmentation-ready clinical data is the strongest next step."
   },
   {
     id: "public_performance_trajectory",
     title: "Public performance trajectory",
     file: "public_performance_trajectory.png",
-    caption: "Held-out public Dice metrics for the selected public model, long-trained public model, and hybrid model."
+    caption: "Tracks final public test performance across the selected public-data model, the longer public-data training run, and the hybrid model. The key result is that public performance improved and remained strong after adding clinical-domain training signal."
   },
   {
     id: "public_to_clinical_gap",
     title: "Public-to-clinical gap",
     file: "public_to_clinical_gap.png",
-    caption: "Public test performance remained much higher than clinical patient-weighted performance."
+    caption: "Contrasts public test Dice with clinical patient-weighted Dice. The gap is the main domain-shift finding: public fundus performance alone did not imply strong clinical/head-mounted transfer."
   },
   {
     id: "clinical_strategy_dice",
     title: "Clinical strategy Dice comparison",
     file: "clinical_strategy_dice.png",
-    caption: "Patient-weighted clinical Dice across clinical-only adaptation and hybrid training conditions."
+    caption: "Compares clinical-only fine-tuning against hybrid public-clinical training. The patient-weighted view emphasizes generalization across held-out patient/encounter groups rather than allowing patients with more images to dominate the result."
   },
   {
     id: "clinical_strategy_cdr",
     title: "Clinical strategy CDR error comparison",
     file: "clinical_strategy_cdr.png",
-    caption: "Patient-weighted CDR absolute error across clinical strategy conditions."
+    caption: "Shows the downstream cup-to-disc-ratio error across clinical strategies. Lower is better, and the hybrid model reduced patient-weighted CDR error relative to its internal zero-shot baseline."
   },
   {
     id: "evidence_matrix",
     title: "Evidence matrix",
     file: "evidence_matrix.png",
     featured: true,
-    caption: "Final project claims linked to metrics, interpretation strength, and caveats."
+    caption: "Static evidence-matrix export for reporting. The dashboard’s Claims and Evidence cards below are the preferred readable version because they include the same claims with cleaner layout and caveats."
   },
 ];
 
@@ -397,7 +440,7 @@ function renderClaims(claims) {
         <div class="evidence-item"><small>Evidence</small><div>${escapeHtml(claim.supporting_metric)}</div></div>
         <div class="evidence-item"><small>Value</small><div>${claim.value === null || claim.value === "" ? "—" : escapeHtml(fmt(claim.value))}</div></div>
         <div class="evidence-item"><small>Strength</small><div>${escapeHtml(String(claim.interpretation_strength).replaceAll("_", " "))}</div></div>
-        <div class="evidence-item"><small>Notebooks</small><div>${escapeHtml(String(claim.supporting_notebooks).replaceAll(";", ", "))}</div></div>
+        <div class="evidence-item"><small>Notebooks</small><div>${notebookChipsFromText(claim.supporting_notebooks)}</div></div>
       </div>
       <p><strong>Caveat:</strong> ${escapeHtml(claim.caveat)}</p>
     </article>
@@ -408,13 +451,15 @@ function renderDataLinks() {
   const links = [
     ["dashboard_kpi_cards.json", "KPI cards JSON"],
     ["dashboard_story_sections.json", "Storyboard sections JSON"],
+    ["model_development_registry.csv", "Model development registry CSV"],
     ["public_model_performance_summary.csv", "Public model performance CSV"],
-    ["clinical_transfer_summary.csv", "Clinical transfer CSV"],
+    ["clinical_transfer_summary.csv", "Clinical transfer summary CSV"],
     ["clinical_strategy_comparison_summary.csv", "Clinical strategy comparison CSV"],
     ["public_clinical_tradeoff_summary.csv", "Public-clinical tradeoff CSV"],
     ["final_claims_evidence_matrix.csv", "Claims/evidence CSV"],
     ["final_claims_evidence_matrix.json", "Claims/evidence JSON"],
-    ["model_development_registry.csv", "Model development registry CSV"],
+    ["dashboard_data_dictionary.csv", "Dashboard data dictionary CSV"],
+    ["dashboard_assets_manifest.csv", "Dashboard asset manifest CSV"],
     ["final_project_interpretation.md", "Final project interpretation"],
   ];
 
