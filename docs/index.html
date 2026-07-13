@@ -3,50 +3,164 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Glaucoma Segmentation Capstone Dashboard</title>
+  <title>AI-Enhanced Ophthalmoscopy Dashboard</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <p class="eyebrow">UVA MSDS Capstone</p>
-    <h1>AI-Enhanced Ophthalmoscopy: Segmentation Model Development Storyboard</h1>
-    <p class="lede">
-      A public-safe dashboard summarizing the model-development pipeline, public segmentation performance,
-      clinical transfer experiments, and final evidence-backed project conclusions.
-    </p>
+  <header class="hero" id="top">
+    <nav class="topnav" aria-label="Dashboard navigation">
+      <a href="#summary">Summary</a>
+      <a href="#metrics">Metrics</a>
+      <a href="#story">Story</a>
+      <a href="#performance">Performance</a>
+      <a href="#clinical">Clinical</a>
+      <a href="#figures">Figures</a>
+      <a href="#claims">Evidence</a>
+      <a href="#data">Data</a>
+    </nav>
+
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">UVA MSDS Capstone</p>
+        <h1>AI-Enhanced Ophthalmoscopy</h1>
+        <p class="subtitle">Segmentation model development, clinical-transfer analysis, and public-safe dashboard evidence base.</p>
+      </div>
+      <div class="hero-card">
+        <p class="hero-card-label">Final project thesis</p>
+        <p>
+          Public segmentation performance became strong, but clinical/head-mounted transfer remained the central challenge.
+          Hybrid public + clinical training produced the strongest patient-weighted clinical improvement while preserving public performance.
+        </p>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="panel">
-      <h2>Key Metrics</h2>
-      <div id="kpi-grid" class="kpi-grid"></div>
-    </section>
-
-    <section class="panel">
-      <h2>Project Storyboard</h2>
-      <div id="story-sections" class="story-sections"></div>
-    </section>
-
-    <section class="panel">
-      <h2>Final Figures</h2>
-      <div class="figure-grid">
-        <figure><img src="dashboard_assets/figures/pipeline_storyboard.png" alt="Pipeline storyboard"><figcaption>Pipeline storyboard</figcaption></figure>
-        <figure><img src="dashboard_assets/figures/public_performance_trajectory.png" alt="Public performance trajectory"><figcaption>Public performance trajectory</figcaption></figure>
-        <figure><img src="dashboard_assets/figures/public_to_clinical_gap.png" alt="Public-to-clinical gap"><figcaption>Public-to-clinical gap</figcaption></figure>
-        <figure><img src="dashboard_assets/figures/clinical_strategy_dice.png" alt="Clinical strategy Dice comparison"><figcaption>Clinical strategy Dice comparison</figcaption></figure>
-        <figure><img src="dashboard_assets/figures/clinical_strategy_cdr.png" alt="Clinical strategy CDR error comparison"><figcaption>Clinical strategy CDR error comparison</figcaption></figure>
-        <figure><img src="dashboard_assets/figures/evidence_matrix.png" alt="Evidence matrix"><figcaption>Evidence matrix</figcaption></figure>
+    <section class="panel executive" id="summary">
+      <div>
+        <p class="section-kicker">Executive summary</p>
+        <h2>What the project shows</h2>
+        <p class="lead">
+          This capstone built a reproducible optic disc/cup segmentation pipeline from public fundus datasets, tested model-selection and augmentation strategies,
+          evaluated clinical transfer, and then compared clinical-only adaptation with hybrid public-clinical training.
+        </p>
+        <div class="takeaway-list">
+          <div><strong>Public performance improved.</strong><span> Long public training raised held-out public mean Dice over the selected Notebook 07 model.</span></div>
+          <div><strong>Clinical transfer remained hard.</strong><span> Public-only models did not fully generalize to PSD-derived clinical/head-mounted imagery.</span></div>
+          <div><strong>Clinical-only fine-tuning was unstable.</strong><span> Tiny clinical-only subsets did not reliably improve held-out patient-weighted performance.</span></div>
+          <div><strong>Hybrid training helped most.</strong><span> Adding clinical examples before augmentation improved held-out patient-weighted clinical Dice and CDR error.</span></div>
+        </div>
       </div>
+      <aside class="summary-card">
+        <h3>Dashboard purpose</h3>
+        <p>
+          This site is a public-safe storyboard. It links final metrics, claims, figures, and data assets produced by Notebook 14.
+        </p>
+        <a class="button" href="dashboard_data/final_project_interpretation.md" target="_blank" rel="noopener">Open final interpretation</a>
+      </aside>
     </section>
 
-    <section class="panel">
-      <h2>Claims and Evidence</h2>
-      <div id="claims-table"></div>
+    <section class="panel" id="metrics">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Top-line results</p>
+          <h2>Key metrics</h2>
+        </div>
+        <p class="section-note">Loaded from <code>docs/dashboard_data/dashboard_kpi_cards.json</code>.</p>
+      </div>
+      <div id="kpi-grid" class="kpi-grid loading">Loading KPI cards…</div>
+    </section>
+
+    <section class="panel" id="story">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Narrative</p>
+          <h2>Project storyboard</h2>
+        </div>
+        <p class="section-note">Each card is linked to source notebooks and supporting figures.</p>
+      </div>
+      <div id="story-sections" class="story-grid loading">Loading project storyboard…</div>
+    </section>
+
+    <section class="panel" id="performance">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Public test results</p>
+          <h2>Public model performance</h2>
+        </div>
+        <p class="section-note">Same public held-out test split for the final public and hybrid models.</p>
+      </div>
+      <div id="public-summary" class="chart-area loading">Loading public performance summary…</div>
+      <div id="public-table" class="table-wrap"></div>
+    </section>
+
+    <section class="panel" id="clinical">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Clinical transfer and adaptation</p>
+          <h2>Clinical strategy comparison</h2>
+        </div>
+        <p class="section-note">
+          Notebook 12 and Notebook 13 comparisons are valid within their own held-out clinical splits; cross-notebook clinical comparisons are contextual.
+        </p>
+      </div>
+      <div id="clinical-summary" class="chart-area loading">Loading clinical strategy summary…</div>
+      <div id="clinical-table" class="table-wrap"></div>
+    </section>
+
+    <section class="panel" id="figures">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Visual evidence</p>
+          <h2>Final figures</h2>
+        </div>
+        <p class="section-note">Click any figure to enlarge, or open the full-size PNG in a new tab.</p>
+      </div>
+      <div id="figure-grid" class="figure-grid"></div>
+    </section>
+
+    <section class="panel" id="claims">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Evidence-backed conclusions</p>
+          <h2>Claims and evidence</h2>
+        </div>
+        <p class="section-note">Loaded from the final claims/evidence matrix.</p>
+      </div>
+      <div id="claims-table" class="claims-grid loading">Loading claims and evidence…</div>
+    </section>
+
+    <section class="panel" id="data">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Public-safe assets</p>
+          <h2>Dashboard data and source files</h2>
+        </div>
+        <p class="section-note">These files are committed public-safe aggregate outputs, not private clinical artifacts.</p>
+      </div>
+      <div id="data-links" class="link-grid"></div>
     </section>
   </main>
 
+  <dialog id="figure-dialog" class="figure-dialog">
+    <div class="dialog-header">
+      <div>
+        <h3 id="dialog-title">Figure</h3>
+        <p id="dialog-caption"></p>
+      </div>
+      <button id="dialog-close" class="button secondary" type="button">Close</button>
+    </div>
+    <img id="dialog-image" alt="">
+    <div class="dialog-actions">
+      <a id="dialog-open" class="button" href="#" target="_blank" rel="noopener">Open full-size image</a>
+    </div>
+  </dialog>
+
   <footer>
-    <p>Generated from public-safe aggregate artifacts in <code>reports/final/</code> and <code>docs/dashboard_data/</code>.</p>
+    <p>
+      Generated from public-safe aggregate artifacts in <code>reports/final/</code> and <code>docs/dashboard_data/</code>.
+      <a href="#top">Back to top</a>
+    </p>
   </footer>
 
   <script src="app.js"></script>
