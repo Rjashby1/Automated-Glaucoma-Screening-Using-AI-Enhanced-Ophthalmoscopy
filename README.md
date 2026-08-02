@@ -51,14 +51,14 @@ In collaboration with UVA Research Computing (Rivanna/Afton)
 | REFUGE | 1,200 |
 | PAPILA | 488 |
 
-**Clinical** — de-identified fundus images from the UVA Department of Ophthalmology, accessed under a data-use agreement with required human-subjects training. Ground truth was derived from expert PSD annotations (59 mask-ready samples, 20 patient/encounter groups). **This data is private and is not included in this repository.**
+**Clinical** — de-identified fundus images from the UVA Department of Ophthalmology, accessed under a data-use agreement with required human-subjects training. Ground truth was derived from clinically provided PSD annotations (59 mask-ready samples, 20 patient/encounter groups). **This data is private and is not included in this repository.**
 
 ## ⚙️ Preprocessing
 
 - Images resized to 256×256 (bilinear); masks resized with nearest-neighbor interpolation
 - Pixel values scaled to `[0, 1]`; no ImageNet normalization (encoders trained from scratch)
 - Masks encoded as `0 = background, 1 = disc, 2 = cup`
-- Leakage-aware, group-wise 70/15/15 split with a fixed seed
+- ORIGA, G1020, and PAPILA used reproducible leakage-aware, group-wise 70/15/15 splits; REFUGE’s official train/validation/test partitions were preserved.
 
 ## 🧠 Models
 
@@ -82,10 +82,11 @@ With the architecture held fixed, we varied the *data* pipeline rather than the 
 
 | Evaluation | Metric | Value |
 |---|---|---|
-| Held-out **public** test split | Mean foreground Dice | **0.844** |
+| Long-trained public-only model | Public test mean foreground Dice | **0.842** |
 | Zero-shot on **clinical** images | Patient-weighted Dice | **0.251** |
-| Hybrid training (held-out clinical split) | Δ patient-weighted Dice | **+0.065** |
-| Hybrid training (held-out clinical split) | Δ CDR absolute error | **+0.122** |
+| Hybrid model | Public test mean foreground Dice | **0.844** |
+| Hybrid clinical adaptation | Patient-weighted Dice | **0.265 → 0.330** |
+| Hybrid clinical adaptation | CDR absolute-error reduction | **0.122** |
 
 - A strong public model (**0.844** Dice) drops sharply on clinical images (**0.251**) — a large domain gap
 - Clinical-only fine-tuning did **not** improve over zero-shot at any fraction
@@ -109,13 +110,12 @@ no clinical data or clinically-trained weights are used.
 git clone https://github.com/Rjashby1/Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy.git
 cd Automated-Glaucoma-Screening-Using-AI-Enhanced-Ophthalmoscopy
 
-conda create -n glaucoma python=3.11 -y
-conda activate glaucoma
+conda env create -f environment.yml
+conda activate glaucoma-capstone
 pip install -e .
-pip install -r environment.yml
 ```
 
-Run the notebooks in numbered order. The public track (`00`–`10`) is reproducible from public data; the clinical track (`11`–`14`) requires the private clinical dataset.
+Run the notebooks in numbered order. Notebooks 00–07 develop and select the publicly available-data model; Notebook 08 performs the initial clinical generalization evaluation; Notebooks 09–10 extend public-data training; Notebooks 11–13 evaluate clinical transfer and adaptation; and Notebook 14 produces the final public-safe synthesis.
 
 ## 🔮 Future Work
 
@@ -143,7 +143,7 @@ Run the notebooks in numbered order. The public track (`00`–`10`) is reproduci
 └── paper.pdf                        # IEEE research paper detailing project work
 ```
 
-> `data/` is not tracked in version control. Public datasets are downloaded via the setup pipeline; clinical data is private and never committed.
+> `data/`: Raw imagery, private clinical data, and PHI-adjacent artifacts are not tracked. Selected public-safe processed manifests are version-controlled for reproducibility. Public datasets are downloaded via the setup pipeline; clinical data is private and never committed.
 
 ## 🙏 Acknowledgments
 
