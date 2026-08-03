@@ -140,7 +140,7 @@ Run the notebooks in numbered order. Notebooks 00–07 develop and select the pu
 ├── configs/                         # Configuration
 ├── reports/                         # Public-safe result tables and figures
 ├── README_Visualizations/           # Visualizations
-└── paper.pdf                        # IEEE research paper detailing project work
+└── Automated_Glaucoma_Screening_Using_AI_Enhanced_Ophthalmoscopy.pdf      # IEEE research paper detailing project work
 ```
 
 > `data/`: Raw imagery, private clinical data, and PHI-adjacent artifacts are not tracked. Selected public-safe processed manifests are version-controlled for reproducibility. Public datasets are downloaded via the setup pipeline; clinical data is private and never committed.
